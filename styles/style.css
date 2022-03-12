@@ -1,0 +1,41 @@
+/*? universal selector for website wide styling */
+* {
+  font-size: 12px;
+}
+
+/*? using class selector */
+.center {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/*? id selector */
+#amir {
+  color: green;
+}
+
+/*? class selector */
+.n1k {
+  color: crimson;
+}
+
+/*? multiple selectors */
+header,
+footer {
+  border: 5px solid goldenrod;
+  border-radius: 10px;
+}
+
+/*? single selector */
+body {
+  background-color: darkslategray;
+}
+
+a:link,
+a:visited,
+a:active,
+a {
+  text-decoration: none;
+  color: black;
+}
