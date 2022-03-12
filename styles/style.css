@@ -39,3 +39,24 @@ a {
   text-decoration: none;
   color: black;
 }
+
+div.parent {
+  background-color: #0074d9;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 1px;
+  position: relative;
+}
+div.child {
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+h2 {
+  color: #fff;
+}
