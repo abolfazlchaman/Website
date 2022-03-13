@@ -2,7 +2,11 @@
 * {
   font-size: 12px;
 }
-
+/*? change color when mouse selects text */
+::selection {
+  background-color: black;
+  color: #fff;
+}
 /*? using class selector */
 .center {
   text-align: center;
@@ -39,7 +43,9 @@ a {
   text-decoration: none;
   color: black;
 }
-
+div > #bruh:hover {
+  color: red;
+}
 div.parent {
   background-color: #0074d9;
   text-align: center;
