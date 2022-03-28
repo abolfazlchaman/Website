@@ -1,38 +1,49 @@
-/*? universal selector for website wide styling */
-* {
-  font-size: 12px;
+:root {
+  --bruh: #000;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /*? change color when mouse selects text */
 ::selection {
   background-color: black;
   color: #fff;
 }
-/*? using class selector */
+
 .center {
   text-align: center;
   align-items: center;
   vertical-align: middle;
 }
 
-/*? id selector */
 #amir {
   color: green;
 }
 
-/*? class selector */
 .n1k {
+  flex: auto;
+  min-width: 500px;
+  max-width: 1920px;
+  flex-flow: row wrap;
   color: crimson;
 }
 
-/*? multiple selectors */
 header,
 footer {
   border: 5px solid goldenrod;
   border-radius: 10px;
 }
 
-/*? single selector */
 body {
+  font-size: 12px;
   background-color: darkslategray;
 }
 
@@ -64,5 +75,5 @@ div.child {
   right: 0;
 }
 h2 {
-  color: #fff;
+  color: var(--bruh);
 }
