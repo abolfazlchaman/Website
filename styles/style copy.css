@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*? change color when mouse selects text */
+::selection {
+  background-color: black;
+  color: #fff;
+}
+
+#amir {
+  color: green;
+}
+
+header,
+footer {
+  border: 5px solid goldenrod;
+  border-radius: 10px;
+}
+
+body {
+  font-size: 12px;
+  background-color: darkslategray;
+}
+
+a:link,
+a:visited,
+a:active,
+a {
+  text-decoration: none;
+  color: black;
+}
+div > #bruh:hover {
+  color: red;
+}
+
+h2 {
+  color: var(--bruh);
+}
