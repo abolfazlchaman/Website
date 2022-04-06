@@ -423,6 +423,27 @@ html {
     flex-direction: column;
     flex: 1;
   }
+  .skills__lang{
+    margin: 35px 0px;
+  justify-content: center;
+  text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .skill__meter{
+    align-items: center;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    
+    text-align: center;
+    justify-self: center;
+    border: 2px solid gold;
+    width: 250px;
+    height: 290px;
+    margin: 0px 11px;
+  }
   .aboutme__section{
     height: 980px;
     align-items: center;
@@ -456,14 +477,52 @@ html {
     display: flex;
     flex-direction: column;
   }
-  
+  .cntr{
+    
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: center;
+  } 
+.bgcircle4{
+  height: 244px;
+  width: 244px;
+  background: #A4161A;
+border-radius: 150px;
+}
+.bgcircle3{
+  border-radius: 50%;
+    height: 242px;
+    width: 242px;
+    background: #2D3135;
+box-shadow: inset -16.5697px -16.5697px 41.4243px #3B4451, inset 16.5697px 16.5697px 41.4243px #000000;
+}
+
+  .bgcircle2{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background: #2D3135;
+box-shadow: 16.5697px 16.5697px 41.4243px rgba(0, 0, 0, 0.5);
+  }
+  .bgcircle{
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background: #2D3135;
+box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 0.7), inset -2px -2px 4px rgba(74, 78, 83, 0.5), inset 4px 4px 10px rgba(35, 37, 39, 0.8);
+  }
   .iconify{
     color: #a4161a;
     width:40px;
     height:40px;
   
   }
-  
+  .icn2{
+margin-top: 30px;
+    width: 100px;
+    height: auto;
+  }
   .nav__icon__container{
     margin-right: 5px;
     display: flex;
