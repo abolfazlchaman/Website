@@ -1,12 +1,21 @@
 body{
-    display: flex;
-    flex-direction: column;
+    background-color: #221222;
 }
-.cont1{
+.skills__header{
     display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    color: #eee;
+    justify-content: center;
+    text-align: center;
 
 }
-.cont2{
-    display: flex;
-
+.hand{
+    margin: 0px 73px;
+    width: 380px;
+    height: 175px;
+    border: 5px solid red;
+}
+.skills__header2{
+    margin-top: 40px;
 }
