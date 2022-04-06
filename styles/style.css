@@ -353,14 +353,13 @@ html {
   -moz-user-select: none;    
   -ms-user-select: none;      
   user-select: none;
+
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-
   font-family: 'Shabnam', sans-serif;
   color: #fff;
   max-width: 1920px;
   height: 2160px;
-  min-height: 1080px;
   background-color: #2d3135;
   box-sizing: border-box;
 }
@@ -445,7 +444,7 @@ html {
     75% { opacity: 0.5; }
     100% { opacity: 1.0; }
    }
-  .nav{
+  nav{
     position: -webkit-sticky; /* Safari */
     position: fixed;
     top: 0;
