@@ -452,6 +452,49 @@ html {
     flex-direction: column;
     flex: 1;
   }
+  .services__section{
+    height: 960px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .services{
+    margin: 10px 0px;
+  justify-content: center;
+  text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .services__slice{
+    image-rendering: crisp-edges;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    
+    text-align: center;
+    justify-self: center;
+    width: 425px;
+    height: 305px;
+    margin: 0px 6px;
+  }
+  .tr{
+    border-radius: 5px 80px 5px 5px;
+  }
+  .tl{
+    border-radius: 80px 5px 5px 5px;
+  }
+  .br{
+    border-radius: 5px 5px 80px 5px;
+  }
+  .bl{
+    border-radius: 5px 5px 5px 80px;
+  }
+  
   .blink_text {
     animation-name: blinker;
     animation-duration: 1.5s;
