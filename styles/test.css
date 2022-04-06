@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.cont1{
+    display: flex;
+
+}
+.cont2{
+    display: flex;
+
+}
