@@ -510,6 +510,76 @@ html {
     background: #A4161A;
     display: flex;
   }
+.header{
+  font-size: 18px;
+}
+  .col{
+    
+    width: 30px;
+    height: 450px;
+  }
+  .steps{
+    margin: 10px;
+    display: flex;
+    width: 250px;
+    height: 450px;
+  }
+  .steps__cont{
+
+    
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .steps__section{
+    margin-top: 50px;
+    height: 700px;
+    align-items: center;
+    text-align: center;
+    
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .test{
+    width: 50px;
+    height: 300px;
+    border: gold 2px solid;
+  }
+  .steps__header{
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cntr3{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 1920px;
+  }
+  .pad{
+    margin: 0px 30px;
+    margin-bottom: 20px;
+  }
+  .contactme__section{
+    margin-top: 50px;
+    height: 960px;
+    align-items: center;
+    text-align: center;
+    
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
   .workexp__section{
     height: 920px;
     align-items: center;
@@ -635,8 +705,15 @@ align-items: flex-start;
     display: flex;
     flex-direction: column;
   }
+
+  .cntr2{
+    margin-top: 5px;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: flex-start;
+  }
   .cntr{
-    
     display: flex;
     flex-flow: nowrap column;
     align-items: center;
@@ -672,8 +749,6 @@ box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 
   }
   .iconify{
     color: #a4161a;
-    width:40px;
-    height:40px;
   }
   .width__adjust{
     width:60px;
