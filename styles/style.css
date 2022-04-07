@@ -453,7 +453,7 @@ html {
     flex: 1;
   }
   .services__section{
-    height: 960px;
+    height: 820px;
     align-items: center;
     justify-content: flex-start;
     display: flex;
@@ -468,13 +468,12 @@ html {
     flex-direction: row;
   }
   .services__slice{
+    padding-top: 5px;
     image-rendering: crisp-edges;
     border-radius: 5px;
     align-items: center;
     display: flex;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
+    flex-direction: column;
     
     text-align: center;
     justify-self: center;
@@ -482,19 +481,135 @@ html {
     height: 305px;
     margin: 0px 6px;
   }
+  .services__slice__title{
+
+    margin: 5px;
+    font-size: 36px;
+  font-weight: bolder;
+  }
+  .workbtn{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 30px;
+    margin: 5px;
+    width: 130px;
+    height: 60px;
+    background: #2d3135;
+    display: flex;
+  }
+  .workbtnselected{
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 30px;
+    margin: 15px;
+    width: 130px;
+    height: 60px;
+    background: #A4161A;
+    display: flex;
+  }
+  .workexp__section{
+    height: 920px;
+    align-items: center;
+    
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .workexp__header{
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .workexp__img{
+
+    display: flex;
+    flex-direction: column;
+    align-items: s;
+    border-radius: 15px;
+    text-align: center;
+    justify-self: flex-start;
+    width: 425px;
+    height: 305px;
+    margin: 0px 6px;
+  }
+  .upper{
+    background-size: cover;
+    background-image: url(/images/coffee.png);
+  }
+  .lower{
+    
+    background-size: cover;
+    background-image: url(/images/garden.png);
+  }
+  .padded{
+    padding-right: 30px;
+    text-align: start;
+    width: 800px;
+  }
+  .workexp{
+    padding-bottom: 50px;
+    display: flex;
+    padding-right: 170px;
+
+    align-items: flex-start;
+align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .slice__content{
+    padding: 0px 15px;
+    line-height: 28px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
   .tr{
+    background-size: cover;
+    background-image: url(/images/slice3.png);
     border-radius: 5px 80px 5px 5px;
   }
   .tl{
+    background-size: cover;
+    background-image: url(/images/slice1.png);
     border-radius: 80px 5px 5px 5px;
   }
   .br{
+    background-size: cover;
+    background-image: url(/images/slice6.png);
     border-radius: 5px 5px 80px 5px;
   }
   .bl{
+    background-size: cover;
+    background-image: url(/images/slice4.png);
     border-radius: 5px 5px 5px 80px;
   }
-  
+  .um{
+    background-size: cover;
+    background-image: url(/images/slice2.png);
+  }
+  .lm{
+    background-size: cover;
+    background-image: url(/images/slice5.png);
+  }
+  .rline{
+    margin: 0px 30px;
+    width: 210px;
+    height: 25px;
+  }
+  .lline{
+    transform: rotate(180deg);
+    margin: 0px 30px;
+    width: 210px;
+    height: 25px;
+  }
   .blink_text {
     animation-name: blinker;
     animation-duration: 1.5s;
@@ -559,8 +674,12 @@ box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 
     color: #a4161a;
     width:40px;
     height:40px;
-  
   }
+  .width__adjust{
+    width:60px;
+    height:60px;
+  }
+
   .icn2{
 margin-top: 30px;
     width: 100px;
@@ -657,6 +776,10 @@ margin-top: 30px;
     text-align: center;
 
   }
+  .flex{
+display: flex;
+flex-direction: row;
+  }
   .skills__section{
     height: 960px;
     align-items: center;
@@ -665,8 +788,16 @@ margin-top: 30px;
     flex-direction: column;
     flex: 1;
   }
+.services__header{
+  margin-top: 10px;
+  display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    color: #eee;
+    justify-content: center;
+    text-align: center
+}
   .skills__header{
-    
     display: flex;
     flex-direction: row;
     font-size: 48px;
