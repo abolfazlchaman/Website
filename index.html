@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<!-- ?<html lang="en"> -->
+<!-- <html lang="en"> -->
 <html lang="fa">
 
 <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- !Content-Security-Policy very important to prevent attacks on website research this for projects, https://content-security-policy.com/ -->
-    <!-- *<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'
+    <!-- Content-Security-Policy very important to prevent attacks on website research this for projects, https://content-security-policy.com/ -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'
     "> -->
     <meta charset="UTF-8">
     <meta name="author" content="Amir N1k">
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script rel="preconnect" src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="preconnect" href="//fdn.fontcdn.ir">
     <link rel="preconnect" href="//v1.fontapi.ir">
     <link href="https://v1.fontapi.ir/css/Shabnam" rel="stylesheet">
-    <!--? It's best to keep meta descriptions long enough that they're sufficiently descriptive, so we recommend descriptions between 50 and 160 characters. -->
+    <!-- It's best to keep meta descriptions long enough that they're sufficiently descriptive, so we recommend descriptions between 50 and 160 characters. -->
     <meta name="description" content="This website is used for this while this">
 
-    <!-- ?kewords:less than 10% of the total words of a page -->
+    <!-- kewords:less than 10% of the total words of a page -->
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon async" type="image/x-icon" href="/images/favicon.ico">
     <title>Anik</title>
 </head>
 
 <body dir="rtl">
 
-<section class="home__section">
+<section id="home" class="home__section">
             
           <div class="contact__card__frame neo__dark">
             <div class="contact__card">
@@ -76,16 +76,16 @@
             </div></div>
 
         <div class="nav__arrow">
-        <div class="nav__btn--home neo__red"><a href="#">خانه</a></div>
-        <div class="nav__btn--circle neo__dark"><a href="#">درباره من</a></div>
-        <div class="nav__btn--circle neo__dark"><a href="#">مهارت ها</a></div>
-        <div class="nav__btn--circle neo__dark"><a href="#">خدمات</a></div>
-        <div class="nav__btn--circle neo__dark"><a href="#">نمونه کار</a></div>
-        <div class="nav__btn--kite neo__dark"><a class="reset__transform" href="#">ارتباط با من</a></div>
+        <div class="nav__btn--home neo__red"><a href="#home">خانه</a></div>
+        <div class="nav__btn--circle neo__dark"><a href="#aboutme">درباره من</a></div>
+        <div class="nav__btn--circle neo__dark"><a href="#skills">مهارت ها</a></div>
+        <div class="nav__btn--circle neo__dark"><a href="#services">خدمات</a></div>
+        <div class="nav__btn--circle neo__dark"><a href="#works">نمونه کار</a></div>
+        <div class="nav__btn--kite neo__dark"><a class="reset__transform" href="#contact">ارتباط با من</a></div>
         </div>
     </nav>
         
-<section class="aboutme__section">
+<section id="aboutme" class="aboutme__section">
             
             <div class="aboutme__card__frame neo__dark">
               <img src="images/img2.png" class="aboutme__card--img">
@@ -123,7 +123,7 @@
       
 </section>
 
-<section class="skills__section">
+<section id="skills" class="skills__section">
     <div class="skills__header">
         <div><img src="images/righthand.png" alt="" class="hand"></div>
     
@@ -199,7 +199,7 @@
     </div>
 </section>
 
-<section class="services__section">
+<section id="services" class="services__section">
     <div class="services__header">
 
         <span class="cntr"> چه خدماتی ارائه میدم؟ 
@@ -248,7 +248,7 @@
     </div>
 </section>
 
-<section class="workexp__section">
+<section id="works" class="workexp__section">
     <div class="workexp__header">
                 
             <span class="workbtnselected neo__red cntr">
@@ -321,41 +321,66 @@
    
 </section>
 
-<section class="contactme__section">
-    <div class="steps__header">
+<section id="contact" class="contactme__section">
+
+        <div class="steps__cont">
+            <div class="test">
+                <a target="_blank" href="https://www.instagram.com/" title="اینستاگرام"><i class="iconify" data-icon="ant-design:instagram-filled" data-width="60" ></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/" title="واتس اَپ" > <i class="iconify test4" data-icon="dashicons:whatsapp"  data-width="60"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/" title="تلگرام"> <i class="iconify test4" data-icon="uil:telegram"  data-width="60"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/" title="توییتر"> <i class="iconify" data-icon="ant-design:twitter-circle-filled" data-width="60" ></i>
+                </a>
+            </div>
+            <div class="txtcontainer">
+            <img src="images/circle.png" style="width:100%;" alt="">
+            <div class="centeredcircle">تماس با من</div>
+
+            </div>
+            <div class="test">
+
+                    <a target="_blank" href="https://www.instagram.com/" title="استیم"><i class="iconify" data-icon="bi:steam" data-width="60" ></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="لینکداین" > <i class="iconify test2" data-icon="entypo-social:linkedin-with-circle"  data-width="60"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="دیسکورد"> <i class="iconify test3" data-icon="akar-icons:discord-fill"  data-width="60"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="شماره تماس"> <i class="iconify test2" data-icon="ic:baseline-phone-callback"  data-width="60"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="ایمیل"> <i class="iconify" data-icon="clarity:email-solid"  data-width="60"></i>
+                    </a>
+                    
                 
-        <span style="font-size: xxx-large;">
-            قدم به قدم، دست در دست تان!
-        </span>
-    
-    </div>
-        <div class="steps__cont">
-            <div class="test"></div>
-            <img src="images/circle.png" alt="">
-            <div class="test"></div>
+            </div>
 
         </div>
         <div class="steps__cont">
-            <div class="nav__btn--kite neo__dark"></div>
+            <span title="همکاری در گیت هاب" class="neo__dark adjust ">
+                <a class=" reset__transform" target="self" href="https://www.instagram.com/" title="اینستاگرام"><span class="iconify  " data-icon="ri:github-fill"  data-width="105"></span>
+                    
+                </a>
 
-        </div>
+            </span>
 
-   
+        </div>  
 </section>
+
 <footer class="cntr3 pad">
-    <p > تمامی حقوق مادی و معنوی این وبسایت متعلق به<h2 class="pad" style="color: red;">اَمیر نیک</h2> می باشد و هرگونه کپی برداری از آن غیر اخلاقی میباشد.</p>
+    <p > تمامی حقوق مادی و معنوی این وبسایت متعلق به<h2 class="pad" style="color: red;">اَمیر نیک</h2> می باشد و هرگونه کپی برداری از آن غیر اخلاقی است.</p>
 </footer>
         <script src="Scripts/script.js"></script>
-        <!-- !async: the script is executed as soon as it's downloaded, without blocking the browser in the meantime. This implies that it's possible that script 2 is downloaded and executed before script 1.
+        <!-- async: the script is executed as soon as it's downloaded, without blocking the browser in the meantime. This implies that it's possible that script 2 is downloaded and executed before script 1.
     <script src="path/to/script1.js" async></script>
     <script src="path/to/script2.js" async></script> -->
 
-        <!-- !defer: Scripts with the defer attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser Unlike async scripts, defer scripts are only executed after the entire document has been loaded.
+        <!-- defer: Scripts with the defer attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser Unlike async scripts, defer scripts are only executed after the entire document has been loaded.
     <script src="path/to/script1.js" defer></script>
     <script src="path/to/script2.js" defer></script> -->
 
         <!-- <noscript>
-    <!--* The HTML <noscript> element is found either within the <head> tag or the <body> tag. The <noscript> tag will display alternate HTML content if the script type is not supported or if the browser has scripting disabled. 
+     The HTML <noscript> element is found either within the <head> tag or the <body> tag. The <noscript> tag will display alternate HTML content if the script type is not supported or if the browser has scripting disabled. 
     </noscript> -->
 
 </body>

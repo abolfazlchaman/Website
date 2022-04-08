@@ -12,6 +12,7 @@
  */
 
 body {
+  width: 1920px;
   margin: 0;
 }
 /**
@@ -363,7 +364,10 @@ html {
   background-color: #2d3135;
   box-sizing: border-box;
 }
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 /* Hide scrollbar Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
   display: none;}
@@ -445,6 +449,7 @@ html {
     margin: 0px 11px;
   }
   .aboutme__section{
+    margin-bottom: 30px;
     height: 980px;
     align-items: center;
     justify-content: center;
@@ -453,6 +458,7 @@ html {
     flex: 1;
   }
   .services__section{
+    padding-top: 50px;
     height: 820px;
     align-items: center;
     justify-content: flex-start;
@@ -526,7 +532,7 @@ html {
   }
   .steps__cont{
 
-    
+    padding-top: 20px;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -543,10 +549,37 @@ html {
     flex-direction: column;
     flex: 1;
   }
+  .centeredcircle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .txtcontainer{
+    font-size: 64px;
+    position: relative;
+  text-align: center;
+  color: white;
+  }
   .test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
     width: 50px;
-    height: 300px;
-    border: gold 2px solid;
+    height: 320px;
+    margin: 0px 15px;
+  }
+  .test2{
+    margin-right: -30px;
+  }
+  .test3{
+  margin-right: -50px;
+
+  }
+  .test4{
+    margin-left: -30px;
   }
   .steps__header{
     display: flex;
@@ -558,6 +591,8 @@ html {
     text-align: center;
   }
   .cntr3{
+    margin-top: 30px;
+
     display: flex;
     flex-flow: wrap row;
     align-items: center;
@@ -566,9 +601,9 @@ html {
     width: 1920px;
   }
   .pad{
-    margin: 0px 30px;
-    margin-bottom: 20px;
+    margin: 0px 10px;
   }
+
   .contactme__section{
     margin-top: 50px;
     height: 960px;
@@ -580,7 +615,23 @@ html {
     flex-direction: column;
     flex: 1;
   }
+  .adjust{
+    border-radius: 10px;
+    margin-top: auto;
+    transform: rotate(45deg);
+    width: 140px;
+    height: 140px;
+  
+  
+    background-color: #2d3135;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .workexp__section{
+    margin-bottom: 80px;
+    margin-top: 80px;
     height: 920px;
     align-items: center;
     
@@ -853,9 +904,10 @@ margin-top: 30px;
   }
   .flex{
 display: flex;
-flex-direction: row;
+flex-direction: column;
   }
   .skills__section{
+    padding-top: 20px;
     height: 960px;
     align-items: center;
     justify-content: flex-start;
