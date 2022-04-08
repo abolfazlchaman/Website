@@ -392,6 +392,26 @@ html, body {
     height: 100%;
     width: 100%;
   }
+  .prbar {
+    background: #2D3135;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    border-radius: 15px;
+  }
+
+.skillprbar {
+
+    background-color: #A4161A;
+    color: #eee;
+    padding: 1%;
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+     border-radius: 0px 15px 15px 0px;
+  }
+
   .aboutme__container{
     display: flex;
     flex-flow: column wrap;
@@ -405,8 +425,12 @@ html, body {
     height: 2160px;
   }
   .neo__dark{
-    
-    box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 0.7), inset -2px -2px 4px rgba(74, 78, 83, 0.5), inset 4px 4px 10px rgba(35, 37, 39, 0.8);}
+    box-shadow: 
+    4px 4px 15px rgba(35, 37, 39, 0.9),
+    -3px -3px 10px rgba(74, 78, 83, 0.7),
+    inset -2px -2px 2px rgba(74, 78, 83, 0.5),
+    inset 2px 2px 5px rgba(35, 37, 39, 0.8);
+  }
   
   .aboutme__card__frame{
     margin-top: 50px;
@@ -430,6 +454,7 @@ html, body {
     flex: 1;
   }
   .skills__lang{
+    overflow: hidden;
     margin: 35px 0px;
   justify-content: center;
   text-align: center;
@@ -437,19 +462,33 @@ html, body {
     flex-direction: row;
   }
   .skill__meter{
+    border-radius: 15px;
     align-items: center;
     display: flex;
+    flex-direction: column;
     align-content: center;
     align-self: center;
     justify-content: center;
-    
+    border: 0px outset #a4161a;
+    transition: ease-in-out 0.3s;
     text-align: center;
     justify-self: center;
-    border: 2px solid gold;
     width: 250px;
-    height: 290px;
+    height: 250px;
     margin: 0px 11px;
   }
+  .skill__meter:hover{
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+    border: 15px outset rgba(164, 22, 26, 1);
+    border-radius: 15px;
+    box-shadow:
+    -2px -2px 2px rgba(74, 78, 83, 0.5),
+    2px 2px 3px rgba(35, 37, 39, 0.8),
+    8px 8px 15px rgba(35, 37, 39, 0.9),
+    -6px -6px 10px rgba(74, 78, 83, 0.7);
+  }
+
   .aboutme__section{
     margin-bottom: 30px;
     height: 980px;
@@ -496,6 +535,8 @@ html, body {
   font-weight: bolder;
   }
   .workbtn{
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
     justify-content: center;
     align-self: center;
     text-align: center;
@@ -594,7 +635,6 @@ html, body {
   }
   .cntr3{
     margin-top: 30px;
-
     display: flex;
     flex-flow: wrap row;
     align-items: center;
@@ -605,10 +645,11 @@ html, body {
   .pad{
     margin: 0px 10px;
   }
-  nav >div.nav__arrow> div.nav__btn--circle:hover ,nav >div.nav__arrow> div.nav__btn--kite:hover,nav >div.nav__arrow> div.nav__btn--home:hover{
+  nav >div.nav__arrow> div.nav__btn--circle:hover ,nav >div.nav__arrow> div.nav__btn--kite:hover,nav >div.nav__arrow> div.nav__btn--home:hover, .skills__btn2:hover, .workbtn:hover{
     
     background: #A4161A;
     transition: all 0.3s;
+    transition-timing-function: ease-in-out;
   }
 
   .contactme__section{
@@ -777,33 +818,14 @@ align-items: flex-start;
     align-items: center;
     justify-content: center;
   } 
-.bgcircle4{
-  height: 244px;
-  width: 244px;
-  background: #A4161A;
-border-radius: 150px;
-}
-.bgcircle3{
-  border-radius: 50%;
-    height: 242px;
-    width: 242px;
-    background: #2D3135;
-box-shadow: inset -16.5697px -16.5697px 41.4243px #3B4451, inset 16.5697px 16.5697px 41.4243px #000000;
-}
 
-  .bgcircle2{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    background: #2D3135;
-box-shadow: 16.5697px 16.5697px 41.4243px rgba(0, 0, 0, 0.5);
-  }
   .bgcircle{
+  margin-bottom: 25px;
     border-radius: 50%;
     height: 160px;
     width: 160px;
     background: #2D3135;
-box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 0.7), inset -2px -2px 4px rgba(74, 78, 83, 0.5), inset 4px 4px 10px rgba(35, 37, 39, 0.8);
+    transition: all 0.3s;
   }
   .iconify{
     color: #a4161a;
@@ -814,7 +836,6 @@ box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 
   }
 
   .icn2{
-margin-top: 30px;
     width: 100px;
     height: auto;
   }
@@ -970,6 +991,8 @@ flex-direction: column;
   display: flex;
 }
 .skills__btn2{
+  transition: all 0.3s;
+    transition-timing-function: ease-in-out;
   justify-content: center;
   align-self: center;
   text-align: center;
@@ -1045,7 +1068,11 @@ flex-direction: column;
     
   }
   .neo__red{
-    box-shadow: -2px -2px 4px rgba(74, 78, 83, 0.5), 2px 2px 6px rgba(35, 37, 39, 0.8), 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 0.7);
+    box-shadow:
+    -2px -2px 2px rgba(74, 78, 83, 0.5),
+    2px 2px 3px rgba(35, 37, 39, 0.8),
+    8px 8px 15px rgba(35, 37, 39, 0.9),
+    -6px -6px 10px rgba(74, 78, 83, 0.7);
   }
   .theme__btn--on, .lang__btn--on{
     flex-direction: row;
@@ -1063,6 +1090,8 @@ flex-direction: column;
   
   }
   .nav__btn--home{
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
     border-radius: 30px;
     width: 87px;
     height: 44px;
@@ -1073,6 +1102,8 @@ flex-direction: column;
    
   }
   .nav__btn--circle{
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
     border-radius: 30px;
     margin-top: auto;
     width: 85px;
@@ -1086,7 +1117,8 @@ flex-direction: column;
   }
 
   .nav__btn--kite{
-
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
     border-radius: 10px;
     margin-top: auto;
     transform: rotate(45deg);
