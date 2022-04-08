@@ -404,7 +404,9 @@ html, body {
     flex-direction: column;
     height: 2160px;
   }
-  .neo__dark{box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 0.7), inset -2px -2px 4px rgba(74, 78, 83, 0.5), inset 4px 4px 10px rgba(35, 37, 39, 0.8);}
+  .neo__dark{
+    
+    box-shadow: 8px 8px 30px rgba(35, 37, 39, 0.9), -6px -6px 20px rgba(74, 78, 83, 0.7), inset -2px -2px 4px rgba(74, 78, 83, 0.5), inset 4px 4px 10px rgba(35, 37, 39, 0.8);}
   
   .aboutme__card__frame{
     margin-top: 50px;
@@ -602,6 +604,11 @@ html, body {
   }
   .pad{
     margin: 0px 10px;
+  }
+  nav >div.nav__arrow> div.nav__btn--circle:hover ,nav >div.nav__arrow> div.nav__btn--kite:hover,nav >div.nav__arrow> div.nav__btn--home:hover{
+    
+    background: #A4161A;
+    transition: all 0.3s;
   }
 
   .contactme__section{
@@ -1071,6 +1078,7 @@ flex-direction: column;
     width: 85px;
     height: 85px;
     background-color: #2d3135;
+    transition: all 0.3s;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -1078,13 +1086,15 @@ flex-direction: column;
   }
 
   .nav__btn--kite{
+
     border-radius: 10px;
     margin-top: auto;
     transform: rotate(45deg);
     width: 75px;
     height: 75px;
   
-  
+    transition: all 0.3s;
+
     background-color: #2d3135;
     display: flex;
     justify-content: center;

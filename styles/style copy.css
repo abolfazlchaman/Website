@@ -32,7 +32,7 @@ a {
   text-decoration: none;
   color: black;
 }
-div > #bruh:hover {
+div > .bruh:hover {
   color: red;
 }
 
