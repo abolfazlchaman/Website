@@ -11,8 +11,8 @@
     <meta charset="UTF-8">
     <meta name="author" content="Amir N1k">
     <script rel="preconnect" src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link rel="preconnect" href="//fdn.fontcdn.ir">
-    <link rel="preconnect" href="//v1.fontapi.ir">
+    <link rel="async" href="//fdn.fontcdn.ir">
+    <link rel="async" href="//v1.fontapi.ir">
     <link href="https://v1.fontapi.ir/css/Shabnam" rel="stylesheet">
     <!-- It's best to keep meta descriptions long enough that they're sufficiently descriptive, so we recommend descriptions between 50 and 160 characters. -->
     <meta name="description" content="This website is used for this while this">
@@ -20,7 +20,7 @@
     <!-- kewords:less than 10% of the total words of a page -->
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet preconnect" type="text/css" href="styles/style.css">
     <link rel="icon async" type="image/x-icon" href="/images/favicon.ico">
     <title>Anik</title>
 </head>
@@ -65,36 +65,36 @@
           
 </section>
     
-    <nav class="flex column">
+    <nav class="flex column center">
         <img src="images/logo.png" alt="" class="logo">
 
-        <div class="theme__btn--on flex row outdent"><div class="btn__selector flex center">
+        <div class="theme__btn--on flex row outdent center"><div class="btn__selector flex center">
             <a target="self" href="https://www.instagram.com/" title="اینستاگرام"><span class="iconify center eee" data-icon="heroicons-outline:sun"  data-width="25px"></span>
             </a>
             </div></div>
-        <div class="lang__btn--on outdent">
+        <div class="lang__btn--on outdent center">
             <div class="btn__selector flex center">
                 <a target="self" href="https://www.instagram.com/" title="اینستاگرام"><span class="iconify center eee" data-icon="ri:english-input"  data-width="25px"></span>
                 </a>
             </div></div>
 
         <div class="nav__arrow flex column eee">
-        <div class="nav__btn--home flex outdent"><a href="#home">خانه</a></div>
-        <div class="nav__btn--circle flex indent"><a href="#aboutme">درباره من</a></div>
-        <div class="nav__btn--circle flex indent"><a href="#skills">مهارت ها</a></div>
-        <div class="nav__btn--circle flex indent"><a href="#services flex row">خدمات</a></div>
-        <div class="nav__btn--circle flex indent"><a href="#works">نمونه کار</a></div>
-        <div class="nav__btn--kite flex indent"><a class="reset__transform" href="#contact">ارتباط با من</a></div>
+        <div class="nav__btn--home smooth flex outdent"><a href="#home">خانه</a></div>
+        <div class="nav__btn--circle smooth flex indent center"><a href="#aboutme">درباره من</a></div>
+        <div class="nav__btn--circle smooth flex indent center"><a href="#skills">مهارت ها</a></div>
+        <div class="nav__btn--circle smooth flex indent center"><a href="#services flex row">خدمات</a></div>
+        <div class="nav__btn--circle smooth flex indent center"><a href="#works">نمونه کار</a></div>
+        <div class="nav__btn--kite smooth flex indent"><a class="reset__transform" href="#contact">ارتباط با من</a></div>
         </div>
     </nav>
         
 <section id="aboutme" class="aboutme__section flex column">
             
-            <div class="aboutme__card__frame flex row indent dark">
+            <div class="aboutme__card__frame center flex row indent dark">
               <img src="images/img2.png" class="aboutme__card--img">
 
               <div class="aboutme__card flex column justify">
-                  <h1 class="font__adjust flex">چرا باید من رو انتخاب کنید؟!</h1>
+                  <h3 class="sec__header row wrap flex">چرا باید من رو انتخاب کنید؟!</h3>
                   <p>
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
@@ -127,11 +127,11 @@
 </section>
 
 <section id="skills" class="skills__section">
-    <div class="skills__header flex row">
-        <div><img src="images/righthand.png" alt="" class="hand"></div>
+    <div class="sec__header eee flex row center">
+        <div class="center"><img src="images/righthand.png" alt="" class="hand "></div>
     
-        <span> مهارت های تخصصی و فنی
-            <div class="skills__header2 row flex">
+        <h2 class="sec__header"> مهارت های تخصصی و فنی
+            <div class="sec__header nowrap row flex">
                 <span><a target="self" href="#" title="کدنویسی">
                     <div class="skills__btn center outdent">
                         <span class="skills__btn__span">کدنویسی</span>
@@ -141,7 +141,7 @@
                 </a></span>
                 <span>
                     <a target="self" href="#" title="طراحی">
-                        <div class="skills__btn2 center dark indent">
+                        <div class="skills__btn2 smooth center dark indent">
                             <span class="skills__btn__span">طراحی</span>
                             <span class="iconify skills__icon" data-icon="map:art-gallery" style="color: #eee;"></span>
                             
@@ -150,7 +150,7 @@
                 </span>
                 <span>
                     <a target="self" href="#" title="روانشناختی">
-                        <div class="skills__btn2 center dark indent">
+                        <div class="skills__btn2 smooth center dark indent">
                             <span class="skills__btn__span">روانشناختی</span>
                             <span class="iconify skills__icon" data-icon="file-icons:brainfuck" style="color: #eee;"></span>
                             
@@ -159,7 +159,7 @@
                 </span>
                 <span>
                     <a target="self" href="#" title="محیط کاری">
-                        <div class="skills__btn2 center dark indent">
+                        <div class="skills__btn2 smooth center dark indent">
                             <span class="skills__btn__span">محیط کاری</span>
                             <span class="iconify skills__icon" data-icon="fluent:desktop-edit-20-regular" style="color: #eee;"></span>
                             
@@ -168,7 +168,7 @@
                 </span>
                 <span>
                     <a target="self" href="#" title="سایر">
-                        <div class="skills__btn2 center dark indent">
+                        <div class="skills__btn2 smooth center dark indent">
                             <span class="skills__btn__span">سایر</span>
                             <span class="iconify skills__icon" data-icon="cib:hackaday" style="color: #eee;"></span>
                             
@@ -176,9 +176,9 @@
                     </a>
                 </span>
             </div>
-        </span>
+        </h2>
     
-        <div><img src="images/lefthand.png" alt="" class="hand"></div>
+        <div class="center"><img src="images/righthand.png" alt="" class="hand flip center"></div>
     </div>
     <div class="skills__lang flex row">
         
@@ -187,7 +187,7 @@
             <i class="iconify icn2" data-icon="logos:c-sharp"></i>         
             </div>
 <div class="prbar dark indent flex column">
-    <span class="skillprbar " style="width: 58%;">58%</span>
+    <span class="skillprbar eee" style="width: 58%;"><span>58%</span></span>
 </div>
 
         </div>
@@ -198,7 +198,7 @@
             <i class="iconify icn2" data-icon="logos:javascript"></i>         
             </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 59%;">59%</span>
+        <span class="skillprbar eee" style="width: 59%;"><span>59%</span></span>
         </div> 
         </div>
 
@@ -208,7 +208,7 @@
         <i class="iconify icn2" data-icon="logos:bootstrap"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 64%;">64%</span>
+        <span class="skillprbar eee" style="width: 64%;"><span>64%</span></span>
         </div>
         </div>
 
@@ -218,7 +218,7 @@
         <i class="iconify icn2" data-icon="vscode-icons:file-type-css"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 79%;">79</span>
+        <span class="skillprbar eee" style="width: 79%;"><span>79%</span></span>
         </div>
         </div>
 
@@ -228,7 +228,7 @@
         <i class="iconify icn2" data-icon="vscode-icons:file-type-html"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 84%;">84%</span>
+        <span class="skillprbar eee" style="width: 84%;"><span>84%</span></span>
         </div>
     
         </div>
@@ -239,7 +239,7 @@
         <i class="iconify icn2" data-icon="logos:mysql"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 38%;">38%</span>
+        <span class="skillprbar eee" style="width: 38%;"><span>38%</span></span>
         </div>
         </div>
 
@@ -251,7 +251,7 @@
         <i class="iconify icn2" data-icon="logos:c-plusplus"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 36%;">36%</span>
+        <span class="skillprbar eee" style="width: 36%;"><span>36%</span></span>
         </div>
         </div>
             
@@ -261,7 +261,7 @@
             <i class="iconify icn2" data-icon="vscode-icons:file-type-reactts"></i>         
             </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 8%;">8%</span>
+        <span class="skillprbar eee" style="width: 8%;"><span>8%</span></span>
         </div> 
         </div>
 
@@ -271,7 +271,7 @@
         <i class="iconify icn2" data-icon="logos:python"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 28%;">28%</span>
+        <span class="skillprbar eee" style="width: 28%;"><span>28%</span></span>
         </div>
         </div>
 
@@ -281,7 +281,7 @@
         <i class="iconify icn2" data-icon="logos:php"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 14%;">14%</span>
+        <span class="skillprbar eee" style="width: 14%;"><span>14%</span></span>
         </div>
         </div>
 
@@ -291,7 +291,7 @@
         <i class="iconify icn2" data-icon="logos:vue"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 2%;">2%</span>
+        <span class="skillprbar eee" style="width: 2%;"><span>2%</span></span>
         </div>
     
         </div>
@@ -302,89 +302,86 @@
         <i class="iconify icn2" data-icon="akar-icons:github-fill" style="color: #eee;"></i>         
         </div>
         <div class="prbar dark indent flex column">
-        <span class="skillprbar " style="width: 82%;">82%</span>
+        <span class="skillprbar eee" style="width: 82%;"><span>82%</span></span>
         </div>
         </div>
 
     </div>
 </section>
 
-<section id="services flex row" class="services__section flex column">
-    <div class="services__header">
-
-        <span class="center"> چه خدماتی ارائه میدم؟ 
-        </span>
-
-    </div>
+<section id="services" class="services__section flex column">
+    <h2 class="sec__header eee">
+       چه خدماتی ارائه میدم؟ 
+    </h2>
     <div class="services flex row">
-        <span class="services__slice flex column tr indent">
-            <span class="iconify width__adjust" data-icon="clarity:talk-bubbles-solid-badged" style="color: #A4161A;">
+        <span class="services__slice center flex column tr indent">
+            <span class="iconify width__adjust" data-icon="clarity:talk-bubbles-solid-badged" >
             </span>
-            <p class="services__slice__title"> مشاوره تخصصی رایگان
+            <h3 class="services__slice__title"> مشاوره تخصصی رایگان
 
-            </p>
-            <span class="slice__content">تحلیل فنی سناریو، پاسخ دهی مطابق تجربه و بازار کار </span>
+            </h3>
+            <p class="slice__content">تحلیل فنی سناریو، پاسخ دهی مطابق تجربه و بازار کار </p>
         </span>
-        <span class="services__slice flex column um indent">
-            <span class="iconify     width__adjust" data-icon="la:laptop-code" style="color: #A4161A;">
+        <span class="services__slice center flex column um indent">
+            <span class="iconify     width__adjust" data-icon="la:laptop-code" >
             </span>
-            <p class="services__slice__title">قالب به کد</p>
-            <span class="slice__content">رویا به واقعیت با استفاده از آخرین استاندارد های تکنولوژی </span>
+            <h3 class="services__slice__title">قالب به کد</h3>
+            <p class="slice__content">رویا به واقعیت با استفاده از آخرین استاندارد های تکنولوژی </p>
         </span>
-        <span class="services__slice flex column tl indent">
-            <span class="iconify width__adjust" data-icon="bi:credit-card-2-front" style="color: #A4161A;">
+        <span class="services__slice center flex column tl indent">
+            <span class="iconify width__adjust" data-icon="bi:credit-card-2-front" >
             </span>
-            <p class="services__slice__title">طراحی قالب</p>
-            <span class="slice__content">چشم نواز و اختصاصی، همراه ویژگی های مورد نیازتان! </span>
+            <h3 class="services__slice__title">طراحی قالب</h3>
+            <p class="slice__content">چشم نواز و اختصاصی، همراه ویژگی های مورد نیازتان! </p>
         </span>
     </div>
     <div class="services flex row">
-        <span class="services__slice flex column br indent">
-            <span class="iconify width__adjust" data-icon="mdi:web-box" style="color: #A4161A;">
+        <span class="services__slice center flex column br indent">
+            <span class="iconify width__adjust" data-icon="mdi:web-box" >
             </span>
-            <p class="services__slice__title">
-                برندسازی حرفه ای</p>
-            <span class="slice__content">
-                پیکربندی تنظیمات ضروری در پلتفرم های مختلف بر اساس اصول امنیتی، قانونی و الگوریتمیک - طراحی لوگو</span>
+            <h3 class="services__slice__title">
+                برندسازی حرفه ای</h3>
+            <p class="slice__content">
+                پیکربندی تنظیمات ضروری در پلتفرم های مختلف بر اساس اصول امنیتی، قانونی و الگوریتمیک - طراحی لوگو</p>
         </span>
-        <span class="services__slice flex column lm indent">
-            <span class="iconify width__adjust" data-icon="ph:student-fill" style="color: #A4161A;">
+        <span class="services__slice center flex column lm indent">
+            <span class="iconify width__adjust" data-icon="ph:student-fill" >
             </span>
-            <p class="services__slice__title">پروژه های درسی</p>
-            <span class="slice__content">
-                0 تا 100 برنامه های مبتدی تا پیشرفته دانشجویی در کمترین زمان ممکن!</span>
+            <h3 class="services__slice__title">پروژه های درسی</h3>
+            <p class="slice__content">
+                0 تا 100 برنامه های مبتدی تا پیشرفته دانشجویی در کمترین زمان ممکن!</p>
         </span>
-        <span class="services__slice flex column bl ne">
-            <span class="iconify width__adjust" data-icon="mdi:account-eye" style="color: #A4161A;">
+        <span class="services__slice center flex column bl ne">
+            <span class="iconify width__adjust" data-icon="mdi:account-eye" >
             </span>
-            <p class="services__slice__title">آنالیز پروژه</p>
-            <span class="slice__content">رفع تمامی نقص های فنی، تخصصی و امنیتی، سازگار سازی با استاندارد های جهانی وب.</span>
+            <h3 class="services__slice__title">آنالیز پروژه</h3>
+            <p class="slice__content">رفع تمامی نقص های فنی، تخصصی و امنیتی، سازگار سازی با استاندارد های جهانی وب.</p>
         </span>
     </div>
 </section>
 
 <section id="works" class="workexp__section">
-    <div class="workexp__header flex row">
+    <div class="sec__header center flex row">
                 
-            <a href="#" class="workbtnselected outdent center">
-                <span >درحال اجرا</span>
+            <a href="#" id="worksbtn" class="workbtnselected outdent center">
+                درحال اجرا
             </a>
         
-        <img src="images/line.png" alt="" class="rline">
-        <span style="font-size: xxx-large;" class="center">سوابق کاری</span>
-        <img src="images/line.png" alt="" class="lline">
+        <img src="images/line.png" alt="">
+        <h3 class="sec__header">سوابق کاری</h3>
+        <img src="images/line.png" alt="" class="flip">
     
-            <a href="" class="workbtn flex indent center dark">
-                <span >تکمیل شده</span>             
+            <a href="" id="worksbtn" class="workbtn smooth flex indent center dark">
+                تکمیل شده            
             </a>
 
     </div>
-    <div class="workexp flex row">
+    <div class="workexp center flex row">
         <div class="workexp__img flex column upper indent">
         </div>
         <p class="padded">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
     </div>
-    <div class="workexp flex row">
+    <div class="workexp center flex row">
         <div class="workexp__img flex column lower indent">
         </div>
         <p class="padded">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
@@ -393,42 +390,42 @@
 </section>
 
 <section class="steps__section">
-    <div class="steps__header">
+    <div class="sec__header center">
                 
-        <span style="font-size: xxx-large;">
+        <h3 class="sec__header">
             قدم به قدم، دست در دست تان!
-        </span>
+        </h3>
     
     </div>
         <div class="steps__cont flex row">
             <div class="steps">
                 <i class="iconify " data-icon="fxemoji:gem" data-width="130"></i>
-                <p class="header">پشتیبانی حرفه ای و بازدید دوره ای!</p>
-                <p class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <h2 class="slice__header">پشتیبانی حرفه ای و بازدید دوره ای!</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img src="images/seprator.png" class="col">
+            <img src="images/seprator.png" >
             <div class="steps ">
                 <i class="iconify " data-icon="noto:rocket"  data-width="130"></i>
-                <p class="header">پرداخت هزینه نهایی، تکمیل و تحویل پروژه.</p>
-                <p class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <h2 class="slice__header">پرداخت هزینه نهایی، تکمیل و تحویل پروژه.</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img src="images/seprator.png" class="col">
+            <img src="images/seprator.png" ">
             <div class="steps ">
                 <i class="iconify " data-icon="emojione:white-heavy-check-mark" data-width="130"></i>
-                <p class="header">پیشنهاد طرح یا دریافت قالب از شما</p>
-                <p class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <h2 class="slice__header">پیشنهاد طرح یا دریافت قالب از شما&nbsp;<</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img src="images/seprator.png" class="col">
+            <img src="images/seprator.png" >
             <div class="steps ">
                 <i class="iconify " data-icon="noto:handshake-light-skin-tone-medium-skin-tone" data-width="130"></i>
-                <p class="header">توافق بر قرارداد، پیش پرداخت و شروع پروژه</p>
-                <p class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <h2 class="slice__header">توافق بر قرارداد، پیش پرداخت و شروع پروژه.</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img src="images/seprator.png" class="col">
+            <img src="images/seprator.png" >
             <div class="steps ">
                 <i class="iconify " data-icon="carbon:help-desk" style="color: #25CEDE;" data-width="130"></i>
-                <p class="header">درخواست همکاری، ارائه مشاوره تخصصی رایگان</p>
-                <p class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <p class="slice__header">درخواست همکاری، ارائه مشاوره تخصصی رایگان!</p>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
         </div>
 
@@ -449,9 +446,9 @@
                 <a target="_blank" href="https://www.instagram.com/" title="توییتر"> <i class="iconify" data-icon="ant-design:twitter-circle-filled" data-width="60" ></i>
                 </a>
             </div>
-            <div class="txtcontainer">
+            <div class="txtcontainer eee">
             <img src="images/circle.png" style="width:100%;" alt="">
-            <div class="centeredcircle">تماس با من</div>
+            <h3 class="imgtxt__center sec__header">تماس با من</h3>
 
             </div>
             <div class="wing flex column">
@@ -483,7 +480,7 @@
 </section>
 
 <footer class="center flex">
-    <p > تمامی حقوق مادی و معنوی این وبسایت متعلق به<h2 class="pad" style="color: red;">اَمیر نیک</h2> می باشد و هرگونه کپی برداری از آن غیر اخلاقی است.</p>
+    <p> تمامی حقوق مادی و معنوی این وبسایت متعلق به<h2>اَمیر نیک</h2> می باشد و هرگونه کپی برداری از آن غیر اخلاقی است.</p>
 </footer>
         <script src="Scripts/script.js"></script>
         <!-- async: the script is executed as soon as it's downloaded, without blocking the browser in the meantime. This implies that it's possible that script 2 is downloaded and executed before script 1.
