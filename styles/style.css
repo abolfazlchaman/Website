@@ -345,14 +345,107 @@ template {
 }
 
 /* #endregion */
+@keyframes blink {  
+  0% { opacity: 1.0; }
+  25% { opacity: 0.5; }
+  50% { opacity: 0.0; }
+  75% { opacity: 0.5; }
+  100% { opacity: 1.0; }
+ }
 
 @import url('https://v1.fontapi.ir/css/Shabnam');
-/**start*/
-nav >div.nav__arrow> div.nav__btn--circle:hover ,nav >div.nav__arrow> div.nav__btn--kite:hover,nav >div.nav__arrow> div.nav__btn--home:hover, .skills__btn2:hover, .workbtn:hover{
-    
-  background: #A4161A;
+section:first-of-type
+  {
+  padding: 0px 170px;
+  min-height: 1080px;
+  }
+  html {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+  
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    font-family: 'Shabnam', sans-serif;
+    color: #fff;
+    height: 2160px;
+    background-color: #2d3135;
+    box-sizing: border-box;
+  }
+  html, body {
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  section{
+    padding: 4% 170px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+
+  }
+  footer{
+    margin: 20px 170px;
+    flex-flow: wrap row;
+  }
+
+  nav{
+    position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-height: 800px;
+    width: 170px;
+    min-width: 104px;
+    text-align: center;
+    align-items: center;
+  }
+  span.skillprbar>span{
+    margin-right: 20px;
+  }
+
+nav >div.nav__arrow> div.nav__btn__circle:hover ,nav >div.nav__arrow> div.nav__btn__kite:hover,nav >div.nav__arrow> div.nav__btn__home:hover, .skills__btn2:hover, .workbtn:hover{
+  padding: 5px;
+  background-color: #A4161A !important ;
   transition: all 0.3s;
   transition-timing-function: ease-in-out;
+}
+span.last:hover {
+  border: 5px solid rgba(238, 238, 238, 1)!important;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.iconify:not(span.last > *):hover {
+  background-color: rgba(238, 238, 238, .15) !important ;
+  border-radius: 15px;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.steps:hover{
+  padding: 2% 2%;
+  border-radius: 15px;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.services__slice:hover{
+  padding: 1% 10%;
+  border: 5px outset rgba(164, 22, 26, .6)!important;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.circle__border{
+  border-radius: 50%;
+}
+.btn__activedark{
+  background: #A4161A;
+}
+.btn__deactivedark{
+  background-color: #2d3135;
+
 }
 .skill__meter:hover{
   transition: all 0.3s;
@@ -410,26 +503,7 @@ nav >div.nav__arrow> div.nav__btn--circle:hover ,nav >div.nav__arrow> div.nav__b
 .reset__transform{
   transform: rotate(-45deg);
 }
-html {
-  -webkit-user-select: none;  
-  -moz-user-select: none;    
-  -ms-user-select: none;      
-  user-select: none;
 
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  font-family: 'Shabnam', sans-serif;
-  color: #fff;
-  height: 2160px;
-  background-color: #2d3135;
-  box-sizing: border-box;
-}
-html, body {
-  transition: all 0.3s;
-  transition-timing-function: ease-in-out;
-  width: 100%;
-  overflow-x: hidden;
-}
 /* Hide scrollbar Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
   display: none;}
@@ -438,25 +512,8 @@ html, body {
 * {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */}
-section:first-of-type
-  {
-  padding: 0px 170px;
-  min-height: 1080px;
-  }
 
-  section{
-    padding: 4% 170px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    height: 100%;
-
-  }
-  footer{
-    margin: 20px 170px;
-    flex-flow: wrap row;
-  }
-  .indent{
+  .indentdark{
     box-shadow: 
     4px 4px 15px rgba(35, 37, 39, 0.9),
     -3px -3px 10px rgba(74, 78, 83, 0.7),
@@ -464,7 +521,7 @@ section:first-of-type
     inset 2px 2px 5px rgba(35, 37, 39, 0.8);
   }
 
-  .outdent{
+  .outdentdark{
     box-shadow:
     -2px -2px 2px rgba(74, 78, 83, 0.5),
     2px 2px 3px rgba(35, 37, 39, 0.8),
@@ -498,35 +555,19 @@ section:first-of-type
 .row{
   flex-direction: row !important;
 }
-
+.wrap{
+  flex-wrap: wrap;
+}
+.nowrap{
+  flex-wrap: nowrap;
+}
 .blink {
   animation-name: blink;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
  }
- @keyframes blink {  
-  0% { opacity: 1.0; }
-  25% { opacity: 0.5; }
-  50% { opacity: 0.0; }
-  75% { opacity: 0.5; }
-  100% { opacity: 1.0; }
- }
-nav{
-  position: -webkit-sticky; /* Safari */
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  min-height: 800px;
-  width: 170px;
-  min-width: 104px;
-  text-align: center;
-  align-items: center;
-}
-span.skillprbar>span{
-  margin-right: 20px;
-}
+
 /* #region 🖥️media queries🖥️*/
 @media screen and (min-width: 1366px) {
   html{background-color: cyan;}
@@ -535,11 +576,56 @@ span.skillprbar>span{
 @media screen and (min-width: 1600px) {
   html{background-color: #a4161a;}
   }
+  
   @media only screen 
   and (min-device-width: 1920px) 
   and (orientation: landscape){
   html{background-color: #2d3135;}
-
+  div.steps__cont>img{
+    width: 30px;
+    height: 450px;
+  }
+  footer>h2{
+    margin: 0px 10px;
+    color: #A4161A;
+  }
+  div.sec__header>img{
+    margin: 0px 30px;
+      width: 210px;
+      height: 25px;
+  }
+  p{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  h2{
+    padding: 0px;
+    margin: 10px;
+    font-size: 32px;
+  }
+  h4{
+    font-size:22px;
+  }
+  h3,h4{
+    margin: 16px 0;
+  }
+  address{font-style: normal; font-size: 15px; font-weight: 400;}
+  .nav__loc__container{
+    margin-right: -10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: nowrap row;
+    width: 160px;
+  }
+  h3{
+    font-weight: bolder;
+    font-size: 22px;
+  
+  }
+  #worksbtn{
+    font-size: 16px;
+  }
   .prbar {
     margin-bottom: 15px;
     justify-content: center;
@@ -622,7 +708,6 @@ span.skillprbar>span{
     margin: 15px;
     width: 130px;
     height: 60px;
-    background: #A4161A;
   }
 
 .slice__header{
@@ -631,14 +716,9 @@ span.skillprbar>span{
   line-height: normal;
   font-weight: bold;
 }
-  div.steps__cont>img{
-    width: 30px;
-    height: 450px;
-  }
-  #worksbtn{
-    font-size: 16px;
-  }
+
   .steps{
+    
     margin-top: 5px;
     flex-flow: nowrap column;
     align-items: center;
@@ -647,11 +727,9 @@ span.skillprbar>span{
     height: 450px;
   }
   .steps__cont{
-
     padding-top: 20px;
     width: 100%;
     justify-content: center;
-
   }
   .imgtxt__center {
     position: absolute;
@@ -682,10 +760,7 @@ span.skillprbar>span{
   .test4{
     margin-left: -30px;
   }
-footer>h2{
-  margin: 0px 10px;
-  color: #A4161A;
-}
+
   .pad{
     margin: 0px 10px;
   }
@@ -728,17 +803,12 @@ footer>h2{
 
   }
   .slice__content{
-    padding: 0px 35px;
+    padding: 0px 15px;
     font-size: 16px;
     font-weight: normal;
     line-height: 30px;
     text-align: center;
   }
-div.sec__header>img{
-  margin: 0px 30px;
-    width: 210px;
-    height: 25px;
-}
 
   .flip{
     transform: rotate(180deg);
@@ -748,7 +818,6 @@ div.sec__header>img{
 
   .bgcircle{
   margin-bottom: 25px;
-    border-radius: 50%;
     height: 160px;
     width: 160px;
     transition: all 0.3s;
@@ -771,31 +840,7 @@ div.sec__header>img{
     width: 190px;
     height: 34px;
   }
-  p{
-    padding: 0px;
-    margin: 0px;
-  }
-  h2{
-    padding: 0px;
-    margin: 0px;
-    font-size: 32px;
-  }
-  h4{
-    font-size:22px;
-  }
-  h3,h4{
-    margin: 1em 0;
-  }
-  address{font-style: normal; font-size: 15px; font-weight: 400;}
-  .nav__loc__container{
-    margin-top: .5em;
-    margin-right: -5px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-flow: nowrap row;
-    width: 190px;
-    height: 34px;
-  }
+
   .logo{
     margin-top: 10px;
     width: 100%;
@@ -806,9 +851,7 @@ div.sec__header>img{
     background-color: #EEEEEE;
     width: 8px  ;
     height: 70%;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
+justify-content: space-between !important;
 
   }
   .contact__card__frame{
@@ -818,7 +861,7 @@ div.sec__header>img{
     width: 1110px;
   }
   
-  .aboutme__card--img{
+  .aboutme__card__img{
     
     border-left: 0px;
     box-shadow: 0px 0px 30px 9px #A4161A;
@@ -826,13 +869,10 @@ div.sec__header>img{
     width: 430px;
     height: 690px;
   }
-  .contact__card--img{
-    
+  .contact__card__img{
     box-shadow: 0px 0px 30px 9px #A4161A;
     width: 550px;
     height: 550px;
-    border-radius: 50%;
-    
   }
 .sec__header{
   font-size: 48px;
@@ -850,9 +890,7 @@ margin: 20px 0px;
     width: 380px;
     height: 175px;
 }
-.nowrap{
-  flex-wrap: nowrap;
-}
+
 .skills__icon{
   height: 25px;
   width: 25px;
@@ -861,20 +899,13 @@ margin: 20px 0px;
   text-align: center;
 }
 .skills__btn{
-  justify-content: center;
-  align-self: center;
-  text-align: center;
   flex-wrap: wrap;
   border-radius: 30px;
   margin: 5px;
   width: 130px;
   height: 60px;
-  background: #A4161A;
 }
 .skills__btn2{
-  justify-content: center;
-  align-self: center;
-  text-align: center;
   flex-wrap: wrap;
   border-radius: 30px;
   margin: 5px;
@@ -892,7 +923,6 @@ margin: 20px 0px;
     margin: 15px;
     width: 260px;
     height: 44px;
-    background: #A4161A;
   }
   .justify{
     line-height: 28px;
@@ -917,63 +947,40 @@ margin: 20px 0px;
     
   }
   
-  .wrap{
-    flex-wrap: wrap;
-  }
   .btn__selector{
     margin-right: 5px;
- 
     box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
     height: 38px;
     width: 38px;
-    border-radius: 50%;
-    background-color: #2d3135;
   }
   
-  .theme__btn--on, .lang__btn--on{
+  .theme__btn__on, .lang__btn__on{
     justify-content: start !important;
     border-radius: 30px;
     margin-top: 10%;
-    width: 87px;
+    width: 85px;
     height: 44px;
-    background: #A4161A;
-  }
-  h3{
-    font-weight: bolder;
-    font-size: 22px;
-  
-  }
-  .nav__btn--home{
-    border-radius: 30px;
-    width: 87px;
-    height: 44px;
-    background: #A4161A;
-    justify-content: center;
-    align-items: center;
-   
   }
 
-  .nav__btn--circle{
+  .nav__btn__home{
+    margin-bottom: auto;
     border-radius: 30px;
+    width: 85px;
+    height: 44px;
+  }
+
+  .nav__btn__circle{
     margin: auto 0px;
     width: 85px;
     height: 85px;
-    background-color: #2d3135;
-    transition: all 0.3s;
-    border-radius: 50px;
-    
   }
 
-  .nav__btn--kite{
+  .nav__btn__kite{
     border-radius: 10px;
     margin-top: auto;
     transform: rotate(45deg);
     width: 75px;
     height: 75px;
-    transition: all 0.3s;
-    background-color: #2d3135;
-    justify-content: center;
-    align-items: center;
   }
   
 }
