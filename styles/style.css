@@ -359,13 +359,12 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: 'Shabnam', sans-serif;
   color: #fff;
-  max-width: 1920px;
   height: 2160px;
   background-color: #2d3135;
   box-sizing: border-box;
 }
 html, body {
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 /* Hide scrollbar Chrome, Safari and Opera */
@@ -376,6 +375,79 @@ html, body {
 * {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */}
+  
+  .indent{
+    box-shadow: 
+    4px 4px 15px rgba(35, 37, 39, 0.9),
+    -3px -3px 10px rgba(74, 78, 83, 0.7),
+    inset -2px -2px 2px rgba(74, 78, 83, 0.5),
+    inset 2px 2px 5px rgba(35, 37, 39, 0.8);
+  }
+
+  .outdent{
+    box-shadow:
+    -2px -2px 2px rgba(74, 78, 83, 0.5),
+    2px 2px 3px rgba(35, 37, 39, 0.8),
+    8px 8px 15px rgba(35, 37, 39, 0.9),
+    -6px -6px 10px rgba(74, 78, 83, 0.7);
+  }
+  footer{
+    margin: 20px 170px;
+    flex-flow: wrap row;
+  }
+.center{
+  display: flex;
+  justify-self: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+.dark{
+  background: #2D3135 !important;
+}
+.eee{
+  color: #EEEEEE !important;
+}
+.flex{
+  display: flex !important;
+}
+
+.column{
+  flex-direction: column !important;
+}
+.row{
+  flex-direction: row !important;
+}
+
+.blink {
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+ }
+ @keyframes blink {  
+  0% { opacity: 1.0; }
+  25% { opacity: 0.5; }
+  50% { opacity: 0.0; }
+  75% { opacity: 0.5; }
+  100% { opacity: 1.0; }
+ }
+nav{
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-height: 800px;
+  width: 170px;
+  min-width: 104px;
+  text-align: center;
+  align-items: center;
+}
+
 /* #region 🖥️media queries🖥️*/
 @media screen and (min-width: 1366px) {
   html{background-color: cyan;}
@@ -384,16 +456,12 @@ html, body {
 @media screen and (min-width: 1600px) {
   html{background-color: #a4161a;}
   }
-@media screen and (min-width: 1920px) {
+  @media only screen 
+  and (min-device-width: 1920px) 
+  and (orientation: landscape){
   html{background-color: #2d3135;}
 
-  .home__container {  
-    display: flex;
-    height: 100%;
-    width: 100%;
-  }
   .prbar {
-    background: #2D3135;
     margin-bottom: 15px;
     justify-content: center;
     align-items: flex-start;
@@ -411,61 +479,31 @@ html, body {
     font-size: 18px;
      border-radius: 0px 15px 15px 0px;
   }
-
-  .aboutme__container{
-    display: flex;
-    flex-flow: column wrap;
-    margin-top: 340px;
-  margin-right: 170px;
-  margin-left: 100px;
-  }
-  .main__container {
-    display: flex;
-    flex-direction: column;
-    height: 2160px;
-  }
-  .neo__dark{
-    box-shadow: 
-    4px 4px 15px rgba(35, 37, 39, 0.9),
-    -3px -3px 10px rgba(74, 78, 83, 0.7),
-    inset -2px -2px 2px rgba(74, 78, 83, 0.5),
-    inset 2px 2px 5px rgba(35, 37, 39, 0.8);
-  }
   
   .aboutme__card__frame{
     margin-top: 50px;
-    background: #2D3135;
-    mix-blend-mode: normal;
+    
     border-radius: 15px;
     height: 690px;
     width: 1110px;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: row;
   }
   
-  .home__section{
+  section#home{
+    width: 100%;
     height: 960px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
   }
   .skills__lang{
     overflow: hidden;
     margin: 35px 0px;
   justify-content: center;
   text-align: center;
-    display: flex;
-    flex-direction: row;
+
   }
   .skill__meter{
     border-radius: 15px;
     align-items: center;
-    display: flex;
-    flex-direction: column;
     align-content: center;
     align-self: center;
     justify-content: center;
@@ -494,34 +532,24 @@ html, body {
     height: 980px;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
   }
   .services__section{
     padding-top: 50px;
     height: 820px;
     align-items: center;
     justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
   }
   .services{
     margin: 10px 0px;
   justify-content: center;
   text-align: center;
-    display: flex;
-    flex-direction: row;
   }
   .services__slice{
     padding-top: 5px;
     image-rendering: crisp-edges;
     border-radius: 5px;
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    
     text-align: center;
     justify-self: center;
     width: 425px;
@@ -546,8 +574,6 @@ html, body {
     margin: 5px;
     width: 130px;
     height: 60px;
-    background: #2d3135;
-    display: flex;
   }
   .workbtnselected{
     flex-wrap: wrap;
@@ -557,10 +583,10 @@ html, body {
     width: 130px;
     height: 60px;
     background: #A4161A;
-    display: flex;
   }
 .header{
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
 }
   .col{
     
@@ -568,8 +594,10 @@ html, body {
     height: 450px;
   }
   .steps{
+    margin-top: 5px;
+    flex-flow: nowrap column;
+    align-items: center;
     margin: 10px;
-    display: flex;
     width: 250px;
     height: 450px;
   }
@@ -578,8 +606,7 @@ html, body {
     padding-top: 20px;
     width: 100%;
     justify-content: center;
-    display: flex;
-    flex-direction: row;
+
   }
   .steps__section{
     margin-top: 50px;
@@ -588,9 +615,7 @@ html, body {
     text-align: center;
     
     justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
   }
   .centeredcircle {
     position: absolute;
@@ -604,9 +629,7 @@ html, body {
   text-align: center;
   color: white;
   }
-  .test{
-    display: flex;
-    flex-direction: column;
+  .wing{
     justify-content: space-between;
     align-items: center;
     justify-items: center;
@@ -625,23 +648,13 @@ html, body {
     margin-left: -30px;
   }
   .steps__header{
-    display: flex;
     margin-bottom: 50px;
-    flex-direction: row;
     justify-self: center;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .cntr3{
-    margin-top: 30px;
-    display: flex;
-    flex-flow: wrap row;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 1920px;
-  }
+
   .pad{
     margin: 0px 10px;
   }
@@ -657,11 +670,7 @@ html, body {
     height: 960px;
     align-items: center;
     text-align: center;
-    
     justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
   }
   .adjust{
     border-radius: 10px;
@@ -669,11 +678,6 @@ html, body {
     transform: rotate(45deg);
     width: 140px;
     height: 140px;
-  
-  
-    background-color: #2d3135;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -682,25 +686,16 @@ html, body {
     margin-top: 80px;
     height: 920px;
     align-items: center;
-    
     justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
   }
   .workexp__header{
-    display: flex;
     margin-bottom: 50px;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
   .workexp__img{
 
-    display: flex;
-    flex-direction: column;
-    align-items: s;
     border-radius: 15px;
     text-align: center;
     justify-self: flex-start;
@@ -724,15 +719,10 @@ html, body {
   }
   .workexp{
     padding-bottom: 50px;
-    display: flex;
     padding-right: 170px;
-
     align-items: flex-start;
-align-items: flex-start;
   justify-content: flex-start;
   text-align: center;
-    display: flex;
-    flex-direction: row;
   }
   .slice__content{
     padding: 0px 15px;
@@ -779,55 +769,16 @@ align-items: flex-start;
     width: 210px;
     height: 25px;
   }
-  .blink_text {
-    animation-name: blinker;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-   }
-   @keyframes blinker {  
-    0% { opacity: 1.0; }
-    25% { opacity: 0.5; }
-    50% { opacity: 0.0; }
-    75% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-   }
-  nav{
-    position: -webkit-sticky; /* Safari */
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 1000px;
-    min-width: 104px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cntr2{
-    margin-top: 5px;
-    display: flex;
-    flex-flow: nowrap column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .cntr{
-    display: flex;
-    flex-flow: nowrap column;
-    align-items: center;
-    justify-content: center;
-  } 
 
   .bgcircle{
   margin-bottom: 25px;
     border-radius: 50%;
     height: 160px;
     width: 160px;
-    background: #2D3135;
     transition: all 0.3s;
   }
   .iconify{
+    padding: 2%;
     color: #a4161a;
   }
   .width__adjust{
@@ -841,11 +792,9 @@ align-items: flex-start;
   }
   .nav__icon__container{
     margin-right: 5px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-flow: row-reverse nowrap;
     width: 190px;
     height: 34px;
   }
@@ -863,7 +812,6 @@ align-items: flex-start;
   .nav__loc__container{
     margin-top: .5em;
     margin-right: -5px;
-    display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-flow: nowrap row;
@@ -873,10 +821,6 @@ align-items: flex-start;
   .logo{
     margin-top: 10px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-  
-  
   }
   
   .nav__arrow{
@@ -887,22 +831,17 @@ align-items: flex-start;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    display: flex;
-    flex-direction: column;
+
   }
   .contact__card__frame{
-    mix-blend-mode: normal;
+    
     border-radius: 300px 15px 15px 300px;
     height: 512px;
     width: 1110px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
   }
   
   .aboutme__card--img{
-    mix-blend-mode: normal;
+    
     border-left: 0px;
     box-shadow: 0px 0px 30px 9px #A4161A;
     border-radius: 5px 15px 15px 5px;
@@ -910,7 +849,7 @@ align-items: flex-start;
     height: 690px;
   }
   .contact__card--img{
-    mix-blend-mode: normal;
+    
     box-shadow: 0px 0px 30px 9px #A4161A;
     width: 550px;
     height: 550px;
@@ -918,43 +857,23 @@ align-items: flex-start;
     
   }
 
-  .abtme__btns{
-    align-items: flex-end;
-    display: inherit;
-    flex-flow: row nowrap;
-  }
-  .left{
-    padding-right:85px;
-    padding-left:20px;
-    align-self: center;
-    text-align: center;
 
-  }
-  .flex{
-display: flex;
-flex-direction: column;
-  }
   .skills__section{
     padding-top: 20px;
     height: 960px;
     align-items: center;
     justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
   }
 .services__header{
   margin-top: 10px;
-  display: flex;
-    flex-direction: row;
     font-size: 48px;
     color: #eee;
     justify-content: center;
     text-align: center
 }
   .skills__header{
-    display: flex;
-    flex-direction: row;
+
     font-size: 48px;
     color: #eee;
     justify-content: center;
@@ -966,7 +885,6 @@ flex-direction: column;
     height: 175px;
 }
 .skills__header2{
-  display: flex;
   flex-flow: nowrap row;
   margin-top: 25px;
 }
@@ -982,13 +900,11 @@ flex-direction: column;
   align-self: center;
   text-align: center;
   flex-wrap: wrap;
-  flex-direction: row;
   border-radius: 30px;
   margin: 5px;
   width: 130px;
   height: 60px;
   background: #A4161A;
-  display: flex;
 }
 .skills__btn2{
   transition: all 0.3s;
@@ -997,13 +913,10 @@ flex-direction: column;
   align-self: center;
   text-align: center;
   flex-wrap: wrap;
-  flex-direction: row;
   border-radius: 30px;
   margin: 5px;
   width: 130px;
   height: 60px;
-  background: #2d3135;
-  display: flex;
 }
 .skills__btn__span{
   align-self: center;
@@ -1012,13 +925,11 @@ flex-direction: column;
 }
   .abtme__btn{
     flex-wrap: wrap;
-    flex-direction: row;
     border-radius: 30px;
     margin: 15px;
     width: 260px;
     height: 44px;
     background: #A4161A;
-    display: flex;
   }
   .justify{
     line-height: 28px;
@@ -1031,8 +942,7 @@ flex-direction: column;
     height: 580px;
     width: 852px;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+
   }
   .contact__card{
     padding-right: 40px;
@@ -1040,49 +950,29 @@ flex-direction: column;
     width: 852px;
     align-items: flex-start;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+    
   }
-  .centerized{align-self: center;
-    justify-self: center;justify-content: center;align-content: center;margin-top: 1px; margin-right: 2px;height: 35px;width: 35px;
-  }
-  .centerized2{align-self: center;
-    justify-self: center;justify-content: center;align-content: center;margin-top: 4px; margin-right: 5px;height: 28px;width: 28px;
-  }
+  
   .font__adjust{
     margin-bottom: 20px;
-    display: flex;
     flex-flow: row wrap;
     font-size: 48px;
   }
   .btn__selector{
     box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
-    display: flex;
     margin: 5px;
-    align-content: center;
-    align-self: center;
     height: 38px;
     width: 38px;
     border-radius: 50%;
     background-color: #2d3135;
-    
   }
-  .neo__red{
-    box-shadow:
-    -2px -2px 2px rgba(74, 78, 83, 0.5),
-    2px 2px 3px rgba(35, 37, 39, 0.8),
-    8px 8px 15px rgba(35, 37, 39, 0.9),
-    -6px -6px 10px rgba(74, 78, 83, 0.7);
-  }
+  
   .theme__btn--on, .lang__btn--on{
-    flex-direction: row;
     border-radius: 30px;
     margin-top: 10%;
     width: 87px;
     height: 44px;
     background: #A4161A;
-  
-    display: flex;
   }
   h3{
     font-weight: bolder;
@@ -1096,7 +986,6 @@ flex-direction: column;
     width: 87px;
     height: 44px;
     background: #A4161A;
-    display: flex;
     justify-content: center;
     align-items: center;
    
@@ -1111,7 +1000,6 @@ flex-direction: column;
     background-color: #2d3135;
     transition: all 0.3s;
     border-radius: 50px;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -1124,11 +1012,8 @@ flex-direction: column;
     transform: rotate(45deg);
     width: 75px;
     height: 75px;
-  
     transition: all 0.3s;
-
     background-color: #2d3135;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
