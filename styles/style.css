@@ -13,13 +13,10 @@
 :root{ 
   transition: all 0.3s;
   transition-timing-function: ease-in-out;
-   background-color: rgb(231,235,240);
-  color: #2d3135;
 }
 
 body {
-
-
+  color: #292D34;
   width: 1920px;
   margin: 0;
 }
@@ -401,7 +398,7 @@ section {
   min-height: 1000px;
 }
 footer {
-  margin: 20px 170px;
+  padding: 20px 170px;
   flex-flow: wrap row;
 }
 nav {
@@ -423,9 +420,9 @@ p {
   padding: 0px;
   margin: 0px;
 }
-nav > div.nav__arrow > div.nav__btn__circle.indentWhite:hover,
-nav > div.nav__arrow > div.nav__btn__kite.indentWhite:hover,
-nav > div.nav__arrow > div.nav__btn__home.indentWhitehover,
+div.nav__btn__circle.indentWhite:hover,
+div.nav__btn__kite.indentWhite:hover,
+div.nav__btn__home.indentWhite:hover,
 .skills__btn2:hover,
 .workbtn:hover {
   padding: 5px;
@@ -434,7 +431,7 @@ nav > div.nav__arrow > div.nav__btn__home.indentWhitehover,
 
   background: linear-gradient(317.7deg, rgba(37, 206, 222, 0.4) 0%,
   rgba(255, 255, 255, 0.4) 105.18%), #25CEDE;
-  
+
  background-blend-mode: soft-light, normal;
  box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
 }
@@ -483,6 +480,9 @@ div.skills__btn2 > span:only-of-type {
 .logo {
   margin-top: 10px;
   width: 100%;
+}
+.nobrightness{
+  filter: brightness(0%);
 }
 .flip {
   transform: rotate(180deg);
@@ -618,7 +618,7 @@ box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
 .dark {
   background-color: #2d3135 ;
 }
-.white {
+.light {
   background-color: #E7EBF0 ;
 }
 .red{
@@ -627,14 +627,11 @@ box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
 .blue{
   color: #25CEDE;
 }
-.bluebg{
+.blueBg{
   background-color: #25CEDE;
 }
-.txtWhite {
-  color: #E7EBF0 ;
-}
-.txtDark {
-  color: #292D34 ;
+.redBg{
+  background-color: #a4161a;
 }
 .flex {
   display: flex !important;
@@ -685,7 +682,7 @@ box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
     height: 450px;
   }
   footer > h2 {
-    margin: 0px 10px;
+    padding: 0px 10px;
   }
   div.sec__header > img {
     margin: 0px 30px;
@@ -899,9 +896,8 @@ box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
     height: 34px;
   }
 
-  .nav__arrow {
+  #nav__arrow {
     margin-top: 25%;
-    background-color: #2d3135;
     width: 8px;
     height: 70%;
     justify-content: space-between !important;
