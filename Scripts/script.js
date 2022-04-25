@@ -49,6 +49,15 @@ const iconify =$.getElementsByClassName("iconify");
         }
     }
 
+const linkTags =$.getElementsByTagName("a");
+    function linkTagsHandler() {
+        for (let i = 0; i < linkTags.length; i+=1) {
+
+                linkTags[i].classList.toggle("txtwhite","#txtdark");
+
+        }
+    }
+
 const sections = $.getElementsByTagName("section"),
       footer   = $.getElementsByTagName("footer"),
       footerName=$.getElementById("name");
@@ -68,18 +77,24 @@ const sections = $.getElementsByTagName("section"),
 
     }
 
-/* const   blueBg = $.getElementsByClassName("blueBg");
     function skillsHandler() {
-        for (let i = 0; i < blueBg.length; i++) {
-            console.log(i)
-            console.log(blueBg)
-            console.log(blueBg.length)
-            themeFlag?
-            blueBg[i].classList.replace("blueBg","redBg"):
-            blueBg[i].classList.replace("redBg","blueBg")      
+        if (themeFlag) {
+        let   blueBg = $.getElementsByClassName("blueBg");
+            for (cntr=0;cntr<=4;cntr++) {
+                for (let i = 0; i < blueBg.length; i++) {
+                    blueBg[0].classList.replace("blueBg","redBg")
+                } 
+            }
+        } else {
+        let   redBg = $.getElementsByClassName("redBg");
+            for (cntr=0;cntr<=4;cntr++) {
+                for (let i = 0; i < redBg.length; i++) {
+                    redBg[0].classList.replace("redBg","blueBg"); 
+                } 
+            }
         }
-    } */
 
+    } 
 
 const navArrow = $.getElementById("nav__arrow")
     function navArrowHandler() {
@@ -88,67 +103,49 @@ const navArrow = $.getElementById("nav__arrow")
         navArrow.classList.replace("light","dark");
     }
 
-    // function whiteMode() {
+const navBtn= navArrow.children;
+    function navBtnHandler() {
+    if (themeFlag) {
+                for (let i = 0; i < navBtn.length; i++) {
+                    navBtn[i].classList.replace("indentWhite","indentdark")
+                    navBtn[i].classList.replace("light","dark")
+                    // navBtn[i].classList.add("txtwhite")
+                    // navBtn[i].classList.replace("txtdark","txtwhite")
 
-    //     let dark =$.getElementsByClassName("dark"),
-    //     light =$.getElementsByClassName("light");
-
-    //     // console.log(dark.length)
-    //     // console.log(light.length)
-
-    //     for (let i = 0; i < dark.length; i+=1) {
-    //          dark[i].classList.replace("dark","light");  
-    //         console.log("i="+i)
-    //     }
-
-    //     let indentdark =$.getElementsByClassName("indentdark");
-    //     for (let i = 0; i < indentdark.length; i+=1) {
-    //         indentdark[i].classList.replace("indentdark","indentWhite");
-    //         console.log("i="+i)  
-    //     }
-    // } 
-
-    //  function darkMode() {
-
-    //     let dark =$.getElementsByClassName("dark"),
-    //     light =$.getElementsByClassName("light");
-    //     // console.log(dark.length)
-    //     // console.log(dark)
-    //     // console.log(dark.length)
-
-    //     // console.log(light.length)
-    //     // console.log(light)
-
-    //     for (let i = 0; i < light.length; i+=1) {
-    //         light[i].classList.replace("light","dark");  
-    //         console.log("i="+i)
-    //     }
-
-    //     let indentWhite =$.getElementsByClassName("indentWhite");
-    //     for (let i = 0; i < indentWhite.length; i+=1) {
-    //         indentWhite[i].classList.replace("indentWhite","indentdark");
-    //         console.log("i="+i)  
-    //     }
-    // } 
-
-    //theme btn
+                } 
+        } else {
+                for (let i = 0; i < navBtn.length; i++) {
+                    navBtn[i].classList.replace("indentdark","indentWhite")
+                    // navBtn[i].classList.replace("txtwhite","txtdark")
+                } 
+                }
+    }
+    
     $.getElementsByClassName("theme__btn__on")[0].addEventListener('click',function () {
         if (themeFlag) {//Darkens The Theme
             themeFlag = false
-            $.title = "WHITE THEME"
-            $.body.style.setProperty("color", "#292D34", "important");
-            // darkMode()
+
+            $.getElementById("stylesheet").setAttribute("href","styles/white.css")
         }
         else {//Lightens The Theme
             themeFlag = true
-            $.title = "DARK THEME"
-            $.body.style.setProperty("color", "#E7EBF0", "important");
-            // whiteMode()
+
+            $.getElementById("stylesheet").setAttribute("href","styles/dark.css")
         }
-        // skillsHandler()
-        iconifyHandler()
         seperatorsHandler()
         picsHandler()
-        sectionsHandler()
-        navArrowHandler()
     })
+
+let childs = $.getElementById("nav__arrow").children
+for (let i = 0; i < childs.length; i++) {   
+    childs[i].addEventListener('click',function (event) {
+        childs[i].classList.replace("btn__outdent","btn__indent")
+
+        for (let i = 0; i < childs.length; i++) {   
+            childs[i].classList.replace("btn__outdent","btn__indent")
+        }
+        childs[i].classList.replace("btn__indent","btn__outdent")
+    }
+    
+    )}
+
