@@ -1,4 +1,3 @@
-
 /* #region 🦔general css🦔*/
 
 @keyframes blink {
@@ -19,9 +18,10 @@
     }
   }
   section:first-of-type {
-    min-height: 1080px;
+    min-height: 100vh;
   }
   html {
+    font-size: 12px;
     scroll-behavior: smooth;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -31,24 +31,23 @@
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     font-family: "Shabnam", sans-serif;
-    height: 2160px;
     box-sizing: border-box;
   }
   html,
   body {
+    overflow-x: hidden;
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
     width: 100%;
   }
   section {
-    padding: 40px 170px;
+    padding: 0rem 8.44rem !important;
     align-items: center;
     text-align: center;
     justify-content: center;
-    min-height: 1000px;
+    min-height: 100vh;
   }
   footer {
-    padding: 20px 170px;
     flex-flow: wrap row;
   }
   nav {
@@ -57,20 +56,62 @@
     top: 0;
     right: 0;
     height: 100%;
-    min-height: 800px;
-    width: 170px;
+    min-height: 720px;
+    width: 8.75rem;
     min-width: 104px;
     text-align: center;
     align-items: center;
   }
   span.skillprbar > span {
-    margin-right: 20px;
+    margin-right: 10px;
   }
   p {
-    padding: 0px;
-    margin: 0px;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 0rem;
+    margin: 0rem;
   }
-   a.nav__btn__circle:hover,
+  
+  div.steps__cont > img {
+    width: 1.875rem;
+    height: 28.125rem;
+  }
+  footer > h2 {
+    padding: 0rem .625rem;
+  }
+  div.sec__header > img {
+    margin: 0rem 1.875rem;
+    width: 13.25rem;
+    height: 1.5625rem;
+  }
+
+  h1 {
+    padding: 0rem;
+    margin: .3125rem 0rem;
+    font-size: 5rem;
+  }
+  h2 {
+    margin: .3125rem 0rem;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  h4 {
+    padding-right: .1875rem;
+    font-size: 1rem;
+  }
+  h3,
+  h4 {
+    margin: .3rem 0rem;
+  }
+  address {
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  a.nav__btn__circle:hover,
   a.nav__btn__kite:hover,
   a.nav__btn__home:hover,
   .skills__btn2:hover,
@@ -98,6 +139,311 @@
   div.skills__btn2 > span:only-of-type {
     font-size: 16px;
   }
+  .iconify:not(div.steps>.iconify,.wing>a>.iconify,div.reset__transform>.iconify) {
+    padding: 1%;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .workbtn,
+  .workbtnselected {
+    font-size: 1.125rem;
+  }
+  .nav__loc__container {
+    margin-right: -.1875rem;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: nowrap row;
+    width: 7.5rem;
+  }
+  .prbar {
+    margin-bottom: .9375rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    border-radius: .9375rem;
+  }
+
+  .skillprbar {
+    align-self: flex-start;
+    padding: 1%;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.125rem;
+    border-radius: 0rem .9375rem .9375rem 0rem;
+  }
+
+  .aboutme__card__frame {
+    border-radius: .9375rem;
+    height: 43.125rem;
+    width: 69.375rem;
+  }
+
+  .skills__lang {
+    overflow: hidden;
+    margin: 2.1875 0rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .skill__meter {
+    border-radius: .9375rem;
+    border: 0rem outset #25CEDE;
+    width: 15.625rem;
+    height: 15.625rem;
+    margin: 0rem .6875rem;
+  }
+
+  .services {
+    margin: 0.625rem 0rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .services__slice {
+    padding-top: .3125rem;
+    width: 26.5625rem;
+    height: 19.0625rem;
+    margin: 0rem .375rem;
+  }
+  .services__slice__title {
+    margin: .3125rem;
+    font-size: 2.25rem;
+    font-weight: bolder;
+  }
+
+  .workbtn {
+    margin: .3125rem;
+    width: 8.125rem;
+    height: 3.75rem;
+  }
+  .workbtnselected {
+    margin: .9375rem;
+    width: 8.125rem;
+    height: 3.75rem;
+  }
+
+  .slice__header {
+    margin: 1.25rem 0rem;
+    font-size: 1.625rem;
+    line-height: normal;
+    font-weight: bold;
+  }
+
+  .steps {
+    margin-top: .3125rem;
+    flex-flow: nowrap column;
+    align-items: center;
+    margin: 0.625rem;
+    width: 15.625rem;
+    height: 28.125rem;
+  }
+  .steps__cont {
+    padding-top: 1.25rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .imgtxt__center {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .txtcontainer {
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+  }
+  .wing {
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    width: 3.125rem;
+    height: 20rem;
+    margin: 0rem 0.9375rem;
+  }
+
+  .pad {
+    margin: 0rem 0.625rem;
+  }
+  div.workexp>p {
+    padding: 0rem 3rem;
+    width: 40rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .adjust {
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+    border-radius: 0.625rem;
+    margin-top: auto;
+    transform: rotate(45deg);
+    width: 8.75rem;
+    height: 8.75rem;
+  }
+
+  .workexp__img {
+    border-radius: 0.9375rem;
+    text-align: center;
+    justify-self: flex-start;
+    width: 26.5625rem;
+    height: 19.0625rem;
+    margin: 0rem .375rem;
+  }
+  .upper {
+    background-size: cover;
+    background-image: url(/images/coffee.png);
+  }
+  .lower {
+    background-size: cover;
+    background-image: url(/images/garden.png);
+  }
+
+  .workexp {
+    padding: 1.5625rem 0rem;
+  }
+  .slice__content {
+    padding: 0rem 0.9375rem;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.875rem;
+    text-align: center;
+  }
+  .bgcircle {
+    margin: 1.25rem 1.25rem;
+    background-color: #E7EBF0;
+    height: 9.375rem;
+    width: 9.375rem;
+    transition: all 0.3s;
+  }
+
+  .width__adjust {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  div.bgcircle > * {
+    width: 60%;
+    height: auto;
+  }
+  .nav__icon__container {
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row-reverse nowrap;
+    width: 9.375rem;
+    height: 2.125rem;
+  }
+
+  #nav__arrow {
+    background-color: #2d3135 ;
+    margin-top: 10%;
+    width: .5rem;
+    height: 70%;
+    justify-content: space-between !important;
+  }
+  .contact__card__frame {
+    border-radius: 18.75rem 0.9375rem 0.9375rem 18.75rem;
+    height: 20rem;
+    width: 51.25rem;
+    max-width: 55rem;
+  }
+
+  .imgShadow{
+    box-shadow: 0rem 0rem 1.875rem .5625rem #25CEDE;
+  }
+
+  .aboutme__card__img {
+    border-left: 0rem;
+    border-radius: .3125rem 0.9375rem 0.9375rem .3125rem;
+    width: 26.875rem;
+    height: 43.125rem;
+  }
+  .contact__card__img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .sec__header {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 1.25rem 0rem;
+  }
+
+  .skills__header {
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .hand {
+    margin: 0rem 2.5rem;
+    width: 23.75rem;
+    height: 10.9375rem;
+  }
+
+  .skills__icon {
+    height: 1.5625rem;
+    width: 1.5625rem;
+    margin: .3125rem;
+    align-self: center;
+    text-align: center;
+  }
+  .skills__btn {
+    border-radius: 1.875rem;
+    margin: .3125rem;
+    width: 8.125rem;
+    height: 3.75rem;
+  }
+  .skills__btn2,.skills__btn {
+    border-radius: 1.875rem;
+    margin: .3125rem;
+    width: 6rem;
+    height: 3rem;
+  }
+
+  .abtme__btn {
+    margin: 0.9375rem;
+    width: 16.25rem;
+    height: 2.75rem;
+  }
+
+  .contact__card {
+    padding-right: 2.5rem;
+    height: 16.25rem;
+    width: 51.5625rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .theme__btn__on,
+  .lang__btn__on {
+    cursor: pointer;
+    justify-content: start !important;
+    margin-top: 10%;
+    width: 5.3125rem;
+    height: 2.75rem;
+  }
+
+  .nav__btn__home {
+    background-color: #E7EBF0;
+    margin-bottom: auto;
+    width: 5.3125rem;
+    height: 2.75rem;
+  }
+
+  .nav__btn__circle {
+    background-color: #E7EBF0;
+    margin: auto 0rem;
+    width: 5.3125rem;
+    height: 5.3125rem;
+  }
+
+  .nav__btn__kite {
+    background-color: #E7EBF0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.625rem;
+    margin-top: auto;
+
+    width: 4.6875rem;
+    height: 4.6875rem;
+  }
+  
   .abtme__btn.btn__indent:hover {
   
     transition: all 0.3s;
@@ -112,8 +458,8 @@
     background-color: #E7EBF0;
     margin-right: 5px;
     box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
-    height: 38px;
-    width: 38px;
+    height: 2.375rem;
+    width: 2.375rem;
   }
   .justify {
     line-height: 28px;
@@ -121,14 +467,13 @@
     text-justify: inter-word;
   }
   .aboutme__card {
-    padding-right: 40px;
-    padding-left: 40px;
-    height: 580px;
-    width: 852px;
+    padding: 1rem 2rem;
+    height: 36.25rem;
+    width: 53.25rem;
     align-items: center;
   }
   .logo {
-    margin-top: 10px;
+    margin-top: .625rem;
     width: 100%;
   }
   .nobrightness{
@@ -139,21 +484,21 @@
     transform: rotateY(180deg);
   }
   
-  .iconify:hover:not(.bgcircle>.iconify,.last, div.abtme__btn > *, *.btn__selector > *) {
-    background-color: rgba(238, 238, 238, 0.15) !important ;
+  .iconify:hover:not(div.steps>.iconify,.bgcircle>.iconify,.last, div.abtme__btn > *, *.btn__selector > *) {
+    background-color: rgba(17, 17, 17, 0.15) !important ;
     border-radius: 10px;
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
   }
   .steps:hover {
     padding: 2% 2%;
-    border-radius: 15px;
+    border-radius: .9375rem;
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
   }
   .services__slice:hover {
-    width: 560px;
-    height: 325px;
+    width: 35rem;
+    height: 20.3125rem;
     border: 4px outset RGBA(37, 206, 222, .6) ;
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
@@ -170,14 +515,11 @@
   .skill__meter:hover {
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
+    width: 18.75rem;
+    border-radius: .9375rem;
   
   }
-  .iconify {
-    padding: 2%;
-  }
+
   .tr {
     background-size: cover;
   
@@ -217,17 +559,17 @@
     transition-timing-function: ease-in-out;
   }
   .reset__transform {
-    transform: rotate(0deg) !important;
+    transform: rotate(-45deg);
   }
   
   .arched2 {
-    margin-right: -30px;
+    margin-right: -1.875rem;
   }
   .arched3 {
-    margin-right: -50px;
+    margin-right: -3.125rem;
   }
   .arched4 {
-    margin-left: -30px;
+    margin-left: -1.875rem;
   }
   
   .btn__indent {
@@ -300,10 +642,10 @@
   }
   .border30 {
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 1.875rem;
   }
   /* #endregion 🦔general css🦔*/
-  /* #region 🖥️media queries🖥️*/
+/* #region 🖥️media queries🖥️*/
   /*------------------------------------------
     Responsive Grid Media Queries - 1280, 1024, 768, 480
      1280-1024   - desktop (default grid)
@@ -311,7 +653,171 @@
      768-480     - tablet 
      480-less    - phone landscape & smaller
   --------------------------------------------*/
-  @media all and (min-width: 1024px) and (max-width: 1280px) { }
+  @media all and (min-width: 1024px) and (max-width: 1280px) {
+    h2.sec__header{
+      font-size: 2rem;
+    }
+  html{
+      font-size: 16px !important;
+  }
+  section {
+    padding: 0px !important;
+    padding-right: 130px !important;
+  }
+  p {
+    font-weight: bold;
+    font-size: .55rem;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  h3.sec__header {
+    margin: 0.8rem;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  footer{
+    padding: 20px 0px;
+    padding-right: 140px;
+
+  }
+  img.hand{
+    margin: 0rem .6rem;
+    width: 14rem;
+    height: 7.5rem;
+  }
+  .last{
+    width: 130px;
+    height: 130px;
+  }
+  .services__slice:hover {
+    padding-top: .3125rem;
+    width: 20rem;
+    height: 13rem;
+    margin: 0rem .1rem;
+
+  }
+  .sec__header {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 1rem 0rem;
+  }
+  .bgcircle{
+    height: 7rem;
+    width: 7rem;
+  }
+  .skill__meter {
+    width: 8rem;
+    height: 15rem;
+  }
+  .skills__lang {
+    margin: 1.5 0rem;
+  }
+  .skills__btn,.skills__btn2{
+    width: 81px;
+    height: 38px;
+    margin: 0px 3px;
+  font-size: .6rem;
+  }
+  .abtme__btn {
+    margin: 0rem .5rem;
+    margin-top: 1rem;
+    width: 12rem;
+    height: 2.5rem;
+  }
+  .theme__btn__on,
+  .lang__btn__on {
+    width: 4.7rem;
+    height: 2.5rem;
+  }
+
+  .nav__btn__home {
+    width: 4.7rem;
+    height: 2.5rem;
+  }
+
+  .nav__btn__circle {
+
+    width: 4.7rem ;
+    height: 4.7rem ;
+  }
+
+  .nav__btn__kite {
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+  }
+  .aboutme__card__frame {
+    border-radius: .9375rem;
+    height: 30rem;
+    width: 50rem;
+  }
+  .aboutme__card__img {
+    border-left: 0rem;
+    width: 20rem;
+    height: 30rem;
+  }
+  .aboutme__card {
+    padding: 3px 22px;
+    height: 30rem;
+    width: 30rem;
+  }
+  .services {
+    margin: 0.625rem 0rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .services__slice {
+    padding-top: .3125rem;
+    width: 18rem;
+    height: 13rem;
+    margin: 0rem .1rem;
+  }
+  .services__slice__title {
+    margin: .3125rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  .slice__content {
+    padding: 0rem 0.9375rem;
+    font-size: .8rem;
+    font-weight: normal;
+    line-height: 1.875rem;
+    text-align: center;
+  }
+  .steps {
+    margin-top: .3125rem;
+    margin: 0rem !important;
+    width: 15.625rem;
+    height: 28.125rem;
+  }
+  .steps__cont {
+    padding-top: 1.25rem;
+    width: 100%;
+  }
+  .slice__header {
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+  }
+  div.steps>i{
+    width: 130px !important;
+    height: 130px !important;
+  }
+  h3.sec__header{
+    font-size: 2rem;
+    margin: .3rem 0rem;
+  }
+  img#line,img#line2{
+    margin: 0rem .4rem;
+    width: 12rem;
+  }
+  #circle{
+    width: 50rem;
+    height: 40rem;
+  }
+  div.reset__transform>span.iconify{
+    width: 55px;
+    height: 55px;
+  }
+  }
    
   @media all and (min-width: 768px) and (max-width: 1024px) { }
    
@@ -339,311 +845,45 @@
    
   @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
    
+
   /* XLarge screens */
-  @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+  @media only screen and (min-width: 90.063em){} /* min-width 1441px, xlarge screens */
    
-  @media only screen and (min-width: 90.063em) and (max-width: 120em) {
+  @media only screen and (min-width: 90.063em) and (max-width: 120em) {} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+   
+  /* XXLarge screens */
+  @media only screen and (min-width: 120.063em) {
+    html{
+      font-size: 24px;
+    }
+    .theme__btn__on,
+    .lang__btn__on {
+      margin-top: 10%;
+      width: 127.5px;
+      height: 60px;
+    }
+  
+    .nav__btn__home {
+      width: 127.5px;
+      height: 60px;
+    }
+  
+    .nav__btn__circle {
+
+      min-width: 4.5rem;
+      min-height: 4.5rem;
+    }
+  
+    .nav__btn__kite {
+
+      min-width: 3.7rem;
+      min-height: 3.7rem;
+    }
     
-  
-    div.steps__cont > img {
-      width: 30px;
-      height: 450px;
-    }
-    footer > h2 {
-      padding: 0px 10px;
-    }
-    div.sec__header > img {
-      margin: 0px 30px;
-      width: 210px;
-      height: 25px;
-    }
-  
-    h2 {
-      padding: 0px;
-      margin: 10px 0px;
-      font-size: 32px;
-    }
-    h3 {
-      font-weight: bolder;
-      font-size: 22px;
-    }
-    h4 {
-      font-size: 22px;
-    }
-    h3,
-    h4 {
-      margin: 16px 0;
-    }
-    address {
-      font-style: normal;
-      font-size: 15px;
-      font-weight: 400;
-    }
-  
-    .workbtn,
-    .workbtnselected {
-      font-size: 18px;
-    }
-    .nav__loc__container {
-      margin-right: -10px;
-      align-items: center;
-      justify-content: flex-start;
-      flex-flow: nowrap row;
-      width: 160px;
-    }
-    .prbar {
-      margin-bottom: 15px;
-      justify-content: center;
-      align-items: flex-start;
-      width: 85%;
-      border-radius: 15px;
-    }
-  
-    .skillprbar {
-  
-      padding: 1%;
-      font-weight: bold;
-      text-align: right;
-      font-size: 18px;
-      border-radius: 0px 15px 15px 0px;
-    }
-  
-    .aboutme__card__frame {
-      border-radius: 15px;
-      height: 690px;
-      width: 1110px;
-    }
-  
-    .skills__lang {
-      overflow: hidden;
-      margin: 35px 0px;
-      justify-content: center;
-      text-align: center;
-    }
-    .skill__meter {
-      border-radius: 15px;
-      border: 0px outset #25CEDE;
-      width: 250px;
-      height: 250px;
-      margin: 0px 11px;
-    }
-  
-    .services {
-      margin: 10px 0px;
-      justify-content: center;
-      text-align: center;
-    }
-    .services__slice {
-      padding-top: 5px;
-      width: 425px;
-      height: 305px;
-      margin: 0px 6px;
-    }
-    .services__slice__title {
-      margin: 5px;
-      font-size: 36px;
-      font-weight: bolder;
-    }
-  
-    .workbtn {
-      margin: 5px;
-      width: 130px;
-      height: 60px;
-    }
-    .workbtnselected {
-      margin: 15px;
-      width: 130px;
-      height: 60px;
-    }
-  
-    .slice__header {
-      margin: 20px 0px;
-      font-size: 26px;
-      line-height: normal;
-      font-weight: bold;
-    }
-  
-    .steps {
-      margin-top: 5px;
-      flex-flow: nowrap column;
-      align-items: center;
-      margin: 10px;
-      width: 250px;
-      height: 450px;
-    }
-    .steps__cont {
-      padding-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-    .imgtxt__center {
-      position: absolute;
-      top: 35%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .txtcontainer {
-      font-size: 64px;
-      position: relative;
-      text-align: center;
-    }
-    .wing {
-      justify-content: space-between;
-      align-items: center;
-      justify-items: center;
-      width: 50px;
-      height: 320px;
-      margin: 0px 15px;
-    }
-  
-    .pad {
-      margin: 0px 10px;
-    }
-    .padded {
-      padding-right: 30px;
-      text-align: start;
-      width: 800px;
-    }
-    .adjust {
-      transition: all 0.3s;
-      transition-timing-function: ease-in-out;
-      border-radius: 10px;
-      margin-top: auto;
-      transform: rotate(45deg);
-      width: 140px;
-      height: 140px;
-    }
-  
-    .workexp__img {
-      border-radius: 15px;
-      text-align: center;
-      justify-self: flex-start;
-      width: 425px;
-      height: 305px;
-      margin: 0px 6px;
-    }
-    .upper {
-      background-size: cover;
-      background-image: url(/images/coffee.png);
-    }
-    .lower {
-      background-size: cover;
-      background-image: url(/images/garden.png);
-    }
-  
-    .workexp {
-      padding: 25px 0px;
-    }
-    .slice__content {
-      padding: 0px 15px;
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 30px;
-      text-align: center;
-    }
-    .bgcircle {
-      margin: 20px 20px;
-      background-color: #E7EBF0;
-      height: 150px;
-      width: 150px;
-      transition: all 0.3s;
-    }
-  
-    .width__adjust {
-      width: 60px;
-      height: 60px;
-    }
-    div.bgcircle > * {
-      width: 60%;
-      height: auto;
-    }
-    .nav__icon__container {
-      margin-right: 5px;
-      align-items: center;
-      justify-content: space-between;
-      flex-flow: row-reverse nowrap;
-      width: 190px;
-      height: 34px;
-    }
-  
-    #nav__arrow {
-      background-color: #2d3135 ;
-      margin-top: 25%;
-      width: 8px;
-      height: 70%;
-      justify-content: space-between !important;
-    }
-    .contact__card__frame {
-      border-radius: 300px 15px 15px 300px;
-      height: 512px;
-      width: 1110px;
-    }
-  
-    .imgShadow{
-      box-shadow: 0px 0px 30px 9px #25CEDE;
-    }
-  
-    .aboutme__card__img {
-      border-left: 0px;
-      border-radius: 5px 15px 15px 5px;
-      width: 430px;
-      height: 690px;
-    }
-    .contact__card__img {
-      width: 550px;
-      height: 550px;
-    }
-    .sec__header {
-      font-size: 48px;
-      font-weight: bolder;
-      margin: 20px 0px;
-    }
-  
-    .skills__header {
-      font-size: 48px;
-      justify-content: center;
-      text-align: center;
-    }
-    .hand {
-      margin: 0px 40px;
-      width: 380px;
-      height: 175px;
-    }
-  
-    .skills__icon {
-      height: 25px;
-      width: 25px;
-      margin: 5px;
-      align-self: center;
-      text-align: center;
-    }
-    .skills__btn {
-      border-radius: 30px;
-      margin: 5px;
-      width: 130px;
-      height: 60px;
-    }
-    .skills__btn2 {
-      border-radius: 30px;
-      margin: 5px;
-      width: 130px;
-      height: 60px;
-    }
-  
-    .abtme__btn {
-      margin: 15px;
-      width: 260px;
-      height: 44px;
-    }
-  
-    .contact__card {
-      padding-right: 40px;
-      height: 512px;
-      width: 852px;
-      align-items: flex-start;
-      justify-content: center;
-    }
-  
+   } /* min-width 1921px, xlarge screens */
+
+
+  /* @media only screen and (min-height: 1200px){
     .theme__btn__on,
     .lang__btn__on {
       cursor: pointer;
@@ -656,15 +896,17 @@
     .nav__btn__home {
       background-color: #E7EBF0;
       margin-bottom: auto;
-      width: 85px;
-      height: 44px;
+
+      width: 100px;
+      height: 40px;
     }
   
     .nav__btn__circle {
       background-color: #E7EBF0;
       margin: auto 0px;
-      width: 85px;
-      height: 85px;
+
+      width: 120px;
+      height: 120px;
     }
   
     .nav__btn__kite {
@@ -675,15 +917,51 @@
       margin-top: auto;
       transform: rotate(45deg);
   
-      width: 75px;
-      height: 75px;
+
+      width: 120px;
+      height: 120px;
+    }
+  } */
+
+  /* @media only screen and (min-height: 1800px){
+    .theme__btn__on,
+    .lang__btn__on {
+      cursor: pointer;
+      justify-content: start !important;
+      margin-top: 10%;
+      width: 85px;
+      height: 44px;
     }
   
-   } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-   
-  /* XXLarge screens */
-  @media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
-   
+    .nav__btn__home {
+      background-color: #E7EBF0;
+      margin-bottom: auto;
+
+      width: 150px;
+      height: 65px;
+    }
+  
+    .nav__btn__circle {
+      background-color: #E7EBF0;
+      margin: auto 0px;
+
+      width: 170px;
+      height: 170px;
+    }
+  
+    .nav__btn__kite {
+      background-color: #E7EBF0;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 10px;
+      margin-top: auto;
+      transform: rotate(45deg);
+  
+
+      width: 150px;
+      height: 150px;
+    }
+  } */
   /*------------------------------------------*/
    
    
@@ -722,13 +1000,8 @@
   /* iPad Landscape */
   @media screen and (min-device-width: 481px) and (orientation:landscape) {
   }
-   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  
-  
-  /*------------------------------------------
+/*------------------------------------------
     Live demo samples
      - http://andrelion.github.io/mediaquery/livedemo.html
   --------------------------------------------*/
-  /* #endregion */
-  
+  /* #endregion */  
