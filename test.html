@@ -1,21 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/test.css">
-    <title>Document</title>
-</head>
-<body>
+<!-- <html lang="en"> -->
+<html lang="fa">
 
-    <div class="animation-wrapper">
-    </div>
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Content-Security-Policy very important to prevent attacks on website research this for projects, https://content-security-policy.com/ -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'
+    "> -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Amir N1k">
+    <script rel="preconnect" src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="stylesheet preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css" integrity="sha512-K7kg/b/uwKLejlClSl2m2CDutNLO7w6Wh8R7X2921f6TSs/q+MuhKlTHbM9/8dvN5TK7Y9q2VV6pNtyVKdEKJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- It's best to keep meta descriptions long enough that they're sufficiently descriptive, so we recommend descriptions between 50 and 160 characters. -->
+    <meta name="description" content="This website is used for this while this">
+
+    <!-- kewords:less than 10% of the total words of a page -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet preconnect" type="text/css" href="styles/normalize.css">
+    <link id="stylesheet" rel="stylesheet preconnect" type="text/css" href="styles/test.css">
+    <link rel="icon async" type="image/x-icon" href="/images/favicon.ico">
+    <title>Anik</title>
+</head>
+
+<body dir="rtl">
+
+<section id="home" class="flex column center light">
+            
+          <div class="contact__card__frame btn__indent center">
+            <div class="contact__card flex column">
+                <h1>اَمیر نیک&nbsp;<span class="blink">_ </span></h1>
+                <h2>طراح و توسعه دهنده وب</h2>
+                <a target="_blank" href = "mailto: amirn1kdev@gmail.com"><h3>amirn1kdev@gmail.com</h3></a>
+                
+                
+                <div class="nav__icon__container flex">
+                    <a target="_blank" href="https://www.instagram.com/" title="اینستاگرام"><i class="iconify blue" data-icon="ant-design:instagram-filled" data-width="40" ></i>
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=989027001688" title="واتس اَپ" > <i class="iconify blue" data-icon="dashicons:whatsapp"  data-width="40"></i>
+                    </a>
+                    <a target="_blank" href="telegram.co/" title="تلگرام"> <i class="iconify blue" data-icon="uil:telegram"  data-width="40"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/Amir-nik" title="گیت هاب"> <i class="iconify blue" data-icon="ri:github-fill"data-width="40"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/AmirNikdev" title="توییتر"> <i class="iconify blue" data-icon="ant-design:twitter-circle-filled" data-width="40" ></i>
+                    </a>
+                </div>
+                
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=989027001688">
+                    <h4 dir="ltr">۰۹۰۲ ۷۰۰ ۱۶۸۸</h4>
+                </a>
+
+                <div class="nav__loc__container flex">
+                    <i class="iconify blue" data-icon="fluent:location-16-filled" data-width="40" ></i>
+                    <address>شیراز، ایران</address>    
+                </div>
+                
+            </div>
+            <img src="images/img.png" alt="" class="contact__card__img imgShadow circle__border">
+
+          </div>
+          
+</section>
     
-    <div class="page-wrapper">
-      <h1 >Disco Effect</h1>
-      <p>CSS only</p> 
+<nav class="flex column center">
+        <img src="images/logo.png" alt="" class="logo nobrightness">
+
+        <div class="theme__btn__on border30  flex row btn__outdent center"><div class="btn__selector circle__border flex center">
+            <a target="self" ><span class="iconify center " data-icon="heroicons-outline:sun"  data-width="25px"></span>
+            </a>
+            </div></div>
+        <div class="lang__btn__on border30  btn__outdent center">
+            <div class="btn__selector circle__border  flex center">
+                <a target="self" ><span class="iconify center " data-icon="ri:english-input"  data-width="25px"></span>
+                </a>
+            </div></div>
+
+    <div id="nav__arrow" class="center flex column">
+        
+        <a href="#home" class="nav__btn__home border30  smooth flex center btn__outdent ">
+                خانه
+        </a>
+
+        
+        <a href="#aboutme" class="nav__btn__circle circle__border  smooth flex btn__indent center">
+                درباره من
+        </a>
+
+        
+        <a href="#skills" class="nav__btn__circle circle__border  smooth flex btn__indent center">
+                مهارت ها
+        </a>
+
+        
+        <a href="#services" class="nav__btn__circle circle__border  smooth flex btn__indent center">
+                خدمات
+        </a>
+
+        
+        <a href="#works" class="nav__btn__circle circle__border  smooth flex btn__indent center">
+                نمونه کار
+        </a>
+
+        <a href="#contact" class="reset__transform nav__btn__kite  smooth flex btn__indent center">
+
+                ارتباط با من
+
+
+        </a>
     </div>
+</nav>
+        
+<section id="aboutme" class="aboutme__section flex column light">
+            
+            <div class="aboutme__card__frame center flex row btn__indent ">
+              <img src="images/img2.png" class="aboutme__card__img imgShadow">
+
+              <div class="aboutme__card flex column justify">
+                  <h3 class="sec__header row wrap flex">چرا باید من رو انتخاب کنید؟!</h3>
+                  <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                  </p>
+                    
+                    <div class="flex">
+                        <a download="Amirnik_cv.pdf" target="self" href="Amirnik_cv.pdf" title="همکاری">
+                        <div class="abtme__btn border30  flex row btn__indent center smooth">
+                            <span class="center">همکاری با من</span>
+                            <span class="iconify  center" data-icon="fa-solid:handshake" data-width="45"></span>                         
+                       </div>
+                       
+                    </a>
+                    <a target="self" href="https://www.instagram.com/" title="رزومه">
+                        <div class="abtme__btn border30  flex row btn__indent center smooth">
+                            <span class="center">دریافت رزومه</span>
+
+                            <span class="iconify  center"  data-icon="dashicons:media-spreadsheet"  data-width="45"></span>   
+                        </div>
+                    </a>
+
+                    </div>
+                  
+
+              </div>
+            </div>
+      
+</section>
+
+<section id="skills" class="skills__section light" >
+    <div class="sec__header flex row center">
+        <div class="center"><img src="images/blackhand.png" alt="" class="hand "></div>
+    
+        <h2 class="sec__header"> مهارت های تخصصی و فنی
+            <div class="sec__header nowrap row flex">
+                <span class="buttone"><a target="self" href="#" title="کدنویسی">
+                    <div class="skills__btn  center btn__outdent">
+                        <span >کدنویسی</span>
+                        <span class="iconify skills__icon" data-icon="codicon:code" ></span>
+                        
+                    </div>
+                </a></span>
+                <span class="buttone">
+                    <a target="self" href="#" title="طراحی">
+                        <div class="skills__btn2 smooth center light btn__indent">
+                            <span >طراحی</span>
+                            <span class="iconify skills__icon" data-icon="map:art-gallery" ></span>
+                            
+                        </div>
+                    </a>
+                </span>
+                <span class="buttone">
+                    <a target="self" href="#" title="روانشناختی">
+                        <div class="skills__btn2 smooth center light btn__indent">
+                            <span >روانشناختی</span>
+                            <span class="iconify skills__icon" data-icon="file-icons:brainfuck" ></span>
+                            
+                        </div>
+                    </a>
+                </span>
+                <span class="buttone">
+                    <a target="self" href="#" title="محیط کاری">
+                        <div class="skills__btn2 smooth center light btn__indent">
+                            <span >محیط کاری</span>
+                            <span class="iconify skills__icon" data-icon="fluent:desktop-edit-20-regular" ></span>
+                            
+                        </div>
+                    </a>
+                </span>
+                <span class="buttone">
+                    <a target="self" href="#" title="سایر">
+                        <div class="skills__btn2 smooth center light btn__indent">
+                            <span >سایر</span>
+                            <span class="iconify skills__icon" data-icon="cib:hackaday" ></span>
+                            
+                        </div>
+                    </a>
+                </span>
+            </div>
+        </h2>
+    
+        <div class="center"><img src="images/blackhand.png" alt="" class="hand flip center"></div>
+    </div>
+    <div class="skills__lang  flex row">
+        
+        <div class="skill__meter  smooth flex column " title="c-sharp">
+            <div class="bgcircle circle__border light btn__indent center">
+            <i class="iconify " data-icon="logos:c-sharp"></i>         
+            </div>
+<div class="prbar center light btn__indent flex column">
+    <span class="skillprbar blueBg" style="width: 58%;"><span>58%</span></span>
+</div>
+
+        </div>
+            
+
+        <div class="skill__meter smooth flex column " title="javascript">
+            <div class="bgcircle circle__border light btn__indent center">
+            <i class="iconify " data-icon="logos:javascript"></i>         
+            </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 59%;"><span>59%</span></span>
+        </div> 
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="bootstrap">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="logos:bootstrap"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 64%;"><span>64%</span></span>
+        </div>
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="css">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="vscode-icons:file-type-css"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 79%;"><span>79%</span></span>
+        </div>
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="html">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="vscode-icons:file-type-html"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 84%;"><span>84%</span></span>
+        </div>
+    
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="sql">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="logos:mysql"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 38%;"><span>38%</span></span>
+        </div>
+        </div>
+
+    </div>
+    <div class="skills__lang  flex row">
+        
+        <div class="skill__meter smooth flex column " title="c plus plus">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="logos:c-plusplus"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 36%;"><span>36%</span></span>
+        </div>
+        </div>
+            
+
+        <div class="skill__meter smooth flex column " title="React">
+            <div class="bgcircle circle__border light btn__indent center">
+            <i class="iconify " data-icon="vscode-icons:file-type-reactts"></i>         
+            </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 8%;"><span>8%</span></span>
+        </div> 
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="Python">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="logos:python"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 28%;"><span>28%</span></span>
+        </div>
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="PHP">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="logos:php"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 14%;"><span>14%</span></span>
+        </div>
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="VUE.js">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="logos:vue"></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 2%;"><span>2%</span></span>
+        </div>
+    
+        </div>
+
+
+        <div class="skill__meter smooth flex column " title="Github">
+        <div class="bgcircle circle__border light btn__indent center">
+        <i class="iconify " data-icon="akar-icons:github-fill" ></i>         
+        </div>
+        <div class="prbar center light btn__indent flex column">
+        <span class="skillprbar blueBg" style="width: 82%;"><span>82%</span></span>
+        </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="services" class="services__section flex column light">
+    <h2 class="sec__header ">
+       چه خدماتی ارائه میدم؟ 
+    </h2>
+    <div class="services flex row">
+        <span class="services__slice smooth center flex column tr btn__indent">
+            <span class="iconify blue width__adjust" data-icon="clarity:talk-bubbles-solid-badged" >
+            </span>
+            <h3 class="services__slice__title"> مشاوره تخصصی رایگان
+
+            </h3>
+            <p class="slice__content">تحلیل فنی سناریو، پاسخ دهی مطابق تجربه و بازار کار </p>
+        </span>
+        <span class="services__slice smooth center flex column um btn__indent">
+            <span class="iconify blue     width__adjust" data-icon="la:laptop-code" >
+            </span>
+            <h3 class="services__slice__title">قالب به کد</h3>
+            <p class="slice__content">رویا به واقعیت با استفاده از آخرین استاندارد های تکنولوژی </p>
+        </span>
+        <span class="services__slice smooth center flex column tl btn__indent">
+            <span class="iconify blue width__adjust" data-icon="bi:credit-card-2-front" >
+            </span>
+            <h3 class="services__slice__title">طراحی قالب</h3>
+            <p class="slice__content">چشم نواز و اختصاصی، همراه ویژگی های مورد نیازتان! </p>
+        </span>
+    </div>
+    <div class="services flex row">
+        <span class="services__slice smooth center flex column br btn__indent">
+            <span class="iconify blue width__adjust" data-icon="mdi:web-box" >
+            </span>
+            <h3 class="services__slice__title">
+                برندسازی حرفه ای</h3>
+            <p class="slice__content">
+                پیکربندی تنظیمات ضروری در پلتفرم های مختلف بر اساس اصول امنیتی، قانونی و الگوریتمیک - طراحی لوگو</p>
+        </span>
+        <span class="services__slice smooth center flex column lm btn__indent">
+            <span class="iconify blue width__adjust" data-icon="ph:student-fill" >
+            </span>
+            <h3 class="services__slice__title">پروژه های درسی</h3>
+            <p class="slice__content">
+                0 تا 100 برنامه های مبتدی تا پیشرفته دانشجویی در کمترین زمان ممکن!</p>
+        </span>
+        <span class="services__slice smooth center flex column bl btn__indent">
+            <span class="iconify blue width__adjust" data-icon="mdi:account-eye" >
+            </span>
+            <h3 class="services__slice__title">آنالیز پروژه</h3>
+            <p class="slice__content">رفع تمامی نقص های فنی، تخصصی و امنیتی، سازگار سازی با استاندارد های جهانی وب.</p>
+        </span>
+    </div>
+</section>
+
+<section id="works" class="workexp__section light">
+    <div class="sec__header center flex row">
+                
+            <a href="#" id="worksbtn" class="workbtnselected border30 flex row wrap  btn__outdent center">
+                درحال اجرا
+            </a>
+        
+        <img id="line" src="images/blackline.png" alt="">
+        <h3 class="sec__header">سوابق کاری</h3>
+        <img id="line2" src="images/blackline.png" alt="" class="flip">
+    
+            <a href="" id="worksbtn" class="workbtn border30 smooth flex row wrap btn__indent center light">
+                تکمیل شده            
+            </a>
+
+    </div>
+    <div class="workexp center flex row">
+        <div class="workexp__img flex column upper btn__indent">
+        </div>
+        <p class="padded">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
+    </div>
+    <div class="workexp center flex row">
+        <div class="workexp__img flex column lower btn__indent">
+        </div>
+        <p class="padded">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
+    </div>
+   
+</section>
+
+<section class="steps__section light">
+    <div class="sec__header center">
+                
+        <h3 class="sec__header">
+            قدم به قدم، دست در دست تان!
+        </h3>
+    
+    </div>
+        <div class="steps__cont flex row">
+            <div class="steps smooth">
+                <i class="iconify blue " data-icon="fxemoji:gem" data-width="130"></i>
+                <h2 class="slice__header">پشتیبانی حرفه ای و بازدید دوره ای!</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
+            </div>
+            <img class="seprator" src="images/blackseprator.png" >
+            <div class="steps smooth ">
+                <i class="iconify blue " data-icon="noto:rocket"  data-width="130"></i>
+                <h2 class="slice__header">پرداخت هزینه نهایی، تکمیل و تحویل پروژه.</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
+            </div>
+            <img class="seprator" src="images/blackseprator.png" ">
+            <div class="steps smooth ">
+                <i class="iconify blue " data-icon="emojione:white-heavy-check-mark" data-width="130"></i>
+                <h2 class="slice__header">پیشنهاد طرح یا دریافت قالب از شما&nbsp;<</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
+            </div>
+            <img class="seprator" src="images/blackseprator.png" >
+            <div class="steps smooth ">
+                <i class="iconify blue " data-icon="noto:handshake-light-skin-tone-medium-skin-tone" data-width="130"></i>
+                <h2 class="slice__header">توافق بر قرارداد، پیش پرداخت و شروع پروژه.</h2>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
+            </div>
+            <img class="seprator" src="images/blackseprator.png" >
+            <div class="steps smooth ">
+                <i class="iconify blue " data-icon="carbon:help-desk"  data-width="130"></i>
+                <p class="slice__header">درخواست همکاری، ارائه مشاوره تخصصی رایگان!</p>
+                <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
+            </div>
+        </div>
+
+
+   
+</section>
+
+<section id="contact" class="contactme__section flex column light">
+
+        <div class="steps__cont flex row">
+            <div class="wing flex column">
+                <a target="_blank" href="https://www.instagram.com/" title="اینستاگرام"><i class="iconify blue" data-icon="ant-design:instagram-filled" data-width="60" ></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/" title="واتس اَپ" > <i class="iconify blue arched4" data-icon="dashicons:whatsapp"  data-width="60"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/" title="تلگرام"> <i class="iconify blue arched4" data-icon="uil:telegram"  data-width="60"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/AmirNikdev" title="توییتر"> <i class="iconify blue" data-icon="ant-design:twitter-circle-filled" data-width="60" ></i>
+                </a>
+            </div>
+            <div class="txtcontainer">
+            <img id="circle" src="images/blackcircle.png" style="width:100%;" alt="">
+            <h3 class="imgtxt__center sec__header">تماس با من</h3>
+
+            </div>
+            <div class="wing flex column">
+
+                    <a target="_blank" href="https://www.instagram.com/" title="استیم"><i class="iconify blue" data-icon="bi:steam" data-width="60" ></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="لینکداین" > <i class="iconify blue arched2" data-icon="entypo-social:linkedin-with-circle"  data-width="60"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="دیسکورد"> <i class="iconify blue arched3" data-icon="akar-icons:discord-fill"  data-width="60"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="شماره تماس"> <i class="iconify blue arched2" data-icon="ic:baseline-phone-callback"  data-width="60"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/" title="ایمیل"> <i class="iconify blue" data-icon="clarity:email-solid"  data-width="60"></i>
+                    </a>
+                    
+                
+            </div>
+
+        </div>
+        <a target="self" href="https://www.github.com/Amir-nik" class="flex row">
+            <span title="همکاری در گیت هاب" class="last btn__indent adjust center light flex column">
+                <div class="reset__transform">
+                    <span class="iconify blue" data-icon="ri:github-fill"  data-width="105">
+                    </span>
+                </div>
+
+            </span>
+
+        </a>  
+</section>
+
+<footer class="center flex light">
+    <p> تمامی حقوق مادی و معنوی این وبسایت متعلق به<h2 class="blue" id="name">اَمیر نیک</h2> می باشد و هرگونه کپی برداری از آن غیر اخلاقی است.</p>
+</footer>
+        <script src="Scripts/script.js"></script>
+        <!-- async: the script is executed as soon as it's downloaded, without blocking the browser in the meantime. This implies that it's possible that script 2 is downloaded and executed before script 1.
+    <script src="path/to/script1.js" async></script>
+    <script src="path/to/script2.js" async></script> -->
+
+        <!-- defer: Scripts with the defer attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser Unlike async scripts, defer scripts are only executed after the entire document has been loaded.
+    <script src="path/to/script1.js" defer></script>
+    <script src="path/to/script2.js" defer></script> -->
+
+        <!-- <noscript>
+     The HTML <noscript> element is found either within the <head> tag or the <body> tag. The <noscript> tag will display alternate HTML content if the script type is not supported or if the browser has scripting disabled. 
+    </noscript> -->
 
 </body>
-</html>
+
+</html
