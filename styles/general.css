@@ -476,10 +476,21 @@ div.bgcircle > * {
 .theme__btn__on,
 .lang__btn__on {
   cursor: pointer;
-  justify-content: start !important;
   margin-top: 10%;
   width: 4.7rem;
   height: 2.5rem;
+}
+.justifystart{
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+  justify-content: start !important;
+
+}
+.justifyend{
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+  justify-content: end !important;
+
 }
 .justify {
   line-height: 28px;
@@ -723,7 +734,7 @@ div.bgcircle > * {
     min-height: 74px;
   }
   .btn__selector {
-    margin-right: 5px;
+    margin: 0px 5px;
     height: 1.7rem;
     width: 1.7rem;
   }
