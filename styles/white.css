@@ -1,11 +1,17 @@
-
 a.nav__btn__circle:hover,
 a.nav__btn__kite:hover,
 a.nav__btn__home:hover,
 .workbtn:hover,
 .skills__btn2:hover,
 .skills__btn:hover,
-.bgcircle:hover  {
+.bgcircle:hover,
+a.nav__btn__circle:active,
+a.nav__btn__kite:active,
+a.nav__btn__home:active,
+.workbtn:active,
+.skills__btn2:active,
+.skills__btn:active,
+.bgcircle:active {
   transition: all 0.3s;
   transition-timing-function: ease-in-out;
 

@@ -1,4 +1,18 @@
-console.clear();
+//offline modal here
+window.addEventListener('offline', (event) => {
+  console.log("The network connection has been lost.");
+});
+
+//loader here
+window.addEventListener("load", function () {
+  console.log("LOADED ALL ASSETS")
+});
+
+//online modal here
+window.addEventListener('online', (event) => {
+console.log("You are now connected to the network.");
+});
+
 const $ = document,
   _id = $.getElementById,
   _tg = $.getElementsByTagName;
@@ -121,19 +135,4 @@ for (let i = 0; i < childs.length; i++) {
 
 $.addEventListener("scroll", function name() {
   scrollHandler();
-});
-
-//loader here
-window.addEventListener('load', function() {
-    console.log('All assets are loaded')
-})
-
-//offline modal here
-window.addEventListener('offline', (event) => {
-  console.log("The network connection has been lost.");
-});
-
-//online modal here
-window.addEventListener('online', (event) => {
-console.log("You are now connected to the network.");
 });
