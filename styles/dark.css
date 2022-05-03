@@ -1,3 +1,22 @@
+@media all and (max-width: 1023px) {
+  nav{
+    background: #292d34 !important;
+
+    box-shadow:  5px 5px 10px #22252b,
+                 -5px -5px 10px #30353d;
+  }
+  .btn__selector{
+
+    box-shadow: inset 2px 2px 5px #1f2227,
+              inset -2px -2px 5px #333841
+  }
+}
+@media all and (min-width: 1024px) {
+  .btn__selector{
+    margin: 0px 5px;
+    background-color: #292d34 !important;
+  }
+}
 nav{
   background-color: #292D34 !important;
   

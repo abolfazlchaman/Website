@@ -1,4 +1,26 @@
-nav{
+@media all and (max-width: 1023px) {
+  nav {
+    background: linear-gradient(
+        317.7deg,
+        rgba(37, 206, 222, 0.4) 0%,
+        rgba(255, 255, 255, 0.4) 105.18%
+      ),
+      #e7ebf0 !important;
+    background-blend-mode: soft-light, normal;
+    box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  }
+  .btn__selector {
+    background-blend-mode: soft-light, normal;
+    box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  }
+}
+@media all and (min-width: 1024px) {
+  .btn__selector {
+    margin: 0px 5px;
+    background-color: #e7ebf0 !important;
+  }
+}
+nav {
   border-color: #25cede;
 }
 a.nav__btn__circle:hover,
@@ -98,7 +120,7 @@ a.nav__btn__home:active,
       rgba(37, 206, 222, 0.4) 0%,
       rgba(255, 255, 255, 0.4) 105.18%
     ),
-    #25cede ;
+    #25cede;
   background-blend-mode: soft-light, normal;
   box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
