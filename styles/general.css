@@ -125,8 +125,8 @@ h2.sec__header {
   font-size: 2rem;
 }
 div.steps > i {
-  width: 130px ;
-  height: 130px ;
+  width: 130px;
+  height: 130px;
 }
 h3.sec__header {
   margin: 1.2rem 0rem;
@@ -155,8 +155,8 @@ div.bgcircle > * {
   height: auto;
 }
 div.steps > *.iconify {
-  width: 130px ;
-  height: 130px ;
+  width: 130px;
+  height: 130px;
 }
 .abtme__btn.btn__indent:hover {
   transition: all 0.3s;
@@ -267,6 +267,7 @@ div.steps > *.iconify {
 }
 
 .nav__btn__home {
+  background-color: #e7ebf0;
   margin-bottom: auto;
   width: 4.7rem;
   height: 2.5rem;
@@ -308,7 +309,7 @@ div.steps > *.iconify {
 }
 
 .steps {
-  margin: 0rem ;
+  margin: 0rem;
   margin-top: 0.3125rem;
   flex-flow: nowrap column;
   align-items: center;
@@ -441,7 +442,7 @@ div.steps > *.iconify {
 }
 
 .abtme__btn {
-  margin: .5rem 0.5rem;
+  margin: 0.5rem 0.5rem;
   width: 12rem;
   height: 2.5rem;
 }
@@ -648,7 +649,6 @@ div.steps > *.iconify {
   p {
     font-size: 1.2rem;
   }
-
   h2.sec__header {
     font-size: 2rem;
   }
@@ -662,11 +662,82 @@ div.steps > *.iconify {
     padding-right: 0px;
     flex-flow: wrap row;
   }
+  section {
+    padding: 0px;
+    padding-top: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100%;
+  }
+  section:first-of-type {
+    padding: 0px;
+    padding-right: 0px;
+    padding-top: 25%;
+
+    min-height: 100%;
+  }
+
+  h5 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  div.steps > *.iconify {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  div.services {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  p {
+    font-size: 12px !important;
+  }
+  nav {
+    position: -webkit-sticky; /* Safari */
+    flex-direction: row;
+    border-bottom: 2px solid;
+    border-radius: 0px 0px 10px 10px;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    height: 8.5%;
+    min-height: 65px;
+    width: 100%;
+    /* min-width: 104px; */
+    /* max-width: 150px; */
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+  }
+  p.slice__content {
+    font-size: 10px !important;
+    max-width: 120px;
+    max-height: 70px;
+  }
+  *.reset__transform > *.iconify {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  #nav__arrow {
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 75%;
+    height: 0.5rem;
+    display: flex;
+
+    justify-content: space-between !important;
+  }
   #line,
   #line2 {
-  margin: 0rem 0.4rem;
-  width: 15%;
-  height: 2%;
+    margin: 0rem 0.4rem;
+    width: 15%;
+    height: 2%;
   }
   #circle {
     width: 65%;
@@ -680,37 +751,31 @@ div.steps > *.iconify {
     line-height: normal;
     font-weight: bold;
   }
-  #seprator__3{
+  #seprator__3 {
     display: none;
     visibility: hidden;
   }
-  h5{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+
   .steps {
     justify-content: start;
-    margin:20px 5px;
+    margin: 20px 5px;
 
     flex-flow: nowrap column;
     align-items: center;
     width: 25%;
     height: 28.125rem;
   }
-  div.steps > *.iconify {
-    width: 50px !important;
-    height: 50px !important;
-  }
+
   .last {
     width: 60px;
     height: 60px;
   }
-  .wing{
+  .wing {
     justify-content: space-between;
-  align-items: center;
-  justify-items: center;
-  width: 3.125rem;
-  margin: 0rem 0.9375rem;
+    align-items: center;
+    justify-items: center;
+    width: 3.125rem;
+    margin: 0rem 0.9375rem;
     height: 25% !important;
   }
   .wing > a > .iconify {
@@ -723,18 +788,15 @@ div.steps > *.iconify {
     height: auto;
     justify-content: center;
   }
-  *.reset__transform > *.iconify {
-    width: 40px !important;
-    height: 40px !important;
-  }
+
   .workbtn,
-.workbtnselected {
-  margin: 0;
-  font-size: 1.125rem;
-  width: 16%;
-  height: 25px;
-font-size: 10px !important;
-}
+  .workbtnselected {
+    margin: 0;
+    font-size: 1.125rem;
+    width: 16%;
+    height: 25px;
+    font-size: 10px !important;
+  }
   .hand {
     visibility: hidden;
     display: none;
@@ -745,8 +807,8 @@ font-size: 10px !important;
     min-height: 160px !important;
     margin: 0rem 0.1rem;
   }
-  .skills__btn>*,
-  .skills__btn2>* {
+  .skills__btn > *,
+  .skills__btn2 > * {
     width: 20px !important;
     height: 20px !important;
   }
@@ -760,7 +822,7 @@ font-size: 10px !important;
     margin: 0px 3px;
     font-size: 0.8rem;
   }
-  .skills__section{
+  .skills__section {
     width: 100%;
   }
   .skill__meter {
@@ -786,10 +848,7 @@ font-size: 10px !important;
     font-weight: bolder;
     margin: 1rem 0rem;
   }
-  div.services{
-    display: flex;
-    flex-flow: row wrap;
-  }
+
   .contact__card__frame {
     /* border-radius: 18.75rem 0.9375rem 0.9375rem 18.75rem; */
     -webkit-border-radius: 18.75rem;
@@ -807,11 +866,11 @@ font-size: 10px !important;
     max-width: 300px;
 
     display: flex;
-  align-content: center;
-  align-items: start;
-  text-align: start;
-  justify-content: center;
-  justify-items: start;
+    align-content: center;
+    align-items: start;
+    text-align: start;
+    justify-content: center;
+    justify-items: start;
   }
   .aboutme__card__img {
     display: none;
@@ -825,11 +884,8 @@ font-size: 10px !important;
     padding: 3px 20px;
     align-items: center;
   }
-  p{
-    font-size: 12px !important;
-  }
-  .aboutme__card__frame {
 
+  .aboutme__card__frame {
     min-width: 330px;
     justify-content: center;
     border-radius: 0.9375rem;
@@ -844,7 +900,7 @@ font-size: 10px !important;
     width: 30rem;
     height: 30rem;
   }
-  .contact__card{
+  .contact__card {
     padding-top: 31rem;
 
     padding-right: 0rem;
@@ -855,7 +911,6 @@ font-size: 10px !important;
     position: absolute;
     top: auto;
   }
-
 
   .skills__btn > *.iconify,
   .skills__btn2 > *.iconify {
@@ -879,9 +934,8 @@ font-size: 10px !important;
     right: 0;
     width: 30px !important;
     height: 30px;
-
   }
-  .lang__btn__on{
+  .lang__btn__on {
     margin-right: 42px;
   }
   .wing > a > .iconify {
@@ -890,7 +944,7 @@ font-size: 10px !important;
   }
   .nav__btn__home {
     max-width: 35px;
-        max-height: 35px;
+    max-height: 35px;
     margin: 0px;
     font-weight: bolder;
     font-size: 0.8rem;
@@ -900,7 +954,7 @@ font-size: 10px !important;
 
   .nav__btn__circle {
     max-width: 35px;
-        max-height: 35px;
+    max-height: 35px;
     margin: 0px;
     font-weight: bolder;
     font-size: 0.8rem;
@@ -910,39 +964,22 @@ font-size: 10px !important;
 
   .nav__btn__kite {
     max-width: 35px;
-        max-height: 35px;
+    max-height: 35px;
     margin: 0px;
     font-weight: bolder;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     min-width: 33px;
     min-height: 33px;
   }
   .btn__selector {
-    
+    background-color: unset !important;
     margin: auto;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
   }
-  .btn__selector>a>*{
+  .btn__selector > a > * {
     width: 18px !important;
     height: 20px !important;
-  }
-  section {
-    padding: 0px;
-    padding-top: 20%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    min-height: 100%;
-  }
-  section:first-of-type {
-    
-    padding: 0px ;
-    padding-right: 0px;
-    padding-top: 25%;
-
-    min-height: 100%;
-
   }
   .logo {
     position: fixed;
@@ -953,42 +990,11 @@ font-size: 10px !important;
     width: 75px !important;
     height: 25px !important;
   }
-  #nav__arrow {
-    flex-direction: row;
-    position: fixed;
-    left: 0;
-    margin-top: 0px;
-    margin-left: 10px;
-    width: 70%;
-    height: 0.5rem;
-    display: flex;
-
-    justify-content: space-between !important;
-  }
-  nav {
-    position: -webkit-sticky; /* Safari */
-    flex-direction: row;
-    background-color: #e7ebf0;
-    border-bottom: 2px #25cede solid ;
-
-    position: fixed;
-    top: 0;
-    margin: auto;
-    height: 10%;
-    width: 100%;
-    /* min-width: 104px; */
-    /* max-width: 150px; */
-    text-align: center;
-    align-self: center;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-  }
   .tr {
     border-radius: 5px 80px 5px 5px;
   }
   .tl {
-    border-radius:5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
   }
   .br {
     border-radius: 5px 5px 5px 5px;
@@ -998,16 +1004,9 @@ font-size: 10px !important;
   }
   .um {
     border-radius: 80px 5px 5px 5px;
-    
   }
   .lm {
     border-radius: 5px 5px 80px 5px;
-
-  }
-  p.slice__content{
-    font-size: 10px !important;
-    max-width: 120px;
-    max-height: 70px;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
@@ -1016,7 +1015,6 @@ font-size: 10px !important;
 } /* min-width 641px, medium screens */
 
 @media only screen and (max-width: 1023px) {
- 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 @media all and (min-width: 1024px) {
@@ -1056,7 +1054,7 @@ font-size: 10px !important;
   }
   .steps {
     justify-content: start;
-    margin:20px 5px;
+    margin: 20px 5px;
 
     flex-flow: nowrap column;
     align-items: center;

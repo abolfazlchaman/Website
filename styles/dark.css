@@ -1,5 +1,19 @@
+nav{
+  background-color: #292D34 !important;
+  
+  border-color: #a4161a;
+}
+.nav__btn__home {
+  background-color: #292D34;
+}
+.nav__btn__circle {
+  background-color: #292D34;
+}
 
+.nav__btn__kite {
+  background-color: #292D34;
 
+}
 a.nav__btn__circle:hover,
 a.nav__btn__kite:hover,
 .workbtn:hover,
@@ -52,7 +66,7 @@ a.nav__btn__home:active,
 }
 
 .btn__outdent{
-  background: #a4161a !important;
+  background: #a4161a ;
 
 box-shadow:  5px 5px 10px #22252b,
              -5px -5px 10px #30353d;
@@ -74,14 +88,7 @@ box-shadow:  5px 5px 10px #22252b,
   box-shadow: 0px 0px 30px 9px #a4161a;
 }
 
-.nav__btn__circle {
-  background-color: #292D34;
-}
 
-.nav__btn__kite {
-  background-color: #292D34;
-
-}
 .theme__btn__on,
 .lang__btn__on {
   background-color: #a4161a;
@@ -100,7 +107,7 @@ box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
   background-color: #a4161a;
 }
 .light {
-  background-color: #292D34;
+  background-color: #292D34 ;
 }
 .redBg {
   background-color: #a4161a;

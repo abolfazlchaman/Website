@@ -114,7 +114,7 @@ function scrollHandler() {
     navDentHandler();
     childs[4].classList.replace("btn__indent", "btn__outdent");
     // window.location.href = urL.concat("#works")
-  } else if (xScrollOffset >= contactSection.offsetTop) {
+  } else if (xScrollOffset >= contactSection.offsetTop- 500) {
     navDentHandler();
     childs[5].classList.replace("btn__indent", "btn__outdent");
     // window.location.href = urL.concat("#steps")
