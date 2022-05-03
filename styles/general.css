@@ -70,9 +70,9 @@ address {
   font-weight: 400;
 }
 section {
-  padding: 30px 0px;
   padding-right: 140px;
-
+  padding-top: 10px !important ;
+  padding-bottom: 5% !important;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -89,20 +89,15 @@ section:first-of-type {
   padding-right: 130px;
   min-height: 100vh;
 }
-html {
+:root {
   font-size: 12px;
   scroll-behavior: smooth;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
   font-family: "Shabnam", sans-serif;
   box-sizing: border-box;
 }
-html,
+:root,
 body {
   overflow-x: hidden;
   transition: all 0.3s;
@@ -144,11 +139,12 @@ div.skills__btn2 > span:only-of-type {
   font-size: 16px;
 }
 div.workexp > p {
-  padding: 0rem 3rem;
+  padding: .5rem 2rem;
   width: 40rem;
   font-size: 1.2rem;
   text-align: justify;
   text-justify: inter-word;
+  align-self: flex-start;
 }
 div.bgcircle > * {
   width: 60%;
@@ -164,7 +160,6 @@ div.steps > *.iconify {
 }
 .skill__meter:hover {
   width: 12rem;
-  height: 15rem;
   transition: all 0.3s;
   transition-timing-function: ease-in-out;
   border-radius: 0.9375rem;
@@ -255,7 +250,8 @@ div.steps > *.iconify {
 }
 
 .skills__lang {
-  margin: 1.5rem 0rem;
+  height: auto;
+
   overflow: hidden;
   justify-content: center;
   text-align: center;
@@ -372,6 +368,7 @@ div.steps > *.iconify {
 }
 
 .workexp {
+  width: 95%;
   padding: 1.5625rem 0rem;
 }
 .slice__content {
@@ -399,6 +396,8 @@ div.steps > *.iconify {
   height: 20rem;
   width: 51.25rem;
   max-width: 55rem;
+  max-height: 550px;
+
 }
 .aboutme__card__img {
   border-left: 0rem;
@@ -407,8 +406,8 @@ div.steps > *.iconify {
   border-radius: 0.3125rem 0.9375rem 0.9375rem 0.3125rem;
 }
 .contact__card__img {
-  width: 20rem;
-  height: 20rem;
+  min-width: 440px;
+  min-height: 440px;
 }
 .sec__header {
   font-size: 3rem;
@@ -424,6 +423,8 @@ div.steps > *.iconify {
   margin: 0rem 0.3rem;
   width: 20vw;
   height: 13vh;
+  max-height: 150px;
+  max-width: 350px;
 }
 .skills__icon {
   height: 1.5625rem;
@@ -448,7 +449,7 @@ div.steps > *.iconify {
 }
 
 .contact__card {
-  padding-right: 2.5rem;
+  padding-right: 2rem;
   height: 16.25rem;
   width: 51.5625rem;
   align-items: flex-start;
@@ -507,7 +508,7 @@ div.steps > *.iconify {
 
 .skill__meter {
   width: 8rem;
-  height: 15rem;
+  height: auto;
   border-radius: 0.9375rem;
   margin: 0rem 0.6875rem;
 }
@@ -643,7 +644,7 @@ div.steps > *.iconify {
 } /* Define mobile styles - Mobile First */
 
 @media only screen and (max-width: 40em) {
-  html {
+  :root {
     font-size: 10px !important;
   }
   p {
@@ -673,9 +674,9 @@ div.steps > *.iconify {
   section:first-of-type {
     padding: 0px;
     padding-right: 0px;
-    padding-top: 25%;
+    padding-top: 5%;
 
-    min-height: 100%;
+    min-height: 100vh;
   }
 
   h5 {
@@ -694,7 +695,7 @@ div.steps > *.iconify {
     font-size: 12px !important;
   }
   nav {
-    position: -webkit-sticky; /* Safari */
+    z-index: 1;
     flex-direction: row;
     border-bottom: 2px solid;
     border-radius: 0px 0px 10px 10px;
@@ -702,10 +703,9 @@ div.steps > *.iconify {
     top: 0;
     margin: auto;
     height: 8.5%;
-    min-height: 65px;
+    min-height: 70px;
     width: 100%;
-    /* min-width: 104px; */
-    /* max-width: 150px; */
+
     text-align: center;
     align-self: center;
     justify-content: center;
@@ -741,7 +741,7 @@ div.steps > *.iconify {
   }
   #circle {
     width: 65%;
-    height: 110%;
+    height: 100%;
   }
   .slice__header {
     width: 100% !important;
@@ -777,6 +777,7 @@ div.steps > *.iconify {
     width: 3.125rem;
     margin: 0rem 0.9375rem;
     height: 25% !important;
+    min-height: 115px;
   }
   .wing > a > .iconify {
     width: 20px !important;
@@ -832,10 +833,8 @@ div.steps > *.iconify {
     margin: 0rem 0.6875rem;
   }
   .skills__lang {
-    height: auto;
     display: flex;
     flex-wrap: wrap !important;
-    margin: 0rem;
     overflow: hidden;
     justify-content: center;
     text-align: center;
@@ -850,13 +849,7 @@ div.steps > *.iconify {
   }
 
   .contact__card__frame {
-    /* border-radius: 18.75rem 0.9375rem 0.9375rem 18.75rem; */
-    -webkit-border-radius: 18.75rem;
-    -webkit-border-bottom-right-radius: 0.9375rem;
-    -webkit-border-bottom-left-radius: 0.9375rem;
-    -moz-border-radius: 18.75rem;
-    -moz-border-radius-bottomright: 0.9375rem;
-    -moz-border-radius-bottomleft: 0.9375rem;
+
     border-radius: 18.75rem;
     border-bottom-right-radius: 0.9375rem;
     border-bottom-left-radius: 0.9375rem;
@@ -897,8 +890,9 @@ div.steps > *.iconify {
     margin-bottom: 20px;
     left: 0;
     right: 0;
-    width: 30rem;
-    height: 30rem;
+    min-width: 300px !important;
+    min-height: 300px !important;
+  
   }
   .contact__card {
     padding-top: 31rem;
@@ -987,8 +981,9 @@ div.steps > *.iconify {
     top: 0;
     right: 0;
     margin: 1px !important;
-    width: 75px !important;
-    height: 25px !important;
+
+    width: 70px !important;
+    height: 27px !important;
   }
   .tr {
     border-radius: 5px 80px 5px 5px;
@@ -1023,7 +1018,6 @@ div.steps > *.iconify {
   }
   nav {
     flex-direction: column;
-    position: -webkit-sticky; /* Safari */
     position: fixed;
     top: 0;
     right: 0;
@@ -1035,13 +1029,13 @@ div.steps > *.iconify {
     text-align: center;
     align-items: center;
   }
-  html {
+  :root {
     font-size: 16px !important;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  html {
+  :root {
     font-size: 20px !important;
   }
   p {
@@ -1111,12 +1105,16 @@ div.steps > *.iconify {
 }
 
 @media only screen and (min-width: 1600px) {
-  html {
+  :root {
     font-size: 24px !important;
   }
   p {
     line-height: 1.22;
     font-size: 1.25rem;
+  }
+  .contact__card__img {
+    min-width: 550px;
+    min-height: 550px;
   }
   .aboutme__card {
     padding: 0.5rem 1.5rem;
@@ -1164,7 +1162,7 @@ div.steps > *.iconify {
 }
 
 @media only screen and (min-width: 1920px) {
-  html {
+  :root {
     font-size: 28px !important;
   }
   section {
@@ -1216,9 +1214,13 @@ div.steps > *.iconify {
     margin: 0px 3px;
     font-size: 0.85rem;
   }
+  .contact__card__img {
+    min-width: 650px;
+    min-height: 650px;
+  }
 }
 @media only screen and (min-width: 2048px) {
-  html {
+  :root {
     font-size: 30px !important;
   }
   .hand {
@@ -1236,9 +1238,16 @@ div.steps > *.iconify {
     width: 85px;
     height: 85px;
   }
+  .contact__card__frame {
+    max-height: 30rem;
+  }
+  .contact__card__img {
+    min-width: 750px;
+    min-height: 750px;
+  }
 }
 @media only screen and (min-width: 2560px) {
-  html {
+  :root {
     font-size: 36px !important;
   }
   nav {
@@ -1249,6 +1258,11 @@ div.steps > *.iconify {
   }
   footer {
     padding-right: 240px !important;
+  }
+
+  .contact__card__img {
+    min-width: 900px;
+    min-height: 900px;
   }
   .hand {
     margin: 0rem 0.3rem;
@@ -1271,8 +1285,8 @@ div.steps > *.iconify {
   }
 }
 @media only screen and (min-width: 3840px) {
-  html {
-    font-size: 52px !important;
+  :root {
+    font-size: 54px !important;
   }
   nav {
     max-width: 400px;
@@ -1290,6 +1304,10 @@ div.steps > *.iconify {
     height: 17vh;
   }
 
+  .contact__card__img {
+    min-width: 1300px;
+    min-height: 1300px;
+  }
   .nav__btn__kite {
     min-width: 211px;
     min-height: 211px;
@@ -1328,7 +1346,7 @@ div.steps > *.iconify {
   }
 }
 @media only screen and (min-width: 4096px) {
-  html {
+  :root {
     font-size: 58px !important;
   }
 
@@ -1359,41 +1377,108 @@ div.steps > *.iconify {
 }
 /* Portrait */
 @media screen and (orientation: portrait) {
-  /* Portrait styles here */
+
 }
 /* Landscape */
-@media screen and (orientation: landscape) {
-  /* Landscape styles here */
+@media all and (max-width: 1023px) and (orientation: landscape) {
+  footer {
+    margin: 20px 0px;
+    padding-right: 104px;
+
+    flex-flow: wrap row;
+  }
+  section {
+    padding: 5% 0px;
+    padding-right: 88px;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  section:first-of-type {
+
+    padding:0px;
+    padding-right: 88px;
+    min-height: 100vh;
+
+  }
+  .steps{
+    width: 15% ;
+  }
+  .skills__btn,.skills__btn2{
+    font-size: 12px !important;
+  }
+  .wing {
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    width: 3.125rem;
+    margin: 0rem 0.9375rem;
+    height: 25% !important;
+    min-height: 167px;
+  }
+  .wing > a > .iconify {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .hand {
+width: 17vw;
+height: 16vh;
+  }
+  :root{
+    font-size: 10px !important;
+  }
+  .logo{
+    width: 75px;
+    height: 28px;
+  }
+  #nav__arrow {
+    flex-direction: column;
+  }
+  .btn__selector > a > * {
+    width: 14px !important;
+    height: 16px !important;
+  }
+  nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-height: 95%;
+    width: 8.75rem;
+    min-width: auto;
+    max-width: 150px;
+    text-align: center;
+    align-items: center;
+  }
+  .nav__btn__kite,.nav__btn__circle,.nav__btn__home{
+    font-size: 8px !important;
+  }
+  .nav__btn__circle {
+    max-width: 47px;
+    max-height: 47px;
+
+  }
+
+  .nav__btn__kite {
+    min-width: 47px;
+    min-height: 47px;
+
+  }
+  .services{
+    width: 90%;
+  }
+  .contact__card__img{
+    min-height: 150px;
+    min-width: 150px;
+  }
+.aboutme__card>p{
+  line-height: 1.5rem;
+}
 }
 
-/* CSS for iPhone, iPad, and Retina Displays */
-
-/* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-}
-
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-}
-
-/* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation: landscape) {
-}
-
-/* iPad Portrait */
-@media screen and (min-device-width: 481px) and (orientation: portrait) {
-}
-
-/* iPad Landscape */
-@media screen and (min-device-width: 481px) and (orientation: landscape) {
-}
 /*------------------------------------------
     Live demo samples
      - http://andrelion.github.io/mediaquery/livedemo.html

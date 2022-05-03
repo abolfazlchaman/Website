@@ -1,4 +1,4 @@
-@media all and (max-width: 1023px) {
+@media (max-width: 1023px) or (orientation: landscape) {
   nav {
     background: linear-gradient(
         317.7deg,
@@ -20,6 +20,7 @@
     background-color: #e7ebf0 !important;
   }
 }
+
 nav {
   border-color: #25cede;
 }

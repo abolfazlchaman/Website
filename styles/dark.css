@@ -1,4 +1,4 @@
-@media all and (max-width: 1023px) {
+@media (max-width: 1023px) or (orientation: landscape) {
   nav{
     background: #292d34 !important;
 
