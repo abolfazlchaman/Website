@@ -1,14 +1,5 @@
 @media (max-width: 1023px) or (orientation: landscape) {
-  nav {
-    background: linear-gradient(
-        317.7deg,
-        rgba(37, 206, 222, 0.4) 0%,
-        rgba(255, 255, 255, 0.4) 105.18%
-      ),
-      #e7ebf0 !important;
-    background-blend-mode: soft-light, normal;
-    box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
-  }
+
   .btn__selector {
     background-blend-mode: soft-light, normal;
     box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;

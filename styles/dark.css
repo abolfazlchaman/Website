@@ -1,10 +1,4 @@
 @media (max-width: 1023px) or (orientation: landscape) {
-  nav{
-    background: #292d34 !important;
-
-    box-shadow:  5px 5px 10px #22252b,
-                 -5px -5px 10px #30353d;
-  }
   .btn__selector{
 
     box-shadow: inset 2px 2px 5px #1f2227,
