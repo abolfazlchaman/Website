@@ -2,7 +2,8 @@
 
   .btn__selector {
     background-blend-mode: soft-light, normal;
-    box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+    -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+            box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
   }
 }
 @media all and (min-width: 1024px) {
@@ -29,8 +30,19 @@ a.nav__btn__home:active,
 .skills__btn2:active,
 .skills__btn:active,
 .bgcircle:active {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+
+  background: -o-linear-gradient(
+      132.3deg,
+      rgba(37, 206, 222, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 105.18%
+    ),
+    #25cede;
 
   background: linear-gradient(
       317.7deg,
@@ -40,7 +52,8 @@ a.nav__btn__home:active,
     #25cede;
 
   background-blend-mode: soft-light, normal;
-  box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+          box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
 
 .last:hover {
@@ -48,6 +61,12 @@ a.nav__btn__home:active,
 }
 
 .abtme__btn.btn__indent:hover {
+  background: -o-linear-gradient(
+      132.3deg,
+      rgba(37, 206, 222, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 105.18%
+    ),
+    #25cede;
   background: linear-gradient(
       317.7deg,
       rgba(37, 206, 222, 0.4) 0%,
@@ -56,7 +75,8 @@ a.nav__btn__home:active,
     #25cede;
 
   background-blend-mode: soft-light, normal;
-  box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+          box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
 
 .iconify:hover:not(div.steps > .iconify, .bgcircle
@@ -84,7 +104,8 @@ a.nav__btn__home:active,
 }
 
 .imgShadow {
-  box-shadow: 0rem 0rem 1.875rem 0.5625rem #25cede;
+  -webkit-box-shadow: 0rem 0rem 1.875rem 0.5625rem #25cede;
+          box-shadow: 0rem 0rem 1.875rem 0.5625rem #25cede;
 }
 
 .nav__btn__circle {
@@ -97,16 +118,25 @@ a.nav__btn__home:active,
 
 .btn__selector {
   background-color: #e7ebf0;
-  box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
+          box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
 }
 
 .btn__indent {
   border: 1px solid rgba(255, 255, 255, 0.4);
-  box-sizing: border-box;
-  box-shadow: inset -2.5px -2.5px 5px #fafbff, inset 2.5px 2.5px 5px #a6abbd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset -2.5px -2.5px 5px #fafbff, inset 2.5px 2.5px 5px #a6abbd;
+          box-shadow: inset -2.5px -2.5px 5px #fafbff, inset 2.5px 2.5px 5px #a6abbd;
 }
 
 .btn__outdent {
+  background: -o-linear-gradient(
+      132.3deg,
+      rgba(37, 206, 222, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 105.18%
+    ),
+    #25cede;
   background: linear-gradient(
       317.7deg,
       rgba(37, 206, 222, 0.4) 0%,
@@ -114,7 +144,8 @@ a.nav__btn__home:active,
     ),
     #25cede;
   background-blend-mode: soft-light, normal;
-  box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+          box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
 .theme__btn__on,
 .lang__btn__on {
