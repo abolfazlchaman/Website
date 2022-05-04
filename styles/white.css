@@ -161,7 +161,7 @@ a.nav__btn__home:active,
   color: #25cede;
 }
 .blueBg {
-  background-color: #25cede;
+  background-color: #25cede !important;
 }
 .redBg {
   background-color: #a4161a;

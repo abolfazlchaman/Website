@@ -1,4 +1,4 @@
---@media (max-width: 1023px) or (orientation: landscape) {
+@media (max-width: 1023px) or (orientation: landscape) {
   .btn__selector{
 
     -webkit-box-shadow: inset 2px 2px 5px #1f2227,
@@ -135,7 +135,7 @@ a.nav__btn__home:active,
   color: #a4161a;
 }
 .blueBg {
-  background-color: #a4161a;
+  background-color: #a4161a !important;
 }
 .light {
   background-color: #292D34 ;

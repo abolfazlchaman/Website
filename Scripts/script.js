@@ -54,7 +54,7 @@ function seperatorsHandler() {
 }
 
 $.getElementsByClassName("theme__btn__on")[0].addEventListener(
-  "click",
+  ("touchstart","click"),
   function () {
 
     if (themeFlag) {
@@ -123,13 +123,29 @@ function scrollHandler() {
 
 let childs = $.getElementById("nav__arrow").children;
 for (let i = 0; i < childs.length; i++) {
-  childs[i].addEventListener("click", function () {
+  childs[i].addEventListener(("touchstart","click"), function () {
     childs[i].classList.replace("btn__outdent", "btn__indent");
 
     for (let i = 0; i < childs.length; i++) {
       childs[i].classList.replace("btn__outdent", "btn__indent");
     }
     childs[i].classList.replace("btn__indent", "btn__outdent");
+  });
+}
+
+let skillsBtn = $.getElementsByClassName("skills__btn");
+for (let i = 0; i < skillsBtn.length; i++) {
+  skillsBtn[i].addEventListener(("touchstart","click"), function () {
+    // console.log(event.target.classList)
+    skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
+
+    for (let i = 0; i < skillsBtn.length; i++) {
+      skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
+    skillsBtn[i].classList.remove("blueBg");
+
+    }
+    skillsBtn[i].classList.replace("btn__indent", "btn__outdent");
+    skillsBtn[i].classList.toggle("blueBg");
   });
 }
 
