@@ -293,7 +293,7 @@ div.steps > *.iconify {
   font-weight: bold;
   text-align: right;
   font-size: 1.125rem;
-  border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+  border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
 }
 
 .aboutme__card__frame {
@@ -1131,7 +1131,7 @@ div.steps > *.iconify {
     }
     section {
       padding: 0px;
-      padding-top: 20%;
+      padding-top: 75px !important;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;

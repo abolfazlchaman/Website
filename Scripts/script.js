@@ -146,8 +146,47 @@ for (let i = 0; i < skillsBtn.length; i++) {
     }
     skillsBtn[i].classList.replace("btn__indent", "btn__outdent");
     skillsBtn[i].classList.toggle("blueBg");
+skillsContentHandler()
+
   });
 }
+
+let skillsContent = $.getElementsByClassName("skills__lang");
+function skillsContentHandler() {
+  for (let i = 0; i < skillsContent.length; i++) {
+    skillsContent[i].setAttribute("hidden","");
+  }
+
+  if (skillsBtn[0].classList.contains("btn__outdent")) {
+    skillsContent[0].removeAttribute("hidden")
+    skillsContent[1].removeAttribute("hidden")
+  }
+  if (skillsBtn[1].classList.contains("btn__outdent")) {
+    skillsContent[3].removeAttribute("hidden")
+  }
+  if (skillsBtn[2].classList.contains("btn__outdent")) {
+    skillsContent[4].removeAttribute("hidden")
+  }
+  if (skillsBtn[3].classList.contains("btn__outdent")) {
+    skillsContent[5].removeAttribute("hidden")
+  }
+  if (skillsBtn[4].classList.contains("btn__outdent")) {
+    skillsContent[6].removeAttribute("hidden")
+  }
+}
+// for (let i = 0; i < skillsBtn.length; i++) {
+//   skillsBtn[i].addEventListener(("touchstart","click"), function () {
+//     skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
+
+//     for (let i = 0; i < skillsBtn.length; i++) {
+//       skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
+//     skillsBtn[i].classList.remove("blueBg");
+
+//     }
+//     skillsBtn[i].classList.replace("btn__indent", "btn__outdent");
+//     skillsBtn[i].classList.toggle("blueBg");
+//   });
+
 
 $.addEventListener("scroll", function name() {
   scrollHandler();
