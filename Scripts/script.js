@@ -197,5 +197,3 @@ $.addEventListener("scroll", function name() {
   behavior: 'smooth';
   scrollHandler();
 });
-
-
