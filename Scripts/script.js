@@ -5,7 +5,7 @@ window.addEventListener('offline', (event) => {
 
 //loader here
 window.addEventListener("load", function () {
-  console.log("LOADED ALL ASSETS")
+  scrollHandler();
 });
 
 //online modal here
@@ -194,6 +194,7 @@ function workBtnHandler() {
 }
 
 $.addEventListener("scroll", function name() {
+  behavior: 'smooth';
   scrollHandler();
 });
 

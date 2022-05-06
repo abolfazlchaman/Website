@@ -118,7 +118,7 @@ address {
   font-weight: 400;
 }
 section {
-  padding-right: 140px;
+  padding-right: 130px;
   padding-top: 10px !important ;
   padding-bottom: 5% !important;
   -webkit-box-align: center;
@@ -211,6 +211,7 @@ div.steps > *.iconify {
   -webkit-transition-timing-function: ease-in-out;
        -o-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+  flex-grow: .5;
   padding-top: 0.3125rem;
   margin: 0rem 0.1rem;
 }
@@ -286,8 +287,8 @@ div.steps > *.iconify {
 .skillprbar {
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 1%;
-  min-width: 2.75rem;
+  margin: 1%;
+  min-width: 2.7rem;
   min-height: 2rem;
   font-weight: bold;
   font-size: 1.25rem;
@@ -302,6 +303,7 @@ div.steps > *.iconify {
 }
 
 .skills__lang {
+  width: 95%;
   height: auto;
   overflow: hidden;
   -webkit-box-pack: center;
@@ -329,6 +331,12 @@ div.steps > *.iconify {
   text-align: center;
 }
 .services__slice {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   padding-top: 0.3125rem;
   width: 25vw;
   height: 16rem;
@@ -417,7 +425,7 @@ div.steps > *.iconify {
 }
 
 .workexp__img {
-  border-radius: 30px;
+  border-radius: 15px;
   text-align: center;
   justify-self: flex-start;
   width: 50%;
@@ -429,16 +437,15 @@ div.steps > *.iconify {
   padding: 1.5625rem 0rem;
 }
 .slice__content {
-  max-width: 85%;
+  max-width:  20vw;
   padding: 0rem 0.9375rem;
-  font-size: 2vw !important;
+  font-size: 1.75vw !important;
   font-weight: normal;
   line-height: 1.875rem;
   text-align: center;
 }
 h5.slice__content{
   font-size: 1.5vw !important;
-
 }
 .width__adjust {
   width: 3.75rem;
@@ -491,8 +498,7 @@ h5.slice__content{
 .hand {
   margin: 0rem 0.3rem;
   width: 20vw;
-  height: 13vh;
-  max-height: 150px;
+  height: auto;
   max-width: 350px;
 }
 .skills__icon {
@@ -562,7 +568,7 @@ h5.slice__content{
 }
 .justify {
 
-  line-height: 28px;
+  line-height:normal;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -590,8 +596,7 @@ h5.slice__content{
           transform: rotateY(180deg);
 }
 .steps:hover {
-  padding: 2% 2%;
-  border-radius: 30px;
+  padding: 0% 2%;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -605,7 +610,7 @@ h5.slice__content{
 }
 
 .skill__meter {
-  width: 8rem;
+  width: 15%;
   height: auto;
   border-radius: 30px;
   margin: 0rem 5px;
@@ -780,12 +785,6 @@ h5.slice__content{
   }
   .skill__meter:hover {
 
-    padding: 5px;
-    border-radius: 20px 0px 20px 0px;
-
-    border: 6px solid #25cede;
-    border-right: 3px solid #25cede;
-    border-top: 3px solid #25cede;
 
     width: 10rem;
     -webkit-transition: all 0.3s;
@@ -804,9 +803,7 @@ h5.slice__content{
     font-size: 1.2rem;
   }
   .hand {
-    margin: 0rem 0.3rem;
     width: 20vw;
-    height: 16vh;
   }
   .steps {
     -webkit-box-pack: start;
@@ -864,9 +861,12 @@ h5.slice__content{
   :root {
     font-size: 24px !important;
   }
+  .contact__card>h1{
+    font-size: 104px !important;
+  }
   p {
     line-height: 1.22;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   .contact__card__img {
     min-width: 550px;
@@ -876,9 +876,7 @@ h5.slice__content{
     padding: 0.5rem 1.5rem;
   }
   .hand {
-    margin: 0rem 0.3rem;
     width: 21vw;
-    height: 14vh;
   }
   .btn__selector > * > *.iconify {
     width: 33px;
@@ -914,6 +912,9 @@ h5.slice__content{
 @media only screen and (min-width: 1920px) {
   :root {
     font-size: 28px !important;
+  }
+  .contact__card>h1{
+    font-size: 4.8rem !important;
   }
   section {
     padding-right: 180px !important;
@@ -964,7 +965,6 @@ h5.slice__content{
   }
   .hand {
     width: 18vw;
-    height: 16vh;
   }
   .skills__btn{
     width: 175px;
@@ -994,9 +994,7 @@ h5.slice__content{
     min-height: 900px;
   }
   .hand {
-    margin: 0rem 0.3rem;
     width: 21vw;
-    height: 17vh;
   }
   .logo {
     margin-top: 0.625rem;
@@ -1096,7 +1094,7 @@ h5.slice__content{
   }
 }
 @media screen and (orientation: portrait) {
-  
+
   @media only screen and (max-width: 1023px) {
     .navheader{
       width: 15%;
@@ -1200,11 +1198,7 @@ h5.slice__content{
           -ms-flex-align: center;
               align-items: center;
     }
-    /* p.slice__content {
-      font-size: 10px !important;
-      max-width: 120px;
-      max-height: 70px;
-    } */
+
     *.reset__transform > *.iconify {
       width: 40px !important;
       height: 40px !important;
@@ -1304,10 +1298,10 @@ h5.slice__content{
       height: 25px;
       font-size: 10px !important;
     }
-    .hand {
+    /* .hand {
       visibility: hidden;
       display: none;
-    }
+    } */
     .services__slice {
       padding-top: 0.3125rem;
       width: 45%;
@@ -1339,6 +1333,7 @@ h5.slice__content{
       height: 12rem;
     }
     .skills__lang {
+      max-width: 60%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1420,20 +1415,7 @@ h5.slice__content{
       width: 90%;
       border-radius: 30px;
     }
-    .aboutme__card>div:first-of-type{
-      border-radius: 15px;
-      padding: 10px;
-      filter: blur(5px);
-      background-image: url(/images/aboutmebg.jpg);
-      background-size: contain cover;
-      min-width: 330px;
-      filter: opacity(.3);
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .aboutme__card>div>p{
-      color: #e7ebf0 !important;
-    }
+
     .contact__card__img {
       margin-bottom: 20px;
       left: 0;
@@ -1465,8 +1447,8 @@ h5.slice__content{
     }
 
     .skills__btn {
-      width: 15vw !important;
-      height: 15vw !important;
+      width: fit-content;
+      height: 12vw !important;
       margin: 0px 5px;
       font-size: .9rem !important;
     }
@@ -1542,7 +1524,10 @@ h5.slice__content{
     }
   }
   @media only screen and (min-width: 360px) {
-
+    .hand {
+      visibility: hidden;
+      display: none;
+    }
     .wing > a > .iconify {
       width: 1.8rem !important;
       height: 1.8rem !important;
@@ -1568,6 +1553,7 @@ h5.slice__content{
   }
 
   @media only screen and (min-width: 601px) {
+
     .contact__card {
       padding-top: 285px;
     }
@@ -1583,7 +1569,17 @@ h5.slice__content{
 
     }
   }
+  @media only screen and (min-width: 735px) {
+    .hand {
+      visibility: visible;
+      display: block;
+    }
+  }
+ 
   @media only screen and (min-height: 1023px) {
+    .aboutme__card>p {
+      font-size: 1rem !important;
+    }
     .contact__card__img{
       min-height: 335px !important;
       min-width: 335px !important;
@@ -1693,7 +1689,6 @@ h5.slice__content{
     }
     .hand {
       width: 17vw;
-      height: 16vh;
     }
     :root {
       font-size: 10px !important;
@@ -1747,7 +1742,7 @@ h5.slice__content{
       min-height: 40px;
     }
     .services {
-      width: 85%;
+      width: 100%;
     }
     .contact__card__img {
       min-height: 150px;
