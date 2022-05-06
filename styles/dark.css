@@ -33,14 +33,12 @@ nav{
 a.nav__btn__circle:hover,
 a.nav__btn__kite:hover,
 .workbtn:hover,
-.skills__btn2:hover,
 .skills__btn:hover,
 .bgcircle:hover,
 a.nav__btn__circle:active,
 a.nav__btn__kite:active,
 a.nav__btn__home:active,
 .workbtn:active,
-.skills__btn2:active,
 .skills__btn:active,
 .bgcircle:active {
  
@@ -73,7 +71,7 @@ a.nav__btn__home:active,
     > .iconify, .last, div.abtme__btn > *, *.btn__selector
     > *, .reset__transform > .iconify, .btn__selector
     > a
-    > *.iconify, .skills__btn > *.iconify, .skills__btn2 > *.iconify) {
+    > *.iconify, .skills__btn > *.iconify) {
       background-color: rgba(238, 238, 238, 0.15) !important ;
 
 }

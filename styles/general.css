@@ -145,9 +145,6 @@ section:first-of-type {
   min-height: 100vh;
 }
 
-span.skillprbar > span {
-  margin-right: 10px;
-}
 div.steps__cont > img {
   width: 1.875rem;
   height: 28.125rem;
@@ -175,14 +172,13 @@ div.reset__transform > span.iconify,
   width: 55px;
   height: 55px;
 }
-div.skills__btn > span:only-of-type,
-div.skills__btn2 > span:only-of-type {
+div.skills__btn > span:only-of-type {
   font-size: 16px;
 }
 div.workexp > p {
   padding: 0.5rem 2rem;
   width: 40rem;
-  font-size: 1.2rem;
+  font-size: 2.5vw !important;
   text-align: justify;
   text-justify: inter-word;
   -ms-flex-item-align: start;
@@ -222,7 +218,7 @@ div.steps > *.iconify {
     > .iconify, .last, div.abtme__btn > *, *.btn__selector
     > *, .reset__transform > .iconify, .btn__selector
     > a
-    > *.iconify, .skills__btn > *.iconify, .skills__btn2 > *.iconify) {
+    > *.iconify, .skills__btn > *.iconify) {
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -242,7 +238,10 @@ div.steps > *.iconify {
   width: 4.7rem;
   height: 4.7rem;
 }
-
+.abtme__btn__container{
+  margin-top: auto;
+  margin-bottom: 15px;
+}
 .nav__btn__kite {
   cursor: pointer;
   border-radius: 0.625rem;
@@ -256,8 +255,7 @@ div.steps > *.iconify {
   height: 120px;
 }
 
-.workbtn,
-.workbtnselected {
+.workbtn{
   font-size: 1.125rem;
 }
 .nav__loc__container {
@@ -275,7 +273,6 @@ div.steps > *.iconify {
   width: 7.5rem;
 }
 .prbar {
-  margin-bottom: 0.9375rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -283,37 +280,36 @@ div.steps > *.iconify {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 85%;
-  border-radius: 0.9375rem;
+  border-radius: 30px;
 }
 
 .skillprbar {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 1%;
+  min-width: 2.75rem;
+  min-height: 2rem;
   font-weight: bold;
-  text-align: right;
-  font-size: 1.125rem;
-  border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+  font-size: 1.25rem;
+  border-radius: 30px;
 }
 
 .aboutme__card__frame {
-  border-radius: 0.9375rem;
+  border-radius: 30px;
   height: 30rem;
   width: 50rem;
-  border-radius: 0.9375rem;
+  border-radius: 30px;
 }
 
 .skills__lang {
   height: auto;
-
   overflow: hidden;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
 }
-.skills__btn > *.iconify,
-.skills__btn2 > *.iconify {
+.skills__btn > *.iconify{
   width: 20px;
   height: 20px;
 }
@@ -334,8 +330,8 @@ div.steps > *.iconify {
 }
 .services__slice {
   padding-top: 0.3125rem;
-  width: 18rem;
-  height: 13rem;
+  width: 25vw;
+  height: 16rem;
   margin: 0rem 0.1rem;
 }
 .services__slice__title {
@@ -349,17 +345,14 @@ div.steps > *.iconify {
   width: 8.125rem;
   height: 3.75rem;
 }
-.workbtnselected {
-  margin: 0.9375rem;
-  width: 8.125rem;
-  height: 3.75rem;
-}
 
 .slice__header {
   margin: 1rem 0rem;
   font-size: 1.2rem;
   line-height: normal;
   font-weight: bold;
+  width: 100% !important;
+  height: 8vh;
 }
 
 .steps {
@@ -424,20 +417,11 @@ div.steps > *.iconify {
 }
 
 .workexp__img {
-  border-radius: 0.9375rem;
+  border-radius: 30px;
   text-align: center;
   justify-self: flex-start;
-  width: 26.5625rem;
-  height: 19.0625rem;
+  width: 50%;
   margin: 0rem 0.375rem;
-}
-.upper {
-  background-size: cover;
-  background-image: url(/images/coffee.png);
-}
-.lower {
-  background-size: cover;
-  background-image: url(/images/garden.png);
 }
 
 .workexp {
@@ -445,12 +429,16 @@ div.steps > *.iconify {
   padding: 1.5625rem 0rem;
 }
 .slice__content {
-  max-width: 20vw;
+  max-width: 85%;
   padding: 0rem 0.9375rem;
-  font-size: 1rem;
+  font-size: 2vw !important;
   font-weight: normal;
   line-height: 1.875rem;
   text-align: center;
+}
+h5.slice__content{
+  font-size: 1.5vw !important;
+
 }
 .width__adjust {
   width: 3.75rem;
@@ -516,7 +504,7 @@ div.steps > *.iconify {
       align-self: center;
   text-align: center;
 }
-.skills__btn2,
+
 .skills__btn {
   width: 85px;
   height: 38px;
@@ -573,6 +561,7 @@ div.steps > *.iconify {
           justify-content: end !important;
 }
 .justify {
+
   line-height: 28px;
   text-align: justify;
   text-justify: inter-word;
@@ -602,7 +591,7 @@ div.steps > *.iconify {
 }
 .steps:hover {
   padding: 2% 2%;
-  border-radius: 0.9375rem;
+  border-radius: 30px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -618,14 +607,13 @@ div.steps > *.iconify {
 .skill__meter {
   width: 8rem;
   height: auto;
-  border-radius: 0.9375rem;
-  margin: 0rem 0.6875rem;
+  border-radius: 30px;
+  margin: 0rem 5px;
 }
 .iconify:not(div.steps > .iconify, .wing > a > .iconify, div.reset__transform
     > .iconify, div.bgcircle > .iconify, .btn__selector
     > a
-    > *.iconify, .skills__btn > *.iconify, .skills__btn2
-    > *.iconify, .services__slice > *.iconify) {
+    > *.iconify, .skills__btn > *.iconify, .services__slice > *.iconify) {
   padding: 1%;
   width: 1.875rem;
   height: 1.875rem;
@@ -787,15 +775,25 @@ div.steps > *.iconify {
         -ms-flex-align: center;
             align-items: center;
   }
+  .contact__card>h1{
+    font-size: 72px !important;
+  }
   .skill__meter:hover {
-    width: 12rem;
+
+    padding: 5px;
+    border-radius: 20px 0px 20px 0px;
+
+    border: 6px solid #25cede;
+    border-right: 3px solid #25cede;
+    border-top: 3px solid #25cede;
+
+    width: 10rem;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-transition-timing-function: ease-in-out;
          -o-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
-    border-radius: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -816,14 +814,12 @@ div.steps > *.iconify {
             justify-content: start;
     margin: 20px 5px;
   }
-  .skills__btn > *.iconify,
-  .skills__btn2 > *.iconify {
+  .skills__btn > *.iconify {
     width: 25px;
     height: 25px;
   }
 
-  .skills__btn,
-  .skills__btn2 {
+  .skills__btn{
     width: 115px;
     height: 55px;
     margin: 0px 3px;
@@ -888,13 +884,11 @@ div.steps > *.iconify {
     width: 33px;
     height: 33px;
   }
-  .skills__btn > *.iconify,
-  .skills__btn2 > *.iconify {
+  .skills__btn > *.iconify{
     width: 40px;
     height: 40px;
   }
-  .skills__btn,
-  .skills__btn2 {
+  .skills__btn{
     width: 145px;
     height: 65px;
   }
@@ -955,8 +949,7 @@ div.steps > *.iconify {
     min-width: 106px;
     min-height: 106px;
   }
-  .skills__btn,
-  .skills__btn2 {
+  .skills__btn{
     width: 180px;
     height: 70px;
   }
@@ -973,8 +966,7 @@ div.steps > *.iconify {
     width: 18vw;
     height: 16vh;
   }
-  .skills__btn,
-  .skills__btn2 {
+  .skills__btn{
     width: 175px;
     height: 65px;
   }
@@ -1015,8 +1007,7 @@ div.steps > *.iconify {
     min-width: 147px;
     min-height: 147px;
   }
-  .skills__btn,
-  .skills__btn2 {
+  .skills__btn{
     width: 195px;
     font-size: 0.8rem;
   }
@@ -1048,8 +1039,7 @@ div.steps > *.iconify {
     height: 85px !important;
     width: 85px !important;
   }
-  .skills__btn,
-  .skills__btn2 {
+  .skills__btn{
     width: 320px;
     height: 120px;
     margin: 0px 15px;
@@ -1106,12 +1096,23 @@ div.steps > *.iconify {
   }
 }
 @media screen and (orientation: portrait) {
+  
   @media only screen and (max-width: 1023px) {
+    .navheader{
+      width: 15%;
+      right: 0;
+      margin-right: 2% !important;
+      position: fixed;
+      flex-direction: row;
+    }
+    .navbtns{
+      flex-direction: row !important;
+    }
     :root {
       font-size: 10px !important;
     }
     p {
-      font-size: 1.2rem;
+      font-size: 1.2rem !important;
     }
     h2.sec__header {
       font-size: 2rem;
@@ -1181,8 +1182,10 @@ div.steps > *.iconify {
       top: 0;
       margin: auto;
       height: 8.5%;
-      min-height: 70px;
+      min-height: 95px;
       width: 100%;
+      min-width: 100%;
+
 
       text-align: center;
       -ms-flex-item-align: center;
@@ -1197,15 +1200,16 @@ div.steps > *.iconify {
           -ms-flex-align: center;
               align-items: center;
     }
-    p.slice__content {
+    /* p.slice__content {
       font-size: 10px !important;
       max-width: 120px;
       max-height: 70px;
-    }
+    } */
     *.reset__transform > *.iconify {
       width: 40px !important;
       height: 40px !important;
     }
+
     #nav__arrow {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1237,14 +1241,7 @@ div.steps > *.iconify {
       width: 65%;
       height: 100%;
     }
-    .slice__header {
-      width: 100% !important;
-      height: 40px;
-      margin: 1rem 0rem;
-      font-size: 1rem;
-      line-height: normal;
-      font-weight: bold;
-    }
+
     #seprator__3 {
       display: none;
       visibility: hidden;
@@ -1300,8 +1297,7 @@ div.steps > *.iconify {
               justify-content: center;
     }
 
-    .workbtn,
-    .workbtnselected {
+    .workbtn {
       margin: 0;
       font-size: 1.125rem;
       width: 16%;
@@ -1318,13 +1314,11 @@ div.steps > *.iconify {
       min-height: 160px !important;
       margin: 0rem 0.1rem;
     }
-    .skills__btn > *,
-    .skills__btn2 > * {
+    .skills__btn > *{
       width: 20px !important;
       height: 20px !important;
     }
-    .skills__btn,
-    .skills__btn2 {
+    .skills__btn{
       font-size: 10px !important;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -1343,8 +1337,6 @@ div.steps > *.iconify {
     .skill__meter {
       width: 10rem;
       height: 12rem;
-      border-radius: 0.9375rem;
-      margin: 0rem 0.6875rem;
     }
     .skills__lang {
       display: -webkit-box;
@@ -1376,7 +1368,7 @@ div.steps > *.iconify {
       border-radius: 18.75rem;
       border-bottom-right-radius: 0.9375rem;
       border-bottom-left-radius: 0.9375rem;
-      min-height: 450px;
+      min-height: 500px;
       height: 75vh;
       width: 80%;
       max-width: 400px;
@@ -1401,10 +1393,15 @@ div.steps > *.iconify {
       display: none;
       visibility: hidden;
     }
+    .aboutme__card>p {
+      line-height: normal;
+    font-size: 1.2rem !important;
+    }
     .aboutme__card {
       min-width: 290px;
+      height: 50vh;
 
-      height: 75%;
+      /* height: 90% !important; */
       width: 80%;
       padding: 3px 20px;
       -webkit-box-align: center;
@@ -1413,14 +1410,29 @@ div.steps > *.iconify {
     }
 
     .aboutme__card__frame {
-      min-width: 330px;
+
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      border-radius: 0.9375rem;
-      height: auto;
+      border-radius: 30px;
+      height: 50vh;
+
       width: 90%;
-      border-radius: 0.9375rem;
+      border-radius: 30px;
+    }
+    .aboutme__card>div:first-of-type{
+      border-radius: 15px;
+      padding: 10px;
+      filter: blur(5px);
+      background-image: url(/images/aboutmebg.jpg);
+      background-size: contain cover;
+      min-width: 330px;
+      filter: opacity(.3);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .aboutme__card>div>p{
+      color: #e7ebf0 !important;
     }
     .contact__card__img {
       margin-bottom: 20px;
@@ -1432,7 +1444,7 @@ div.steps > *.iconify {
       height: 300px !important;
     }
     .contact__card {
-      padding-top: 300px;
+      padding-top: 310px;
 
       padding-right: 0rem;
       height: 25%;
@@ -1447,35 +1459,29 @@ div.steps > *.iconify {
       top: auto;
     }
 
-    .skills__btn > *.iconify,
-    .skills__btn2 > *.iconify {
-      width: 25px;
-      height: 25px;
+    .skills__btn > *.iconify{
+      width: 1.8rem !important;
+      height: 1.8rem !important;
     }
 
-    .skills__btn,
-    .skills__btn2 {
-      width: 115px;
-      height: 55px;
-      margin: 0px 3px;
-      font-size: 0.8rem;
+    .skills__btn {
+      width: 15vw !important;
+      height: 15vw !important;
+      margin: 0px 5px;
+      font-size: .9rem !important;
     }
     .theme__btn__on,
     .lang__btn__on {
-      margin: 0px;
-      margin-top: 25px;
-      margin-right: 8px;
-      position: fixed;
-      right: 0;
+      margin-right: 5px;
       width: 30px !important;
       height: 30px;
     }
     .lang__btn__on {
-      margin-right: 42px;
+      margin-right: 5px;
     }
     .wing > a > .iconify {
-      width: 65px;
-      height: 65px;
+      width: 3.5rem !important;
+      height: 3.5rem !important;
     }
     .nav__btn__home {
       margin: 0px;
@@ -1511,14 +1517,10 @@ div.steps > *.iconify {
       height: 20px !important;
     }
     .logo {
-      position: fixed;
-
+      margin-top: 0px;
+      margin-right: 5px;
       top: 0;
-      right: 0;
-      margin: 1px !important;
-
-      width: 70px !important;
-      height: 27px !important;
+      width: 100% !important;
     }
     .tr {
       border-radius: 5px 80px 5px 5px;
@@ -1539,55 +1541,91 @@ div.steps > *.iconify {
       border-radius: 5px 5px 80px 5px;
     }
   }
+  @media only screen and (min-width: 360px) {
+
+    .wing > a > .iconify {
+      width: 1.8rem !important;
+      height: 1.8rem !important;
+    }
+    .wing{
+      height: 100px !important;
+
+    }
+  }
+
   @media only screen and (min-width: 480px) {
+    :root {
+      font-size: 12px !important;
+    }
+    .wing > a > .iconify {
+      width: 2.3rem !important;
+      height: 2.3rem !important;
+    }
+    .wing{
+      height: 150px !important;
+
+    }
+  }
+
+  @media only screen and (min-width: 601px) {
+    .contact__card {
+      padding-top: 285px;
+    }
+    :root {
+      font-size: 13px !important;
+    }
+    .aboutme__card>p {
+      line-height: normal;
+      font-size: 1.4rem !important;
+    }
+    .wing{
+      height: 190px !important;
+
+    }
+  }
+  @media only screen and (min-height: 1023px) {
+    .contact__card__img{
+      min-height: 335px !important;
+      min-width: 335px !important;
+    }
+    .contact__card {
+      padding-top: 333px;
+    }
+    .contact__card__frame {
+      min-height: 650px !important;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .wing{
+      height: 220px !important;
+
+    }
     :root {
       font-size: 14px !important;
     }
-    .skills__lang {
-      width: 80%;
-    }
-    .slice__content {
-      min-width: 95% !important;
-    }
-    .contact__card__frame {
-      min-height: 650px;
-      height: 75vh;
-      width: 80%;
-      max-width: 400px;
-    }
-    .contact__card__img {
-      min-width: 300px !important;
-      min-height: 300px !important;
-      width: 350px !important;
-      height: 350px !important;
-    }
+  }
+
+  @media only screen and (min-width: 950px) {
     .contact__card {
-      padding-top: 350px;
+      padding-top: 240px;
+    }
+    :root {
+      font-size: 15px !important;
+    }
+  }
 
-      padding-right: 0rem;
-      height: 25%;
-      width: 25rem;
+  @media only screen and (min-width: 1024px) {
+    .contact__card {
+      padding-top: 0px;
     }
-    .nav__btn__home {
-      font-size: 0.8rem;
-      width: 4rem;
-      height: 2.3rem;
+    .contact__card__frame{
+      min-height: unset !important;
     }
+    .contact__card>h1{
+      font-size: 4rem !important;
+    }
+  }
 
-    .nav__btn__circle {
-      font-size: 0.8rem;
-      width: 4.1rem;
-      height: 4.1rem;
-    }
-
-    .nav__btn__kite {
-      margin: 0px;
-      font-weight: bolder;
-      font-size: 0.7rem;
-      min-width: 4.1rem;
-      min-height: 4.1rem;
-    }
-  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 }
 @media screen and (orientation: landscape) {
   @media screen and (max-width: 829px) {
@@ -1635,10 +1673,7 @@ div.steps > *.iconify {
     .steps {
       width: 15%;
     }
-    .skills__btn,
-    .skills__btn2 {
-      font-size: 12px !important;
-    }
+
     .wing {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
@@ -1712,7 +1747,7 @@ div.steps > *.iconify {
       min-height: 40px;
     }
     .services {
-      width: 90%;
+      width: 85%;
     }
     .contact__card__img {
       min-height: 150px;
