@@ -5,8 +5,16 @@
 <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'http://127.0.0.1:5500'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'
-    "> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://127.0.0.1:5500 https://cdnjs.cloudflare.com;
+    script-src 'self' https://code.iconify.design;
+    connect-src 'self';
+    frame-src 'none';
+    child-src 'none'
+    img-src 'self';
+    style-src 'self' https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css;
+    form-action 'none';
+    media-src 'none';
+    ">
     <meta charset="UTF-8">
     <meta name="author" content="Amir N1k">
     <script rel="preconnect" src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
