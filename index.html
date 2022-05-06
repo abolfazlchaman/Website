@@ -5,19 +5,18 @@
 <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://127.0.0.1:5500 https://cdnjs.cloudflare.com;
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com;
     script-src 'self' https://code.iconify.design;
-    connect-src 'self';
-    frame-src 'none';
-    child-src 'none'
+    style-src 'self' https://cdnjs.cloudflare.com;
     img-src 'self';
-    style-src 'self' https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css;
+    connect-src 'none';
+    frame-src 'none';
+    child-src 'none';
     form-action 'none';
-    media-src 'none';
-    ">
+    media-src 'none';">
     <meta charset="UTF-8">
     <meta name="author" content="Amir N1k">
-    <link rel="stylesheet async" href="https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css" integrity="sha512-K7kg/b/uwKLejlClSl2m2CDutNLO7w6Wh8R7X2921f6TSs/q+MuhKlTHbM9/8dvN5TK7Y9q2VV6pNtyVKdEKJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet preconnect async" href="https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css" integrity="sha512-K7kg/b/uwKLejlClSl2m2CDutNLO7w6Wh8R7X2921f6TSs/q+MuhKlTHbM9/8dvN5TK7Y9q2VV6pNtyVKdEKJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script rel="async" src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 
     <!-- It's best to keep meta descriptions long enough that they're sufficiently descriptive, so we recommend descriptions between 50 and 160 characters. -->
@@ -31,7 +30,7 @@
     <link rel="stylesheet async" type="text/css" href="/styles/general.css">
     <link id="stylesheet" rel="stylesheet async" type="text/css" href="/styles/white.css">
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon async" type="image/x-icon" href="/images/favicon.ico">
     <title>اَمیر نیک</title>
 </head>
 
@@ -910,7 +909,7 @@
 <footer class="center flex light">
     تمامی حقوق مادی و معنوی این وبسایت متعلق به<h2 class="blue" id="name">اَمیر نیک</h2> می باشد و هرگونه کپی برداری از آن غیر اخلاقی است.
 </footer>
-        <script rel="script async" src="/Scripts/script.js"></script>
-</body>
 
-</html
+<script src="/Scripts/script.js"></script>
+</body>
+</html>

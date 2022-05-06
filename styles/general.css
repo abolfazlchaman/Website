@@ -7,23 +7,6 @@
 
 /* #region 🦔general css🦔*/
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -41,6 +24,7 @@
     opacity: 1;
   }
 }
+/*TODO circle and txtcontainer adjustment */
 #circle {
   width: 50rem;
   height: 38rem;
