@@ -67,8 +67,8 @@ $.getElementsByClassName("theme__btn__on")[0].addEventListener(
         "justifystart"
       );
       $.getElementsByClassName("theme__btn__on")[0].classList.replace(
-        "btn__indent",
-        "btn__outdent"
+        "indent",
+        "outdent"
       );
       $.getElementById("stylesheet").setAttribute("href", "styles/white.css");
       $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
@@ -80,8 +80,8 @@ $.getElementsByClassName("theme__btn__on")[0].addEventListener(
         "justifyend"
       );
       $.getElementsByClassName("theme__btn__on")[0].classList.replace(
-        "btn__outdent",
-        "btn__indent"
+        "outdent",
+        "indent"
       );
       $.getElementById("stylesheet").setAttribute("href", "styles/dark.css");
       $.getElementById("icon1").setAttribute(
@@ -96,7 +96,7 @@ $.getElementsByClassName("theme__btn__on")[0].addEventListener(
 
 function navDentHandler() {
   for (let i = 0; i < childs.length; i++) {
-    childs[i].classList.replace("btn__outdent", "btn__indent");
+    childs[i].classList.replace("outdent", "indent");
   }
 }
 
@@ -112,34 +112,34 @@ function scrollHandler() {
 
   if (xScrollOffset <= homeSection.offsetTop + 50) {
     navDentHandler();
-    childs[0].classList.replace("btn__indent", "btn__outdent");
+    childs[0].classList.replace("indent", "outdent");
   } else if (xScrollOffset <= aboutMeSection.offsetTop + 50) {
     navDentHandler();
-    childs[1].classList.replace("btn__indent", "btn__outdent");
+    childs[1].classList.replace("indent", "outdent");
   } else if (xScrollOffset <= skillsSection.offsetTop + 50) {
     navDentHandler();
-    childs[2].classList.replace("btn__indent", "btn__outdent");
+    childs[2].classList.replace("indent", "outdent");
   } else if (xScrollOffset <= servicesSection.offsetTop + 50) {
     navDentHandler();
-    childs[3].classList.replace("btn__indent", "btn__outdent");
+    childs[3].classList.replace("indent", "outdent");
   } else if (xScrollOffset <= worksSection.offsetTop + 50) {
     navDentHandler();
-    childs[4].classList.replace("btn__indent", "btn__outdent");
+    childs[4].classList.replace("indent", "outdent");
   } else if (xScrollOffset >= contactSection.offsetTop - 500) {
     navDentHandler();
-    childs[5].classList.replace("btn__indent", "btn__outdent");
+    childs[5].classList.replace("indent", "outdent");
   }
 }
 
 let childs = $.getElementById("nav__arrow").children;
 for (let i = 0; i < childs.length; i++) {
   childs[i].addEventListener(("touchstart", "click"), function () {
-    childs[i].classList.replace("btn__outdent", "btn__indent");
+    childs[i].classList.replace("outdent", "indent");
 
     for (let i = 0; i < childs.length; i++) {
-      childs[i].classList.replace("btn__outdent", "btn__indent");
+      childs[i].classList.replace("outdent", "indent");
     }
-    childs[i].classList.replace("btn__indent", "btn__outdent");
+    childs[i].classList.replace("indent", "outdent");
   });
 }
 
@@ -147,13 +147,13 @@ let skillsBtn = $.getElementsByClassName("skills__btn");
 for (let i = 0; i < skillsBtn.length; i++) {
   skillsBtn[i].addEventListener(("touchstart", "click"), function () {
     // console.log(event.target.classList)
-    skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
+    skillsBtn[i].classList.replace("outdent", "indent");
 
     for (let i = 0; i < skillsBtn.length; i++) {
-      skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
+      skillsBtn[i].classList.replace("outdent", "indent");
       skillsBtn[i].classList.remove("blueBg");
     }
-    skillsBtn[i].classList.replace("btn__indent", "btn__outdent");
+    skillsBtn[i].classList.replace("indent", "outdent");
     skillsBtn[i].classList.toggle("blueBg");
     skillsContentHandler();
   });
@@ -165,21 +165,21 @@ function skillsContentHandler() {
     skillsContent[i].setAttribute("hidden", "");
   }
 
-  if (skillsBtn[0].classList.contains("btn__outdent")) {
+  if (skillsBtn[0].classList.contains("outdent")) {
     skillsContent[0].removeAttribute("hidden");
     skillsContent[1].removeAttribute("hidden");
   }
-  if (skillsBtn[1].classList.contains("btn__outdent")) {
+  if (skillsBtn[1].classList.contains("outdent")) {
     skillsContent[2].removeAttribute("hidden");
   }
-  if (skillsBtn[2].classList.contains("btn__outdent")) {
+  if (skillsBtn[2].classList.contains("outdent")) {
     skillsContent[3].removeAttribute("hidden");
   }
-  if (skillsBtn[3].classList.contains("btn__outdent")) {
+  if (skillsBtn[3].classList.contains("outdent")) {
     skillsContent[4].removeAttribute("hidden");
     skillsContent[5].removeAttribute("hidden");
   }
-  if (skillsBtn[4].classList.contains("btn__outdent")) {
+  if (skillsBtn[4].classList.contains("outdent")) {
     skillsContent[6].removeAttribute("hidden");
   }
 }
@@ -188,21 +188,21 @@ const workExp = $.getElementsByClassName("workexp"),
   workBtn = $.getElementsByClassName("workbtn");
 workBtn[0].addEventListener(("touchstart", "click"), function () {
   workBtnHandler();
-  workBtn[0].classList.add("btn__outdent");
+  workBtn[0].classList.add("outdent");
   workExp[2].setAttribute("hidden", "");
 });
 workBtn[1].addEventListener(("touchstart", "click"), function () {
   workBtnHandler();
-  workBtn[1].classList.add("btn__outdent");
+  workBtn[1].classList.add("outdent");
   workExp[0].setAttribute("hidden", "");
   workExp[1].setAttribute("hidden", "");
 });
 function workBtnHandler() {
-  workBtn[0].classList.remove("btn__outdent");
-  workBtn[0].classList.add("btn__indent");
+  workBtn[0].classList.remove("outdent");
+  workBtn[0].classList.add("indent");
   workExp[0].removeAttribute("hidden");
-  workBtn[1].classList.remove("btn__outdent");
-  workBtn[1].classList.add("btn__indent");
+  workBtn[1].classList.remove("outdent");
+  workBtn[1].classList.add("indent");
   workExp[1].removeAttribute("hidden");
   workExp[2].removeAttribute("hidden");
 }

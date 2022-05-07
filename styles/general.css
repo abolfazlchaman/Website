@@ -3,8 +3,11 @@
 * PostCSS: v8.4.12,
 * Autoprefixer: v10.4.4
 * Browsers: last 4 version
-*/
 
+screen size info http://andrelion.github.io/mediaquery/livedemo.html
+
+*/
+  
 /* #region 🦔general🦔*/
 
   /* #region 🐌skills width🐌*/
@@ -323,13 +326,18 @@
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
+  *.reset__transform > *.iconify {
+    width: 5rem;
+    height: 5rem;
+  }
   .btn__selector {
     margin-right: 5px;
     height: 2rem;
     width: 2rem;
   }
   
-  .nav__btn__circle {
+  .btn__circle {
+    font-weight: bolder;
     margin: auto 0rem;
     width: 4.7rem;
     height: 4.7rem;
@@ -338,7 +346,8 @@
     margin-top: auto;
     margin-bottom: 15px;
   }
-  .nav__btn__kite {
+  .btn__kite {
+    font-weight: bolder;
     cursor: pointer;
     border-radius: 0.625rem;
     margin-top: auto;
@@ -412,7 +421,8 @@
     height: 20px;
   }
   
-  .nav__btn__home {
+  .btn__home {
+    font-weight: bolder;
     background-color: #e7ebf0;
     margin-bottom: auto;
     width: 4.7rem;
@@ -557,7 +567,7 @@
     height: 3.75rem;
   }
   
-  .nav__icon__container {
+  .home__icon__container {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -711,7 +721,7 @@
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  .circle__border {
+  .circle50 {
     cursor: pointer;
     border-radius: 50%;
   }
@@ -857,7 +867,7 @@
   }
   /* #endregion 🦔general css🦔*/
   
-  /* #region 🖥️media queries🖥️*/
+/* #region 🖥️media queries🖥️*/
   @media all and (max-width: 1000px){
   .wing{
     height: 50vh;
@@ -913,9 +923,6 @@
     :root {
       font-size: 20px !important;
     }
-    p {
-      font-size: 1.2rem;
-    }
     .hand {
       width: 20vw;
     }
@@ -945,22 +952,19 @@
       width: 2.5rem;
       height: 2.5rem;
     }
-    .nav__btn__home {
-      font-weight: bolder;
+    .btn__home {
       font-size: 0.8rem;
       width: 4rem;
       height: 2.3rem;
     }
   
-    .nav__btn__circle {
-      font-weight: bolder;
+    .btn__circle {
       font-size: 0.8rem;
       width: 4.1rem;
       height: 4.1rem;
     }
   
-    .nav__btn__kite {
-      font-weight: bolder;
+    .btn__kite {
       font-size: 0.75rem;
       min-width: 74px;
       min-height: 74px;
@@ -972,6 +976,9 @@
     }
   }
   @media only screen and (min-width: 1600px) {
+    .services__slice{
+      height: 15rem;
+    }
     :root {
       font-size: 24px !important;
     }
@@ -1005,7 +1012,7 @@
       height: 65px;
     }
   
-    .nav__btn__kite {
+    .btn__kite {
       font-size: 0.75rem;
       min-width: 98px;
       min-height: 98px;
@@ -1052,16 +1059,16 @@
       margin-right: 20px;
       width: 125%;
     }
-    .nav__btn__home {
+    .btn__home {
       width: 3.8rem;
       height: 2.3rem;
     }
   
-    .nav__btn__circle {
+    .btn__circle {
       width: 3.8rem;
       height: 3.8rem;
     }
-    .nav__btn__kite {
+    .btn__kite {
       min-width: 106px;
       min-height: 106px;
     }
@@ -1122,7 +1129,7 @@
     margin-right: 40px;
       width: 140%;
     }
-    .nav__btn__kite {
+    .btn__kite {
       font-size: 0.75rem;
       min-width: 147px;
       min-height: 147px;
@@ -1151,7 +1158,7 @@
       max-width: 1300px;
       max-height: 1300px;
     }
-    .nav__btn__kite {
+    .btn__kite {
       min-width: 211px;
       min-height: 211px;
     }
@@ -1277,8 +1284,8 @@
         padding: 0 !important;
       }
       div.steps > *.iconify {
-        width: 50px !important;
-        height: 50px !important;
+        width: 5rem !important;
+        height: 5rem !important;
       }
       div.services {
         display: -webkit-box;
@@ -1577,25 +1584,22 @@
         width: 3.5rem !important;
         height: 3.5rem !important;
       }
-      .nav__btn__home {
+      .btn__home {
         margin: 0px;
-        font-weight: bolder;
         font-size: 0.8rem;
         width: 4rem;
         height: 2.3rem;
       }
   
-      .nav__btn__circle {
+      .btn__circle {
         margin: 0px;
-        font-weight: bolder;
         font-size: 0.8rem;
         width: 4.1rem;
         height: 4.1rem;
       }
   
-      .nav__btn__kite {
+      .btn__kite {
         margin: 0px;
-        font-weight: bolder;
         font-size: 0.7rem;
         min-width: 4.1rem;
         min-height: 4.1rem;
@@ -1669,9 +1673,6 @@
         line-height: normal;
         font-size: 1.4rem !important;
       }
-      /* .wing {
-        height: 190px !important;
-      } */
     }
     @media only screen and (min-width: 735px) {
       .hand {
@@ -1695,9 +1696,6 @@
       }
     }
     @media only screen and (min-width: 800px) {
-      /* .wing {
-        height: 220px !important;
-      } */
       :root {
         font-size: 14px !important;
       }
@@ -1716,17 +1714,17 @@
         width: 6rem !important;
         height: 2.5rem;
       }
-      .nav__btn__home {
+      .btn__home {
         font-size: 1.2rem;
         width: 6rem;
         height: 2.5rem;
       }
-      .nav__btn__circle {
+      .btn__circle {
         font-size: 1.2rem;
         width: 6rem;
         height: 6rem;
       }
-      .nav__btn__kite {
+      .btn__kite {
         font-size: 1.2rem;
         min-width: 6rem;
         min-height: 6rem;
@@ -1736,7 +1734,7 @@
         width: 100%;
       }
       section{
-        height: 35vh !important;
+        height: 50vh !important;
         min-height: unset;
       }
       .contact__card {
@@ -1749,6 +1747,15 @@
         font-size: 4rem !important;
       }
     }
+
+    @media only screen and (min-width: 1080px) {
+
+      section{
+        height: 35vh !important;
+        min-height: unset;
+      }
+    }
+
   }
   @media screen and (orientation: landscape) {
     @media screen and (max-width: 829px) {
@@ -1766,11 +1773,8 @@
         padding-right: 104px;
   
         -webkit-box-orient: horizontal;
-  
         -webkit-box-direction: normal;
-  
         -ms-flex-flow: wrap row;
-  
         flex-flow: wrap row;
       }
       section {
@@ -1840,17 +1844,17 @@
         -ms-flex-align: center;
         align-items: center;
       }
-      .nav__btn__kite,
-      .nav__btn__circle,
-      .nav__btn__home {
+      .btn__kite,
+      .btn__circle,
+      .btn__home {
         font-size: 8px !important;
       }
-      .nav__btn__circle {
+      .btn__circle {
         max-width: 40px;
         max-height: 40px;
       }
   
-      .nav__btn__kite {
+      .btn__kite {
         min-width: 40px;
         min-height: 40px;
       }
@@ -1866,11 +1870,5 @@
       }
     }
   }
-  
-  /*------------------------------------------
-      Live demo samples
-       - http://andrelion.github.io/mediaquery/livedemo.html
-    --------------------------------------------*/
-  
-  /* #endregion */
+/* #endregion */
   
