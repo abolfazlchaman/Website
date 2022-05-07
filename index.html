@@ -5,7 +5,7 @@
 <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com;
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com;
     script-src 'self' https://code.iconify.design;
     style-src 'self' https://cdnjs.cloudflare.com;
     img-src 'self';
@@ -13,7 +13,7 @@
     frame-src 'none';
     child-src 'none';
     form-action 'none';
-    media-src 'none';">
+    media-src 'none';"> -->
     <meta charset="UTF-8">
     <meta name="author" content="Amir N1k">
     <link rel="stylesheet preconnect async" href="https://cdnjs.cloudflare.com/ajax/libs/shabnam-font/5.0.1/font-face.min.css" integrity="sha512-K7kg/b/uwKLejlClSl2m2CDutNLO7w6Wh8R7X2921f6TSs/q+MuhKlTHbM9/8dvN5TK7Y9q2VV6pNtyVKdEKJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -72,15 +72,20 @@
                 </a>
     
             </div>
-            <img src="/images/img.png" alt="" class="contact__card__img imgShadow circle__border" loading="lazy">
-
+            <picture class="contact__card__img">
+                <source srcset="/images/img.webp" type="image/webp">
+                <img src="/images/img.png" alt="Amir nik web developer" class="contact__card__img imgShadow circle__border">
+            </picture>
           </div>
           
 </section>
     
 <nav class="flex center light">
     <div class="navheader center flex column">
-        <img src="/images/logo.png" alt="" class="logo nobrightness" loading="lazy">
+        <picture>
+            <source srcset="/images/logo.webp" type="image/webp">
+            <img src="/images/logo.png" alt="Website logo" class="logo nobrightness" loading="lazy">
+        </picture>
     <div class="navbtns flex center column">
         <div class="theme__btn__on justifystart  border30  flex row btn__outdent center">
             <div class="btn__selector circle__border flex center txtdark">
@@ -141,7 +146,10 @@
 <section id="aboutme" class="aboutme__section center flex column light">
             
             <div class="aboutme__card__frame  flex row btn__indent ">
-              <img src="/images/img2.png" class="aboutme__card__img imgShadow" loading="lazy">
+                <picture>
+                    <source srcset="/images/img2.webp" type="image/webp">
+                    <img src="/images/img2.png" alt="portrait of Amir nik web developer" class="aboutme__card__img imgShadow" loading="lazy">
+                </picture>
 
               <div class="aboutme__card flex column justify">
                   <h3 class="sec__header row wrap flex">
@@ -180,7 +188,10 @@
 <section id="skills" class="skills__section light center flex column" >
     <div class="sec__header flex row center">
         <div class="center">
-            <img src="/images/blackhand.png" alt="hand" class="hand " loading="lazy"></div>
+            <picture>
+                <source srcset="/images/blackhand.webp" type="image/webp">
+                <img src="/images/blackhand.png" alt="drawing of a hand" class="hand " loading="lazy"></div>
+            </picture>
     
         <h2 class="sec__header center column flex"> مهارت های تخصصی و فنی
             <div class="sec__header nowrap row flex center">
@@ -227,7 +238,10 @@
         </h2>
     
         <div class="center">
-            <img src="/images/blackhand.png" alt="hand" class="hand flip center" loading="lazy">
+            <picture>
+                <source srcset="/images/blackhand.webp" type="image/webp">
+                <img src="/images/blackhand.png" alt="drawing of a hand" class="hand flip center" loading="lazy">
+            </picture>
         </div>
     </div>
 
@@ -791,26 +805,34 @@
             <a href="#works" class="workbtn border30 flex row wrap  btn__outdent center">
                 درحال اجرا
             </a>
-        
-        <img id="line" src="/images/blackline.png" alt="" loading="lazy">
+
+                <img id="line" src="/images/blackline.png" alt="" loading="lazy">
         <h3 class="sec__header">سوابق کاری</h3>
-        <img id="line2" src="/images/blackline.png" alt="" class="flip" loading="lazy">
-    
+            <img id="line2" src="/images/blackline.png" alt="" class="flip" loading="lazy">
             <a href="#works" class="workbtn border30 smooth flex row wrap btn__indent center">
                 تکمیل شده            
             </a>
 
     </div>
     <div class="workexp center flex row">
-            <img class="workexp__img column btn__indent" src="/images/coffee.png" alt="image" loading="lazy">
+        <picture>
+            <source srcset="/images/coffee.webp" type="image/webp">
+            <img class="workexp__img column btn__indent" src="/images/coffee.png" alt="a coffeeshop" loading="lazy">
+        </picture>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
     </div>
     <div class="workexp center flex row">
-            <img class="workexp__img column btn__indent" src="/images/garden.png" alt="image" loading="lazy">
+        <picture>
+            <source srcset="/images/garden.webp" type="image/webp">
+            <img class="workexp__img column btn__indent" src="/images/garden.png" alt="Garden" loading="lazy">
+        </picture>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
     </div>
     <div class="workexp center flex row" hidden>
-        <img class="workexp__img column btn__indent" src="/images/noweebs.jpg" alt="image" loading="lazy">
+        <picture>
+            <source srcset="/images/noweebs.webp" type="image/webp">
+            <img class="workexp__img column btn__indent" src="/images/noweebs.jpg" alt="no weebs" loading="lazy">
+        </picture>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود </p>
     </div>
 </section>
@@ -829,25 +851,37 @@
                 <h2 class="slice__header center">پشتیبانی حرفه ای و بازدید دوره ای!</h2>
                 <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img class="seprator" src="/images/blackseprator.png" loading="lazy">
+            <picture>
+                <source class="sepratorSource" srcset="/images/blackseprator.webp" type="image/webp">
+                <img class="seprator" src="/images/blackseprator.png" loading="lazy" alt="">
+            </picture>
             <div class="steps center  smooth ">
                 <i class="iconify blue " data-icon="noto:rocket"  ></i>
                 <h2 class="slice__header center">پرداخت هزینه نهایی، تکمیل و تحویل پروژه.</h2>
                 <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img class="seprator" src="/images/blackseprator.png" loading="lazy">
+            <picture>
+                <source class="sepratorSource" srcset="/images/blackseprator.webp" type="image/webp">
+                <img class="seprator" src="/images/blackseprator.png" loading="lazy" alt="">
+            </picture>
             <div class="steps center  smooth ">
                 <i class="iconify blue " data-icon="emojione:white-heavy-check-mark" ></i>
                 <h2 class="slice__header center">پیشنهاد طرح یا دریافت قالب از شما&nbsp;<</h2>
                 <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img id="seprator__3" class="seprator" src="/images/blackseprator.png" loading="lazy">
+            <picture>
+                <source class="sepratorSource" srcset="/images/blackseprator.webp" type="image/webp">
+                <img id="seprator__3" class="seprator__3" src="/images/blackseprator.png" loading="lazy" alt="">
+            </picture>
             <div class="steps center  smooth ">
                 <i class="iconify blue " data-icon="noto:handshake-light-skin-tone-medium-skin-tone" ></i>
                 <h2 class="slice__header center">توافق بر قرارداد، پیش پرداخت و شروع پروژه.</h2>
                 <h5 class="slice__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h5>
             </div>
-            <img class="seprator" src="/images/blackseprator.png" loading="lazy">
+            <picture>
+                <source class="sepratorSource" srcset="/images/blackseprator.webp" type="image/webp">
+                <img class="seprator" src="/images/blackseprator.png" loading="lazy" alt="">
+            </picture>
             <div class="steps center  smooth ">
                 <i class="iconify blue " data-icon="carbon:help-desk"  ></i>
                 <p class="slice__header center">درخواست همکاری، ارائه مشاوره تخصصی رایگان!</p>
@@ -873,7 +907,10 @@
                 </a>
             </div>
             <div class="txtcontainer">
-            <img id="circle" src="/images/blackcircle.png" style="width:100%;" alt="Circle" loading="lazy">
+                <picture>
+                    <source id="circleSource" srcset="/images/blackcircle.webp" type="image/webp">
+                    <img id="circle" src="/images/blackcircle.png" style="width:100%;" alt="Circle decoration for contact information" loading="lazy">
+                </picture>
             <h3 class="imgtxt__center sec__header">تماس با من</h3>
 
             </div>
