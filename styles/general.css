@@ -273,6 +273,7 @@ div.steps > *.iconify {
       align-self: center;
   margin: 1%;
   min-width: 2.7rem;
+  max-width: 100%;
   min-height: 2rem;
   font-weight: bold;
   font-size: 1.25rem;
@@ -770,8 +771,6 @@ h5.slice__content{
     font-size: 72px !important;
   }
   .skill__meter:hover {
-
-
     flex-grow: 1;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;

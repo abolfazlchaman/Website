@@ -20,7 +20,8 @@ const lineImg = $.getElementById("line"),
   lineImg2 = $.getElementById("line2"),
   circleImg = $.getElementById("circle"),
   logo = $.getElementsByClassName("logo")[0],
-  hand = $.getElementsByClassName("hand");
+  hand = $.getElementsByClassName("hand"),
+  handSource= $.getElementsByClassName("handSource");
 
 
 function picsHandler() {
@@ -32,6 +33,8 @@ function picsHandler() {
     circleImg.setAttribute("src", "images/blackcircle.png");
     hand[0].setAttribute("src", "images/blackhand.png");
     hand[1].setAttribute("src", "images/blackhand.png");
+    handSource[0].setAttribute("srcset","/images/blackhand.webp");
+    handSource[1].setAttribute("srcset","/images/blackhand.webp");
   } else {
     logo.classList.remove("nobrightness");
     lineImg.setAttribute("src", "images/line.png");
@@ -40,6 +43,8 @@ function picsHandler() {
     circleImg.setAttribute("src", "images/circle.png");
     hand[0].setAttribute("src", "images/whitehand.png");
     hand[1].setAttribute("src", "images/whitehand.png");
+    handSource[0].setAttribute("srcset","/images/whitehand.webp");
+    handSource[1].setAttribute("srcset","/images/whitehand.webp");
   }
 }
 
