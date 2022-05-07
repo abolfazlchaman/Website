@@ -29,7 +29,6 @@ function picsHandler() {
     logo.classList.add("nobrightness");
     lineImg.setAttribute("src", "images/blackline.png");
     lineImg2.setAttribute("src", "images/blackline.png");
-    $.getElementById("circleSource").setAttribute("srcset", "images/blackcircle.webp");
     circleImg.setAttribute("src", "images/blackcircle.png");
     hand[0].setAttribute("src", "images/blackhand.png");
     hand[1].setAttribute("src", "images/blackhand.png");
@@ -39,7 +38,6 @@ function picsHandler() {
     logo.classList.remove("nobrightness");
     lineImg.setAttribute("src", "images/line.png");
     lineImg2.setAttribute("src", "images/line.png");
-    $.getElementById("circleSource").setAttribute("srcset", "images/circle.webp");
     circleImg.setAttribute("src", "images/circle.png");
     hand[0].setAttribute("src", "images/whitehand.png");
     hand[1].setAttribute("src", "images/whitehand.png");
@@ -48,24 +46,14 @@ function picsHandler() {
   }
 }
 
-const seprator = $.getElementsByClassName("seprator"),
-      sepratorSource = $.getElementsByClassName("sepratorSource");
+const seprator = $.getElementsByClassName("seprator");
 function seperatorsHandler() {
   for (let i = 0; i < seprator.length; i += 1) {
     if (!themeFlag) {
       seprator[i].setAttribute("src", "images/blackseprator.png");
-      sepratorSource[i].setAttribute("srcset", "images/blackseprator.webp");
-      
     } else {
       seprator[i].setAttribute("src", "images/seprator.png");
-      sepratorSource[i].setAttribute("srcset", "images/seprator.webp");
-
     }
-    !themeFlag?
-    sepratorSource[3].setAttribute("srcset",
-    "images/blackseprator.webp"):
-    sepratorSource[3].setAttribute("srcset",
-    "images/seprator.webp");
   }
 }
 

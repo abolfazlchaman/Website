@@ -315,6 +315,10 @@ div.steps > *.iconify {
           justify-content: center;
   text-align: center;
 }
+.services__slice>*{
+  mix-blend-mode: normal;
+  text-shadow: 2px 2px 20px #000000;
+}
 .services__slice {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -322,6 +326,7 @@ div.steps > *.iconify {
   -webkit-transition-timing-function: ease-in-out;
        -o-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
+
   padding-top: 0.3125rem;
   width: 25vw;
   height: 16rem;
@@ -422,6 +427,7 @@ div.steps > *.iconify {
   padding: 1.5625rem 0rem;
 }
 .slice__content {
+
   max-width:  20vw;
   padding: 0rem 0.9375rem;
   font-size: 1.75vw !important;
@@ -431,6 +437,7 @@ div.steps > *.iconify {
 }
 h5.slice__content{
   font-size: 1.5vw !important;
+
 }
 .width__adjust {
   width: 3.75rem;
@@ -621,36 +628,36 @@ h5.slice__content{
 .tr {
   background-size: cover;
 
-  background-image: url(/images/slice3.png);
+  background-image: url(/images/slice3.webp);
   border-radius: 5px 80px 5px 5px;
 }
 .tl {
   background-size: cover;
 
-  background-image: url(/images/slice1.png);
+  background-image: url(/images/slice1.webp);
   border-radius: 80px 5px 5px 5px;
 }
 .br {
   background-size: cover;
 
-  background-image: url(/images/slice6.png);
+  background-image: url(/images/slice6.webp);
   border-radius: 5px 5px 80px 5px;
 }
 .bl {
   background-size: cover;
 
-  background-image: url(/images/slice4.png);
+  background-image: url(/images/slice4.webp);
   border-radius: 5px 5px 5px 80px;
 }
 .um {
   background-size: cover;
 
-  background-image: url(/images/slice2.png);
+  background-image: url(/images/slice2.webp);
 }
 .lm {
   background-size: cover;
 
-  background-image: url(/images/slice5.png);
+  background-image: url(/images/slice5.webp);
 }
 .smooth {
   -webkit-transition: all 0.3s;
