@@ -1,5 +1,5 @@
 //offline modal here
-window.addEventListener('offline', (event) => {
+window.addEventListener("offline", (event) => {
   console.log("The network connection has been lost.");
 });
 
@@ -9,8 +9,8 @@ window.addEventListener("load", function () {
 });
 
 //online modal here
-window.addEventListener('online', (event) => {
-console.log("You are now connected to the network.");
+window.addEventListener("online", (event) => {
+  console.log("You are now connected to the network.");
 });
 
 let themeFlag = false; //dark theme is off (by default)
@@ -21,8 +21,7 @@ const lineImg = $.getElementById("line"),
   circleImg = $.getElementById("circle"),
   logo = $.getElementsByClassName("logo")[0],
   hand = $.getElementsByClassName("hand"),
-  handSource= $.getElementsByClassName("handSource");
-
+  handSource = $.getElementsByClassName("handSource");
 
 function picsHandler() {
   if (!themeFlag) {
@@ -32,8 +31,8 @@ function picsHandler() {
     circleImg.setAttribute("src", "images/blackcircle.png");
     hand[0].setAttribute("src", "images/blackhand.png");
     hand[1].setAttribute("src", "images/blackhand.png");
-    handSource[0].setAttribute("srcset","/images/blackhand.webp");
-    handSource[1].setAttribute("srcset","/images/blackhand.webp");
+    handSource[0].setAttribute("srcset", "/images/blackhand.webp");
+    handSource[1].setAttribute("srcset", "/images/blackhand.webp");
   } else {
     logo.classList.remove("nobrightness");
     lineImg.setAttribute("src", "images/line.png");
@@ -41,8 +40,8 @@ function picsHandler() {
     circleImg.setAttribute("src", "images/circle.png");
     hand[0].setAttribute("src", "images/whitehand.png");
     hand[1].setAttribute("src", "images/whitehand.png");
-    handSource[0].setAttribute("srcset","/images/whitehand.webp");
-    handSource[1].setAttribute("srcset","/images/whitehand.webp");
+    handSource[0].setAttribute("srcset", "/images/whitehand.webp");
+    handSource[1].setAttribute("srcset", "/images/whitehand.webp");
   }
 }
 
@@ -58,24 +57,37 @@ function seperatorsHandler() {
 }
 
 $.getElementsByClassName("theme__btn__on")[0].addEventListener(
-  ("touchstart","click"),
+  ("touchstart", "click"),
   function () {
-
     if (themeFlag) {
       //Dark Theme
       themeFlag = false;
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace("justifyend","justifystart")
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace("btn__indent","btn__outdent")
+      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+        "justifyend",
+        "justifystart"
+      );
+      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+        "btn__indent",
+        "btn__outdent"
+      );
       $.getElementById("stylesheet").setAttribute("href", "styles/white.css");
-      $.getElementById("icon1").setAttribute("data-icon","bi:moon-stars")
-      
+      $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
     } else {
       //Light Theme
       themeFlag = true;
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace("justifystart","justifyend")
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace("btn__outdent","btn__indent")
+      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+        "justifystart",
+        "justifyend"
+      );
+      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+        "btn__outdent",
+        "btn__indent"
+      );
       $.getElementById("stylesheet").setAttribute("href", "styles/dark.css");
-      $.getElementById("icon1").setAttribute("data-icon","heroicons-outline:sun")
+      $.getElementById("icon1").setAttribute(
+        "data-icon",
+        "heroicons-outline:sun"
+      );
     }
     seperatorsHandler();
     picsHandler();
@@ -113,7 +125,7 @@ function scrollHandler() {
   } else if (xScrollOffset <= worksSection.offsetTop + 50) {
     navDentHandler();
     childs[4].classList.replace("btn__indent", "btn__outdent");
-  } else if (xScrollOffset >= contactSection.offsetTop- 500) {
+  } else if (xScrollOffset >= contactSection.offsetTop - 500) {
     navDentHandler();
     childs[5].classList.replace("btn__indent", "btn__outdent");
   }
@@ -121,7 +133,7 @@ function scrollHandler() {
 
 let childs = $.getElementById("nav__arrow").children;
 for (let i = 0; i < childs.length; i++) {
-  childs[i].addEventListener(("touchstart","click"), function () {
+  childs[i].addEventListener(("touchstart", "click"), function () {
     childs[i].classList.replace("btn__outdent", "btn__indent");
 
     for (let i = 0; i < childs.length; i++) {
@@ -133,72 +145,69 @@ for (let i = 0; i < childs.length; i++) {
 
 let skillsBtn = $.getElementsByClassName("skills__btn");
 for (let i = 0; i < skillsBtn.length; i++) {
-  skillsBtn[i].addEventListener(("touchstart","click"), function () {
+  skillsBtn[i].addEventListener(("touchstart", "click"), function () {
     // console.log(event.target.classList)
     skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
 
     for (let i = 0; i < skillsBtn.length; i++) {
       skillsBtn[i].classList.replace("btn__outdent", "btn__indent");
-    skillsBtn[i].classList.remove("blueBg");
-
+      skillsBtn[i].classList.remove("blueBg");
     }
     skillsBtn[i].classList.replace("btn__indent", "btn__outdent");
     skillsBtn[i].classList.toggle("blueBg");
-skillsContentHandler()
-
+    skillsContentHandler();
   });
 }
 
 let skillsContent = $.getElementsByClassName("skills__lang");
 function skillsContentHandler() {
   for (let i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].setAttribute("hidden","");
+    skillsContent[i].setAttribute("hidden", "");
   }
 
   if (skillsBtn[0].classList.contains("btn__outdent")) {
-    skillsContent[0].removeAttribute("hidden")
-    skillsContent[1].removeAttribute("hidden")
+    skillsContent[0].removeAttribute("hidden");
+    skillsContent[1].removeAttribute("hidden");
   }
   if (skillsBtn[1].classList.contains("btn__outdent")) {
-    skillsContent[2].removeAttribute("hidden")
+    skillsContent[2].removeAttribute("hidden");
   }
   if (skillsBtn[2].classList.contains("btn__outdent")) {
-    skillsContent[3].removeAttribute("hidden")
+    skillsContent[3].removeAttribute("hidden");
   }
   if (skillsBtn[3].classList.contains("btn__outdent")) {
-    skillsContent[4].removeAttribute("hidden")
-    skillsContent[5].removeAttribute("hidden")
+    skillsContent[4].removeAttribute("hidden");
+    skillsContent[5].removeAttribute("hidden");
   }
   if (skillsBtn[4].classList.contains("btn__outdent")) {
-    skillsContent[6].removeAttribute("hidden")
+    skillsContent[6].removeAttribute("hidden");
   }
 }
 
-const workExp= $.getElementsByClassName("workexp"),
-      workBtn = $.getElementsByClassName("workbtn");
-workBtn[0].addEventListener(("touchstart","click"), function () {
-  workBtnHandler()
-  workBtn[0].classList.add("btn__outdent")
-  workExp[2].setAttribute("hidden","");
-})
-workBtn[1].addEventListener(("touchstart","click"), function () {
-  workBtnHandler()
-  workBtn[1].classList.add("btn__outdent")
-  workExp[0].setAttribute("hidden","");
-  workExp[1].setAttribute("hidden","");
-})
+const workExp = $.getElementsByClassName("workexp"),
+  workBtn = $.getElementsByClassName("workbtn");
+workBtn[0].addEventListener(("touchstart", "click"), function () {
+  workBtnHandler();
+  workBtn[0].classList.add("btn__outdent");
+  workExp[2].setAttribute("hidden", "");
+});
+workBtn[1].addEventListener(("touchstart", "click"), function () {
+  workBtnHandler();
+  workBtn[1].classList.add("btn__outdent");
+  workExp[0].setAttribute("hidden", "");
+  workExp[1].setAttribute("hidden", "");
+});
 function workBtnHandler() {
-    workBtn[0].classList.remove("btn__outdent");
-    workBtn[0].classList.add("btn__indent");
-    workExp[0].removeAttribute("hidden");
-    workBtn[1].classList.remove("btn__outdent");
-    workBtn[1].classList.add("btn__indent");
-    workExp[1].removeAttribute("hidden");
-    workExp[2].removeAttribute("hidden");
-
+  workBtn[0].classList.remove("btn__outdent");
+  workBtn[0].classList.add("btn__indent");
+  workExp[0].removeAttribute("hidden");
+  workBtn[1].classList.remove("btn__outdent");
+  workBtn[1].classList.add("btn__indent");
+  workExp[1].removeAttribute("hidden");
+  workExp[2].removeAttribute("hidden");
 }
 
 $.addEventListener("scroll", function name() {
-  behavior: 'smooth';
+  behavior: "smooth";
   scrollHandler();
 });

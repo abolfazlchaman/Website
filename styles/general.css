@@ -5,8 +5,124 @@
 * Browsers: last 4 version
 */
 
-/* #region 🦔general css🦔*/
+/* #region 🦔general🦔*/
 
+  /* #region 🐌skills width🐌*/
+#skills1 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 58%;
+}
+#skills1 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 58%;
+}
+#skills1 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 64%;
+}
+#skills1 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 79%;
+}
+#skills1 > *.skill__meter:nth-child(5) > *.prbar > *.skillprbar {
+  width: 84%;
+}
+#skills1 > *.skill__meter:nth-child(6) > *.prbar > *.skillprbar {
+  width: 38%;
+}
+#skills2 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 36%;
+}
+#skills2 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 8%;
+}
+#skills2 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 28%;
+}
+#skills2 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 14%;
+}
+#skills2 > *.skill__meter:nth-child(5) > *.prbar > *.skillprbar {
+  width: 82%;
+}
+#skills2 > *.skill__meter:nth-child(6) > *.prbar > *.skillprbar {
+  width: 98%;
+}
+#skills3 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 74%;
+}
+#skills3 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 86%;
+}
+#skills3 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 81%;
+}
+#skills3 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 79%;
+}
+#skills4 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 86%;
+}
+#skills4 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 28%;
+}
+#skills4 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 14%;
+}
+#skills4 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 28%;
+}
+#skills4 > *.skill__meter:nth-child(5) > *.prbar > *.skillprbar {
+  width: 82%;
+}
+#skills4 > *.skill__meter:nth-child(6) > *.prbar > *.skillprbar {
+  width: 86%;
+}
+#skills5 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 98%;
+}
+#skills5 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 96%;
+}
+#skills5 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 87%;
+}
+#skills5 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 82%;
+}
+#skills5 > *.skill__meter:nth-child(5) > *.prbar > *.skillprbar {
+  width: 82%;
+}
+#skills5 > *.skill__meter:nth-child(6) > *.prbar > *.skillprbar {
+  width: 34%;
+}
+#skills6 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 12%;
+}
+#skills6 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 92%;
+}
+#skills6 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 74%;
+}
+#skills6 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 71%;
+}
+#skills6 > *.skill__meter:nth-child(5) > *.prbar > *.skillprbar {
+  width: 42%;
+}
+#skills6 > *.skill__meter:nth-child(6) > *.prbar > *.skillprbar {
+  width: 34%;
+}
+#skills7 > *.skill__meter:nth-child(1) > *.prbar > *.skillprbar {
+  width: 12%;
+}
+#skills7 > *.skill__meter:nth-child(2) > *.prbar > *.skillprbar {
+  width: 74%;
+}
+#skills7 > *.skill__meter:nth-child(3) > *.prbar > *.skillprbar {
+  width: 71%;
+}
+#skills7 > *.skill__meter:nth-child(4) > *.prbar > *.skillprbar {
+  width: 42%;
+}
+/* #endregion 🐌skills width🐌*/
 @keyframes blink {
   0% {
     opacity: 1;
@@ -34,8 +150,8 @@
   width: 0.5rem;
   height: 70%;
   -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
 }
 #line,
 #line2 {
@@ -46,12 +162,12 @@
   font-size: 12px;
   scroll-behavior: smooth;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-family: "Shabnam", sans-serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 :root,
 body {
@@ -60,8 +176,8 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   width: 100%;
 }
 p {
@@ -106,12 +222,12 @@ section {
   padding-top: 10px !important ;
   padding-bottom: 5% !important;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
   min-height: 100vh;
 }
@@ -120,8 +236,8 @@ footer {
   padding-right: 156px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: wrap row;
-          flex-flow: wrap row;
+  -ms-flex-flow: wrap row;
+  flex-flow: wrap row;
 }
 section:first-of-type {
   padding: 0px 0px;
@@ -166,7 +282,7 @@ div.workexp > p {
   text-align: justify;
   text-justify: inter-word;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 div.bgcircle > * {
   width: 60%;
@@ -177,7 +293,6 @@ div.steps > *.iconify {
   height: 130px;
 }
 
-
 .last:hover {
   width: 125px;
   height: 125px;
@@ -185,17 +300,17 @@ div.steps > *.iconify {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .services__slice:hover {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  flex-grow: .5;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  flex-grow: 0.5;
   padding-top: 0.3125rem;
   margin: 0rem 0.1rem;
 }
@@ -209,8 +324,8 @@ div.steps > *.iconify {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .btn__selector {
   margin-right: 5px;
@@ -223,7 +338,7 @@ div.steps > *.iconify {
   width: 4.7rem;
   height: 4.7rem;
 }
-.abtme__btn__container{
+.abtme__btn__container {
   margin-top: auto;
   margin-bottom: 15px;
 }
@@ -240,37 +355,37 @@ div.steps > *.iconify {
   height: 120px;
 }
 
-.workbtn{
+.workbtn {
   font-size: 1.125rem;
 }
 .nav__loc__container {
   margin-right: -0.1875rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: nowrap row;
-          flex-flow: nowrap row;
+  -ms-flex-flow: nowrap row;
+  flex-flow: nowrap row;
   width: 7.5rem;
 }
 .prbar {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 85%;
   border-radius: 30px;
 }
 
 .skillprbar {
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   margin: 1%;
   min-width: 2.7rem;
   max-width: 100%;
@@ -292,11 +407,11 @@ div.steps > *.iconify {
   height: auto;
   overflow: hidden;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
-.skills__btn > *.iconify{
+.skills__btn > *.iconify {
   width: 20px;
   height: 20px;
 }
@@ -311,11 +426,11 @@ div.steps > *.iconify {
 .services {
   margin: 0.625rem 0rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
-.services__slice>*{
+.services__slice > * {
   mix-blend-mode: normal;
   text-shadow: 2px 2px 20px #000000;
 }
@@ -324,8 +439,8 @@ div.steps > *.iconify {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 
   padding-top: 0.3125rem;
   width: 25vw;
@@ -358,11 +473,11 @@ div.steps > *.iconify {
   margin-top: 0.3125rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: nowrap column;
-          flex-flow: nowrap column;
+  -ms-flex-flow: nowrap column;
+  flex-flow: nowrap column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 15%;
   height: 28.125rem;
 }
@@ -371,16 +486,16 @@ div.steps > *.iconify {
   width: auto;
   height: auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .imgtxt__center {
   position: absolute;
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .txtcontainer {
   font-size: 4rem;
@@ -389,11 +504,11 @@ div.steps > *.iconify {
 }
 .wing {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   justify-items: center;
   width: 3.125rem;
   height: 20rem;
@@ -405,13 +520,13 @@ div.steps > *.iconify {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   border-radius: 0.625rem;
   margin-top: auto;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .workexp__img {
@@ -427,17 +542,15 @@ div.steps > *.iconify {
   padding: 1.5625rem 0rem;
 }
 .slice__content {
-
-  max-width:  20vw;
+  max-width: 20vw;
   padding: 0rem 0.9375rem;
   font-size: 1.75vw !important;
   font-weight: normal;
   line-height: 1.875rem;
   text-align: center;
 }
-h5.slice__content{
+h5.slice__content {
   font-size: 1.5vw !important;
-
 }
 .width__adjust {
   width: 3.75rem;
@@ -446,15 +559,15 @@ h5.slice__content{
 
 .nav__icon__container {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-flow: row-reverse nowrap;
-          flex-flow: row-reverse nowrap;
+  -ms-flex-flow: row-reverse nowrap;
+  flex-flow: row-reverse nowrap;
   width: 9.375rem;
   height: 2.125rem;
 }
@@ -485,8 +598,8 @@ h5.slice__content{
 .skills__header {
   font-size: 3rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
 }
 .hand {
@@ -500,8 +613,8 @@ h5.slice__content{
   width: 1.5625rem;
   margin: 0.3125rem 0.2rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   text-align: center;
 }
 
@@ -524,11 +637,11 @@ h5.slice__content{
   height: 16.25rem;
   width: 51.5625rem;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .theme__btn__on,
@@ -543,26 +656,25 @@ h5.slice__content{
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: start !important;
 }
 .justifyend {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   -webkit-box-pack: end !important;
-      -ms-flex-pack: end !important;
-          justify-content: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: end !important;
 }
 .justify {
-
-  line-height:normal;
+  line-height: normal;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -571,8 +683,8 @@ h5.slice__content{
   height: 30rem;
   width: 30rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .logo {
   margin-top: 0.625rem;
@@ -580,14 +692,14 @@ h5.slice__content{
 }
 .nobrightness {
   -webkit-filter: brightness(0%);
-          filter: brightness(0%);
+  filter: brightness(0%);
 }
 .flip {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .steps:hover {
   padding: 0% 2%;
@@ -595,8 +707,8 @@ h5.slice__content{
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .circle__border {
   cursor: pointer;
@@ -664,13 +776,13 @@ h5.slice__content{
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .reset__transform {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .arched2 {
@@ -687,19 +799,19 @@ h5.slice__content{
   display: -ms-flexbox;
   display: flex;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   justify-items: center;
 }
 .flex {
@@ -711,32 +823,32 @@ h5.slice__content{
 .column {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
 }
 .row {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
 }
 .wrap {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .nowrap {
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 .blink {
   -webkit-animation-name: blink;
-          animation-name: blink;
+  animation-name: blink;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 .border30 {
   cursor: pointer;
@@ -753,14 +865,14 @@ h5.slice__content{
   #nav__arrow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
@@ -771,10 +883,10 @@ h5.slice__content{
     max-width: 150px;
     text-align: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
-  .contact__card>h1{
+  .contact__card > h1 {
     font-size: 72px !important;
   }
   .skill__meter:hover {
@@ -783,8 +895,8 @@ h5.slice__content{
     -o-transition: all 0.3s;
     transition: all 0.3s;
     -webkit-transition-timing-function: ease-in-out;
-         -o-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -799,8 +911,8 @@ h5.slice__content{
   }
   .steps {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     margin: 20px 5px;
   }
   .skills__btn > *.iconify {
@@ -808,7 +920,7 @@ h5.slice__content{
     height: 25px;
   }
 
-  .skills__btn{
+  .skills__btn {
     width: 115px;
     height: 55px;
     margin: 0px 3px;
@@ -853,7 +965,7 @@ h5.slice__content{
   :root {
     font-size: 24px !important;
   }
-  .contact__card>h1{
+  .contact__card > h1 {
     font-size: 104px !important;
   }
   p {
@@ -874,11 +986,11 @@ h5.slice__content{
     width: 33px;
     height: 33px;
   }
-  .skills__btn > *.iconify{
+  .skills__btn > *.iconify {
     width: 40px;
     height: 40px;
   }
-  .skills__btn{
+  .skills__btn {
     width: 145px;
     height: 65px;
   }
@@ -905,7 +1017,7 @@ h5.slice__content{
   :root {
     font-size: 28px !important;
   }
-  .contact__card>h1{
+  .contact__card > h1 {
     font-size: 4.8rem !important;
   }
   section {
@@ -942,7 +1054,7 @@ h5.slice__content{
     min-width: 106px;
     min-height: 106px;
   }
-  .skills__btn{
+  .skills__btn {
     width: 180px;
     height: 70px;
   }
@@ -958,7 +1070,7 @@ h5.slice__content{
   .hand {
     width: 18vw;
   }
-  .skills__btn{
+  .skills__btn {
     width: 175px;
     height: 65px;
   }
@@ -997,7 +1109,7 @@ h5.slice__content{
     min-width: 147px;
     min-height: 147px;
   }
-  .skills__btn{
+  .skills__btn {
     width: 195px;
     font-size: 0.8rem;
   }
@@ -1029,7 +1141,7 @@ h5.slice__content{
     height: 85px !important;
     width: 85px !important;
   }
-  .skills__btn{
+  .skills__btn {
     width: 320px;
     height: 120px;
     margin: 0px 15px;
@@ -1086,16 +1198,15 @@ h5.slice__content{
   }
 }
 @media screen and (orientation: portrait) {
-
   @media only screen and (max-width: 1023px) {
-    .navheader{
+    .navheader {
       width: 15%;
       right: 0;
       margin-right: 2% !important;
       position: fixed;
       flex-direction: row;
     }
-    .navbtns{
+    .navbtns {
       flex-direction: row !important;
     }
     :root {
@@ -1117,19 +1228,19 @@ h5.slice__content{
       padding-right: 0px;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: wrap row;
-              flex-flow: wrap row;
+      -ms-flex-flow: wrap row;
+      flex-flow: wrap row;
     }
     section {
       padding: 0px;
       padding-top: 75px !important;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       text-align: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       min-height: 100%;
     }
     section:first-of-type {
@@ -1154,8 +1265,8 @@ h5.slice__content{
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
     }
     p {
       font-size: 12px !important;
@@ -1164,8 +1275,8 @@ h5.slice__content{
       z-index: 1;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       border-bottom: 2px solid;
       border-radius: 0px 0px 10px 10px;
       position: fixed;
@@ -1176,19 +1287,18 @@ h5.slice__content{
       width: 100%;
       min-width: 100%;
 
-
       text-align: center;
       -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -ms-grid-column-align: center;
-          justify-self: center;
+      justify-self: center;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
 
     *.reset__transform > *.iconify {
@@ -1199,8 +1309,8 @@ h5.slice__content{
     #nav__arrow {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       position: fixed;
       left: 0;
       margin-top: 0px;
@@ -1213,9 +1323,9 @@ h5.slice__content{
 
       -webkit-box-pack: justify !important;
 
-          -ms-flex-pack: justify !important;
+      -ms-flex-pack: justify !important;
 
-              justify-content: space-between !important;
+      justify-content: space-between !important;
     }
     #line,
     #line2 {
@@ -1231,20 +1341,20 @@ h5.slice__content{
 
     .steps {
       -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: start;
+      -ms-flex-pack: start;
+      justify-content: start;
       margin: 20px 5px;
 
       -webkit-box-orient: vertical;
 
       -webkit-box-direction: normal;
 
-          -ms-flex-flow: nowrap column;
+      -ms-flex-flow: nowrap column;
 
-              flex-flow: nowrap column;
+      flex-flow: nowrap column;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       width: 25%;
       height: 28.125rem;
     }
@@ -1255,11 +1365,11 @@ h5.slice__content{
     }
     .wing {
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       justify-items: center;
       width: 3.125rem;
       margin: 0rem 0.9375rem;
@@ -1275,8 +1385,8 @@ h5.slice__content{
       width: auto;
       height: auto;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
     }
 
     .workbtn {
@@ -1296,18 +1406,18 @@ h5.slice__content{
       min-height: 160px !important;
       margin: 0rem 0.1rem;
     }
-    .skills__btn > *{
+    .skills__btn > * {
       width: 20px !important;
       height: 20px !important;
     }
-    .skills__btn{
+    .skills__btn {
       font-size: 10px !important;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       width: 65px !important;
       height: 45px !important;
       margin: 0px 3px;
@@ -1326,11 +1436,11 @@ h5.slice__content{
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap !important;
-          flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
       overflow: hidden;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       text-align: center;
     }
     .sec__header {
@@ -1339,8 +1449,8 @@ h5.slice__content{
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
       height: auto;
       font-size: 3rem;
       font-weight: bolder;
@@ -1362,23 +1472,23 @@ h5.slice__content{
 
       display: flex;
       -ms-flex-line-pack: center;
-          align-content: center;
+      align-content: center;
       -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: start;
+      -ms-flex-align: start;
+      align-items: start;
       text-align: start;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       justify-items: start;
     }
     .aboutme__card__img {
       display: none;
       visibility: hidden;
     }
-    .aboutme__card>p {
+    .aboutme__card > p {
       line-height: normal;
-    font-size: 1.2rem !important;
+      font-size: 1.2rem !important;
     }
     .aboutme__card {
       min-width: 290px;
@@ -1388,15 +1498,14 @@ h5.slice__content{
       width: 80%;
       padding: 3px 20px;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
 
     .aboutme__card__frame {
-
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       border-radius: 30px;
       height: 50vh;
 
@@ -1405,7 +1514,6 @@ h5.slice__content{
     }
 
     .contact__card__img {
-
       margin-bottom: 20px;
       left: 0;
       right: 0;
@@ -1421,16 +1529,16 @@ h5.slice__content{
       height: 25%;
       width: 25rem;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       position: absolute;
       top: auto;
     }
 
-    .skills__btn > *.iconify{
+    .skills__btn > *.iconify {
       width: 1.8rem !important;
       height: 1.8rem !important;
     }
@@ -1439,7 +1547,7 @@ h5.slice__content{
       width: fit-content;
       height: 12vw !important;
       margin: 0px 5px;
-      font-size: .9rem !important;
+      font-size: 0.9rem !important;
     }
     .theme__btn__on,
     .lang__btn__on {
@@ -1521,9 +1629,8 @@ h5.slice__content{
       width: 1.8rem !important;
       height: 1.8rem !important;
     }
-    .wing{
+    .wing {
       height: 100px !important;
-
     }
   }
 
@@ -1535,27 +1642,24 @@ h5.slice__content{
       width: 2.3rem !important;
       height: 2.3rem !important;
     }
-    .wing{
+    .wing {
       height: 150px !important;
-
     }
   }
 
   @media only screen and (min-width: 601px) {
-
     .contact__card {
       padding-top: 285px;
     }
     :root {
       font-size: 13px !important;
     }
-    .aboutme__card>p {
+    .aboutme__card > p {
       line-height: normal;
       font-size: 1.4rem !important;
     }
-    .wing{
+    .wing {
       height: 190px !important;
-
     }
   }
   @media only screen and (min-width: 735px) {
@@ -1564,12 +1668,12 @@ h5.slice__content{
       display: block;
     }
   }
- 
+
   @media only screen and (min-height: 1023px) {
-    .aboutme__card>p {
+    .aboutme__card > p {
       font-size: 1rem !important;
     }
-    .contact__card__img{
+    .contact__card__img {
       max-height: 335px !important;
       max-width: 335px !important;
     }
@@ -1581,9 +1685,8 @@ h5.slice__content{
     }
   }
   @media only screen and (min-width: 800px) {
-    .wing{
+    .wing {
       height: 220px !important;
-
     }
     :root {
       font-size: 14px !important;
@@ -1603,14 +1706,13 @@ h5.slice__content{
     .contact__card {
       padding-top: 0px;
     }
-    .contact__card__frame{
+    .contact__card__frame {
       min-height: unset !important;
     }
-    .contact__card>h1{
+    .contact__card > h1 {
       font-size: 4rem !important;
     }
   }
-
 }
 @media screen and (orientation: landscape) {
   @media screen and (max-width: 829px) {
@@ -1631,9 +1733,9 @@ h5.slice__content{
 
       -webkit-box-direction: normal;
 
-          -ms-flex-flow: wrap row;
+      -ms-flex-flow: wrap row;
 
-              flex-flow: wrap row;
+      flex-flow: wrap row;
     }
     section {
       padding: 5% 0px;
@@ -1641,13 +1743,13 @@ h5.slice__content{
 
       -webkit-box-align: center;
 
-          -ms-flex-align: center;
+      -ms-flex-align: center;
 
-              align-items: center;
+      align-items: center;
       text-align: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       min-height: 100vh;
     }
     section:first-of-type {
@@ -1661,11 +1763,11 @@ h5.slice__content{
 
     .wing {
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       justify-items: center;
       width: 3.125rem;
       margin: 0rem 0.9375rem;
@@ -1689,8 +1791,8 @@ h5.slice__content{
     #nav__arrow {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
     }
     .btn__selector > a > * {
       width: 14px !important;
@@ -1701,8 +1803,8 @@ h5.slice__content{
       background: none !important;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       position: fixed;
       top: 0;
       right: 0;
@@ -1713,8 +1815,8 @@ h5.slice__content{
       max-width: 150px;
       text-align: center;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
     .nav__btn__kite,
     .nav__btn__circle,
