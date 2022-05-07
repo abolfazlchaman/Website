@@ -267,11 +267,7 @@ h3.sec__header {
   font-size: 2rem;
 }
 
-div.reset__transform > span.iconify,
-.wing > a > .iconify {
-  width: 55px;
-  height: 55px;
-}
+
 div.skills__btn > span:only-of-type {
   font-size: 16px;
 }
@@ -511,10 +507,14 @@ div.steps > *.iconify {
   align-items: center;
   justify-items: center;
   width: 3.125rem;
-  height: 20rem;
+  height: 30vh;
   margin: 0rem 0.9375rem;
 }
 
+.wing > a > .iconify {
+  width: 1.2rem;
+  height: 1.2rem;
+}
 .adjust {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -687,8 +687,9 @@ h5.slice__content {
   align-items: center;
 }
 .logo {
-  margin-top: 0.625rem;
+  margin-right: 10px;
   width: 100%;
+  height: auto;
 }
 .nobrightness {
   -webkit-filter: brightness(0%);
@@ -857,7 +858,11 @@ h5.slice__content {
 /* #endregion 🦔general css🦔*/
 
 /* #region 🖥️media queries🖥️*/
-
+@media all and (max-width: 1000px){
+.wing{
+  height: 50vh;
+}
+}
 @media all and (min-width: 1024px) {
   :root {
     font-size: 16px !important;
@@ -868,6 +873,7 @@ h5.slice__content {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -885,6 +891,10 @@ h5.slice__content {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .wing > a > .iconify {
+    width: 2.2rem;
+    height: 2.2rem;
   }
   .contact__card > h1 {
     font-size: 72px !important;
@@ -932,8 +942,8 @@ h5.slice__content {
     height: 2.3rem;
   }
   .wing > a > .iconify {
-    width: 65px;
-    height: 65px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .nav__btn__home {
     font-weight: bolder;
@@ -1001,8 +1011,8 @@ h5.slice__content {
     min-height: 98px;
   }
   .wing > a > .iconify {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .last {
     width: 160px;
@@ -1030,8 +1040,8 @@ h5.slice__content {
     padding-right: 220px !important;
   }
   .wing > a > .iconify {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
   .skills__icon {
     height: 45px !important;
@@ -1067,6 +1077,9 @@ h5.slice__content {
   :root {
     font-size: 30px !important;
   }
+  #circle{
+  width: 50vw;
+  }
   .hand {
     width: 18vw;
   }
@@ -1075,8 +1088,8 @@ h5.slice__content {
     height: 65px;
   }
   .wing > a > .iconify {
-    width: 85px;
-    height: 85px;
+    width: 60px;
+    height: 60px;
   }
   .contact__card__frame {
     max-height: 30rem;
@@ -1101,7 +1114,6 @@ h5.slice__content {
     width: 21vw;
   }
   .logo {
-    margin-top: 0.625rem;
     width: 140%;
   }
   .nav__btn__kite {
@@ -1177,8 +1189,8 @@ h5.slice__content {
     padding-right: 520px !important;
   }
   .wing > a > .iconify {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
   }
   .btn__selector > * > *.iconify {
     width: 70px;
@@ -1199,6 +1211,9 @@ h5.slice__content {
 }
 @media screen and (orientation: portrait) {
   @media only screen and (max-width: 1023px) {
+    .wing{
+    height: 20vh;
+    }
     .navheader {
       width: 15%;
       right: 0;
@@ -1364,15 +1379,7 @@ h5.slice__content {
       height: 60px;
     }
     .wing {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      justify-items: center;
-      width: 3.125rem;
-      margin: 0rem 0.9375rem;
+
       height: 25% !important;
       min-height: 115px;
     }
@@ -1596,10 +1603,8 @@ h5.slice__content {
       height: 20px !important;
     }
     .logo {
-      margin-top: 0px;
-      margin-right: 5px;
       top: 0;
-      width: 100% !important;
+      width: 100%;
     }
     .tr {
       border-radius: 5px 80px 5px 5px;
@@ -1643,7 +1648,7 @@ h5.slice__content {
       height: 2.3rem !important;
     }
     .wing {
-      height: 150px !important;
+      height: 250px !important;
     }
   }
 
@@ -1658,9 +1663,9 @@ h5.slice__content {
       line-height: normal;
       font-size: 1.4rem !important;
     }
-    .wing {
+    /* .wing {
       height: 190px !important;
-    }
+    } */
   }
   @media only screen and (min-width: 735px) {
     .hand {
@@ -1685,9 +1690,9 @@ h5.slice__content {
     }
   }
   @media only screen and (min-width: 800px) {
-    .wing {
+    /* .wing {
       height: 220px !important;
-    }
+    } */
     :root {
       font-size: 14px !important;
     }
@@ -1761,19 +1766,6 @@ h5.slice__content {
       width: 15%;
     }
 
-    .wing {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      justify-items: center;
-      width: 3.125rem;
-      margin: 0rem 0.9375rem;
-      height: 25% !important;
-      min-height: 167px;
-    }
     .wing > a > .iconify {
       width: 30px !important;
       height: 30px !important;
@@ -1786,7 +1778,6 @@ h5.slice__content {
     }
     .logo {
       width: 75px;
-      height: 28px;
     }
     #nav__arrow {
       -webkit-box-orient: vertical;
