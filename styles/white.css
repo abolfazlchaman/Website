@@ -1,9 +1,8 @@
 @media (max-width: 1023px) or (orientation: landscape) {
-
   .btn__selector {
     background-blend-mode: soft-light, normal;
     -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
-            box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+    box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
   }
 }
 @media all and (min-width: 1024px) {
@@ -32,8 +31,8 @@ a.btn__home:active,
   -o-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 
   background: -o-linear-gradient(
       132.3deg,
@@ -51,7 +50,7 @@ a.btn__home:active,
 
   background-blend-mode: soft-light, normal;
   -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
-          box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
 
 .last:hover {
@@ -74,7 +73,7 @@ a.btn__home:active,
 
   background-blend-mode: soft-light, normal;
   -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
-          box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
 
 .iconify:hover:not(div.steps > .iconify, .bgcircle
@@ -103,7 +102,7 @@ a.btn__home:active,
 
 .imgShadow {
   -webkit-box-shadow: 0rem 0rem 1.875rem 0.5625rem #25cede;
-          box-shadow: 0rem 0rem 1.875rem 0.5625rem #25cede;
+  box-shadow: 0rem 0rem 1.875rem 0.5625rem #25cede;
 }
 
 .btn__circle {
@@ -117,15 +116,16 @@ a.btn__home:active,
 .btn__selector {
   background-color: #e7ebf0;
   -webkit-box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
-          box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
+  box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
 }
 
 .indent {
   border: 1px solid rgba(255, 255, 255, 0.4);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: inset -2.5px -2.5px 5px #fafbff, inset 2.5px 2.5px 5px #a6abbd;
-          box-shadow: inset -2.5px -2.5px 5px #fafbff, inset 2.5px 2.5px 5px #a6abbd;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset -2.5px -2.5px 5px #fafbff,
+    inset 2.5px 2.5px 5px #a6abbd;
+  box-shadow: inset -2.5px -2.5px 5px #fafbff, inset 2.5px 2.5px 5px #a6abbd;
 }
 
 .outdent {
@@ -143,7 +143,7 @@ a.btn__home:active,
     #25cede;
   background-blend-mode: soft-light, normal;
   -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
-          box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
+  box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
 .theme__btn,
 .lang__btn {

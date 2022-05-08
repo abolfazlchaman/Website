@@ -1,34 +1,30 @@
 @media (max-width: 1023px) or (orientation: landscape) {
-  .btn__selector{
+  .btn__selector {
+    -webkit-box-shadow: inset 2px 2px 5px #1f2227, inset -2px -2px 5px #333841;
 
-    -webkit-box-shadow: inset 2px 2px 5px #1f2227,
-              inset -2px -2px 5px #333841;
-
-            box-shadow: inset 2px 2px 5px #1f2227,
-              inset -2px -2px 5px #333841
+    box-shadow: inset 2px 2px 5px #1f2227, inset -2px -2px 5px #333841;
   }
 }
 @media all and (min-width: 1024px) {
-  .btn__selector{
+  .btn__selector {
     margin: 0px 5px;
     background-color: #292d34 !important;
   }
 }
-nav{
-  background-color: #292D34 !important;
-  
+nav {
+  background-color: #292d34 !important;
+
   border-color: #a4161a;
 }
 .btn__home {
-  background-color: #292D34;
+  background-color: #292d34;
 }
 .btn__circle {
-  background-color: #292D34;
+  background-color: #292d34;
 }
 
 .btn__kite {
-  background-color: #292D34;
-
+  background-color: #292d34;
 }
 a.btn__circle:hover,
 a.btn__kite:hover,
@@ -41,30 +37,36 @@ a.btn__home:active,
 .workbtn:active,
 .skills__btn:active,
 .bgcircle:active {
- 
   -webkit-transition: all 0.3s;
- 
+
   -o-transition: all 0.3s;
- 
+
   transition: all 0.3s;
   -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 
   background-color: #a4161a;
-  -webkit-box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5), 1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9), -3px -3px 10px rgba(74, 78, 83, 0.7);
-          box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5), 1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9), -3px -3px 10px rgba(74, 78, 83, 0.7);
+  -webkit-box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5),
+    1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9),
+    -3px -3px 10px rgba(74, 78, 83, 0.7);
+  box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5),
+    1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9),
+    -3px -3px 10px rgba(74, 78, 83, 0.7);
 }
 
 .last:hover {
-  border: 5px solid #E7EBF0 ;
-
+  border: 5px solid #e7ebf0;
 }
 
 .abtme__btn.indent:hover {
-  background: #292D34;
-  -webkit-box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5), 1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9), -3px -3px 10px rgba(74, 78, 83, 0.7);
-          box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5), 1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9), -3px -3px 10px rgba(74, 78, 83, 0.7);
+  background: #292d34;
+  -webkit-box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5),
+    1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9),
+    -3px -3px 10px rgba(74, 78, 83, 0.7);
+  box-shadow: -1px -1px 2px rgba(74, 78, 83, 0.5),
+    1px 1px 3px rgba(35, 37, 39, 0.8), 4px 4px 15px rgba(35, 37, 39, 0.9),
+    -3px -3px 10px rgba(74, 78, 83, 0.7);
 }
 
 .iconify:hover:not(div.steps > .iconify, .bgcircle
@@ -72,59 +74,50 @@ a.btn__home:active,
     > *, .reset__transform > .iconify, .btn__selector
     > a
     > *.iconify, .skills__btn > *.iconify) {
-      background-color: rgba(238, 238, 238, 0.15) !important ;
-
+  background-color: rgba(238, 238, 238, 0.15) !important ;
 }
 
 .services__slice:hover {
-  border: 4px outset RGBA(164, 22, 26, .6) ;
-
+  border: 4px outset RGBA(164, 22, 26, 0.6);
 }
-
 
 .indent {
-  -webkit-box-shadow: inset 2px 2px 5px #1f2227,
-              inset -2px -2px 5px #333841;
-          box-shadow: inset 2px 2px 5px #1f2227,
-              inset -2px -2px 5px #333841;
+  -webkit-box-shadow: inset 2px 2px 5px #1f2227, inset -2px -2px 5px #333841;
+  box-shadow: inset 2px 2px 5px #1f2227, inset -2px -2px 5px #333841;
 }
 
-.outdent{
-  background: #a4161a ;
+.outdent {
+  background: #a4161a;
 
--webkit-box-shadow:  5px 5px 10px #22252b,
-             -5px -5px 10px #30353d;
+  -webkit-box-shadow: 5px 5px 10px #22252b, -5px -5px 10px #30353d;
 
-        box-shadow:  5px 5px 10px #22252b,
-             -5px -5px 10px #30353d;
+  box-shadow: 5px 5px 10px #22252b, -5px -5px 10px #30353d;
 }
 .skill__meter {
   border: 0px outset #a4161a;
 }
 
 .bgcircle {
-  background-color: #292D34 ;
+  background-color: #292d34;
 }
 
 #nav__arrow {
-  background-color: #E7EBF0 ;
-
+  background-color: #e7ebf0;
 }
 
-.imgShadow{
+.imgShadow {
   -webkit-box-shadow: 0px 0px 30px 9px #a4161a;
-          box-shadow: 0px 0px 30px 9px #a4161a;
+  box-shadow: 0px 0px 30px 9px #a4161a;
 }
-
 
 .theme__btn,
 .lang__btn {
   background-color: #a4161a;
 }
 .btn__selector {
-  background-color: #292D34;
--webkit-box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
-        box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
+  background-color: #292d34;
+  -webkit-box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
+  box-shadow: 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
 }
 .fgcolor {
   color: #a4161a;
@@ -133,7 +126,7 @@ a.btn__home:active,
   background-color: #a4161a !important;
 }
 .bgcolor {
-  background-color: #292D34 ;
+  background-color: #292d34;
 }
 .redBg {
   background-color: #a4161a;
