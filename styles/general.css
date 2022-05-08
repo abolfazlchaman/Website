@@ -331,11 +331,15 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     height: 5rem;
   }
   .btn__selector {
-    margin-right: 5px;
+    
+    margin-right: 3px;
+    margin-left: 3px;
     height: 2rem;
     width: 2rem;
   }
-  
+  .btn__selector>*.iconify{
+    padding: 4px !important;
+  }
   .btn__circle {
     font-weight: bolder;
     margin: auto 0rem;
@@ -999,7 +1003,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     .hand {
       width: 21vw;
     }
-    .btn__selector > * > *.iconify {
+    .btn__selector > *.iconify {
       width: 33px;
       height: 33px;
     }
@@ -1177,7 +1181,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       width: 140px;
       height: 140px;
     }
-    .btn__selector > * > *.iconify {
+    .btn__selector > *.iconify {
       width: 60px;
       height: 60px;
     }
@@ -1205,7 +1209,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       width: 135px;
       height: 135px;
     }
-    .btn__selector > * > *.iconify {
+    .btn__selector > *.iconify {
       width: 70px;
       height: 70px;
     }
@@ -1610,7 +1614,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         height: 30px;
         width: 30px;
       }
-      .btn__selector > a > * {
+      .btn__selector > *.iconify {
+        padding: 0px !important;
         width: 18px !important;
         height: 20px !important;
       }
@@ -1820,7 +1825,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         -ms-flex-direction: column;
         flex-direction: column;
       }
-      .btn__selector > a > * {
+      .btn__selector > *.iconify {
         width: 14px !important;
         height: 16px !important;
       }
