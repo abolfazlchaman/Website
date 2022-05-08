@@ -284,16 +284,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     height: 130px;
   }
   
-  .last:hover {
-    width: 125px;
-    height: 125px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    -webkit-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-  }
+  
   .services__slice:hover {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -352,10 +343,19 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     min-height: 4.5rem;
   }
   .last {
-    width: 120px;
-    height: 120px;
+    width: 6.5rem;
+    height: 6.5rem;
   }
-  
+  .last:hover {
+    width: 7rem;
+    height: 7rem;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
   .workbtn {
     font-size: 1.125rem;
   }
@@ -1038,12 +1038,12 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       height: 50px;
     }
     .last {
-      width: 160px;
-      height: 160px;
+      width: 6rem;
+      height: 6rem;
     }
     .last:hover {
-      width: 170px;
-      height: 170px;
+      width: 6.5rem;
+      height: 6.5rem;
     }
   }
   @media only screen and (min-width: 1920px) {
@@ -1250,15 +1250,9 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       margin: 0px;
       padding: 5px;
     }
-    .aboutme__card__img {
-      display: none;
-      visibility: hidden;
-    }
+
     @media only screen and (max-width: 1023px) {
-      .hand {
-      visibility: hidden;
-      display: none;
-    }
+
       .wing{
       height: 20vh;
       }
@@ -1296,7 +1290,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       }
       section {
         padding: 0px;
-        padding-top: 75px !important;
+        padding-top: 100px !important;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -1307,10 +1301,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         min-height: 100%;
       }
       section:first-of-type {
-        padding: 0px;
-        padding-right: 0px;
-        padding-top: 50px !important;
-  
+        padding: 0px !important;
         min-height: 100vh;
       }
   
@@ -1346,7 +1337,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         top: 0;
         margin: auto;
         padding-bottom: 5px;
-        height: 8.5%;
+        padding-top: 5px;
+        height: 6%;
         width: 100%;
         min-width: 100%;
   
@@ -1542,11 +1534,9 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       }
       .aboutme__card {
         min-width: 290px;
-        height: 50vh;
-  
-        /* height: 90% !important; */
+        height: 33vh;
         width: 80%;
-        padding: 3px 20px;
+        padding: 3px 25px;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -1557,8 +1547,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         -ms-flex-pack: center;
         justify-content: center;
         border-radius: 30px;
-        height: 50vh;
-  
+        height: 33vh;
+        min-height: 300px;
         width: 90%;
         border-radius: 30px;
       }
@@ -1692,6 +1682,9 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       .contact__card {
         padding-top: 285px;
       }
+      .aboutme__card__frame,.aboutme__card{
+      min-height: 470px ;
+      }
       :root {
         font-size: 13px !important;
       }
@@ -1700,13 +1693,18 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         font-size: 1.4rem !important;
       }
     }
-    @media only screen and (min-width: 735px) {
+    @media only screen and (max-width:700px) {
+      .hand {
+        visibility: hidden;
+        display: none;
+        }
       .aboutme__card__img {
-        display: block;
-        visibility: visible;
-        width: auto;
-        height: 100%;
+        display: none;
+        visibility: hidden;
       }
+    }
+    @media only screen and (min-width: 735px) {
+
       .hand {
         visibility: visible;
         display: block;
@@ -1770,8 +1768,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         width: 100%;
       }
       section{
-        height: 50vh !important;
-        min-height: unset;
+        min-height: 50vh;
       }
       .contact__card {
         padding-top: 0px;
@@ -1786,7 +1783,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
 
     @media only screen and (min-width: 1080px) {
 
-      section{
+      section#works{
         height: auto !important;
         min-height: unset;
       }
