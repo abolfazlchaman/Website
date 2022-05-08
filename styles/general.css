@@ -274,15 +274,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
   div.skills__btn > span:only-of-type {
     font-size: 16px;
   }
-  div.workexp > p {
-    padding: 0.5rem 2rem;
-    width: 40rem;
-    font-size: 2.5vw !important;
-    text-align: justify;
-    text-justify: inter-word;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-  }
+
   div.bgcircle > * {
     width: 60%;
     height: auto;
@@ -547,13 +539,14 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     border-radius: 15px;
     text-align: center;
     justify-self: flex-start;
-    width: 100%;
+    width: 80%;
     margin: 0rem 0.375rem;
   }
   
   .workexp {
     width: 95%;
-    padding: 1.5625rem 0rem;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
   }
   .slice__content {
     max-width: 20vw;
@@ -640,8 +633,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     border-radius: 1.875rem;
   }
   .workexp__tags{
-    width: 100%;
-  margin-top: 10px;
+    width: auto;
+  margin: 10px 0px;
   }
   .tag__btn{
     margin: 0.5rem 0.5rem;
@@ -649,7 +642,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     height: 2.5rem;
   }
   .workexp__content{
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin: 0px 45px;
   }
@@ -1243,6 +1236,9 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     }
   }
   @media screen and (orientation: portrait) {
+    .workexp__content{
+      width: 80%;
+    }
     .workexp {
       flex-direction: column !important;
       flex-wrap: wrap !important;
@@ -1777,7 +1773,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     @media only screen and (min-width: 1080px) {
 
       section{
-        height: 35vh !important;
+        height: auto !important;
         min-height: unset;
       }
     }
