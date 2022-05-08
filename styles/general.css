@@ -639,7 +639,23 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     font-size: 0.6rem;
     border-radius: 1.875rem;
   }
-  
+  .workexp__tags{
+    width: 100%;
+  margin-top: 10px;
+  }
+  .tag__btn{
+    margin: 0.5rem 0.5rem;
+    width: 10rem;
+    height: 2.5rem;
+  }
+  .workexp__content{
+    width: 100%;
+    height: 100%;
+    margin: 0px 45px;
+  }
+  .workexp__content>p{
+    font-size: 1.4rem !important;
+  }
   .abtme__btn {
     margin: 0.5rem 0.5rem;
     width: 12rem;
@@ -1227,6 +1243,14 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     }
   }
   @media screen and (orientation: portrait) {
+    .workexp {
+      flex-direction: column !important;
+      flex-wrap: wrap !important;
+    }
+    .workexp__img{
+      margin: 0px;
+      padding: 5px;
+    }
     .hand {
       visibility: hidden;
       display: none;
@@ -1282,7 +1306,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       section:first-of-type {
         padding: 0px;
         padding-right: 0px;
-        padding-top: 5%;
+        padding-top: 50px !important;
   
         min-height: 100vh;
       }
@@ -1318,8 +1342,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         position: fixed;
         top: 0;
         margin: auto;
+        padding-bottom: 5px;
         height: 8.5%;
-        min-height: 95px;
         width: 100%;
         min-width: 100%;
   

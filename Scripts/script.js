@@ -15,6 +15,7 @@ window.addEventListener("online", (event) => {
 
 let themeFlag = false; //dark theme is off (by default)
 const $ = document;
+let childs = $.getElementById("nav__arrow").children;
 
 const lineImg = $.getElementById("line"),
   lineImg2 = $.getElementById("line2"),
@@ -131,7 +132,6 @@ function scrollHandler() {
   }
 }
 
-let childs = $.getElementById("nav__arrow").children;
 for (let i = 0; i < childs.length; i++) {
   childs[i].addEventListener(("touchstart", "click"), function () {
     childs[i].classList.replace("outdent", "indent");
