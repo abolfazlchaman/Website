@@ -624,7 +624,10 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     align-self: center;
     text-align: center;
   }
-  
+  .aboutme__card__frame>picture{
+    width: auto;
+    height: 100% ;
+  }
   .skills__btn {
     width: 85px;
     height: 38px;
@@ -1247,11 +1250,15 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       margin: 0px;
       padding: 5px;
     }
-    .hand {
+    .aboutme__card__img {
+      display: none;
+      visibility: hidden;
+    }
+    @media only screen and (max-width: 1023px) {
+      .hand {
       visibility: hidden;
       display: none;
     }
-    @media only screen and (max-width: 1023px) {
       .wing{
       height: 20vh;
       }
@@ -1528,10 +1535,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         justify-content: center;
         justify-items: start;
       }
-      .aboutme__card__img {
-        display: none;
-        visibility: hidden;
-      }
+
       .aboutme__card > p {
         line-height: normal;
         font-size: 1.2rem !important;
@@ -1697,6 +1701,16 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       }
     }
     @media only screen and (min-width: 735px) {
+      .aboutme__card__img {
+        display: block;
+        visibility: visible;
+        width: auto;
+        height: 100%;
+      }
+      .hand {
+        visibility: visible;
+        display: block;
+      }
       .hand {
         visibility: visible;
         display: block;
