@@ -117,8 +117,8 @@ a.btn__home:active,
 }
 
 
-.theme__btn__on,
-.lang__btn__on {
+.theme__btn,
+.lang__btn {
   background-color: #a4161a;
 }
 .btn__selector {

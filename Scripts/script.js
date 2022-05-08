@@ -56,17 +56,17 @@ function seperatorsHandler() {
   }
 }
 
-$.getElementsByClassName("theme__btn__on")[0].addEventListener(
+$.getElementsByClassName("theme__btn")[0].addEventListener(
   ("touchstart", "click"),
   function () {
     if (themeFlag) {
       //Dark Theme
       themeFlag = false;
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+      $.getElementsByClassName("theme__btn")[0].classList.replace(
         "justifyend",
         "justifystart"
       );
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+      $.getElementsByClassName("theme__btn")[0].classList.replace(
         "indent",
         "outdent"
       );
@@ -75,11 +75,11 @@ $.getElementsByClassName("theme__btn__on")[0].addEventListener(
     } else {
       //Light Theme
       themeFlag = true;
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+      $.getElementsByClassName("theme__btn")[0].classList.replace(
         "justifystart",
         "justifyend"
       );
-      $.getElementsByClassName("theme__btn__on")[0].classList.replace(
+      $.getElementsByClassName("theme__btn")[0].classList.replace(
         "outdent",
         "indent"
       );

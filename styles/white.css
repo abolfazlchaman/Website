@@ -145,8 +145,8 @@ a.btn__home:active,
   -webkit-box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
           box-shadow: -5px -5px 10px #fafbff, 5px 5px 10px #a6abbd;
 }
-.theme__btn__on,
-.lang__btn__on {
+.theme__btn,
+.lang__btn {
   background-color: #25cede;
 }
 .bgcolor {

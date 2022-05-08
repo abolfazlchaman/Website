@@ -658,8 +658,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     justify-content: center;
   }
   
-  .theme__btn__on,
-  .lang__btn__on {
+  .theme__btn,
+  .lang__btn {
     cursor: pointer;
     margin-top: 10%;
     width: 4.7rem;
@@ -947,8 +947,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       margin: 0px 3px;
       font-size: 0.8rem;
     }
-    .theme__btn__on,
-    .lang__btn__on {
+    .theme__btn,
+    .lang__btn {
       width: 4rem;
       height: 2.3rem;
     }
@@ -1227,6 +1227,10 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     }
   }
   @media screen and (orientation: portrait) {
+    .hand {
+      visibility: hidden;
+      display: none;
+    }
     @media only screen and (max-width: 1023px) {
       .wing{
       height: 20vh;
@@ -1422,10 +1426,6 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         height: 25px;
         font-size: 10px !important;
       }
-      /* .hand {
-        visibility: hidden;
-        display: none;
-      } */
       .services__slice {
         padding-top: 0.3125rem;
         width: 45%;
@@ -1575,13 +1575,13 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
         margin: 0px 5px;
         font-size: 0.9rem !important;
       }
-      .theme__btn__on,
-      .lang__btn__on {
+      .theme__btn,
+      .lang__btn {
         margin-right: 5px;
         width: 30px !important;
         height: 30px;
       }
-      .lang__btn__on {
+      .lang__btn {
         margin-right: 5px;
       }
       .wing > a > .iconify {
@@ -1643,10 +1643,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       }
     }
     @media only screen and (min-width: 360px) {
-      .hand {
-        visibility: hidden;
-        display: none;
-      }
+
       .wing > a > .iconify {
         width: 1.8rem !important;
         height: 1.8rem !important;
@@ -1714,8 +1711,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
       }
     }
     @media only screen and (min-width: 1024px) {
-      .theme__btn__on,
-      .lang__btn__on {
+      .theme__btn,
+      .lang__btn {
         width: 6rem !important;
         height: 2.5rem;
       }
