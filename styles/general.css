@@ -295,10 +295,13 @@ div.bgcircle > * {
   height: auto;
 }
 div.steps > *.iconify {
-  width: 130px;
-  height: 130px;
+  width: 6rem;
+  height: 6rem;
 }
 
+.slice__content,.slice__header{
+  align-self: center;
+}
 .services__slice:hover {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -483,6 +486,7 @@ u.bold{
 
 .slice__header {
   margin: 1rem 0rem;
+  margin-top: 1.4rem;
   font-size: 1.2rem;
   line-height: normal;
   font-weight: bold;
@@ -500,8 +504,12 @@ u.bold{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: start !important;
+-ms-flex-pack: start !important;
+justify-content: start !important;
+justify-items: start !important;
   width: 15%;
-  height: 28.125rem;
+  height: 23rem;
 }
 .steps__cont {
   padding-top: 1.25rem;
@@ -573,10 +581,11 @@ u.bold{
   padding: 0rem 0.9375rem;
   font-size: 1.75vw !important;
   font-weight: normal;
-  line-height: 1.875rem;
+  line-height: normal;
   text-align: center;
 }
 h5.slice__content {
+  width: 100%;
   font-size: 1.5vw !important;
 }
 .width__adjust {
@@ -1394,7 +1403,6 @@ h5.slice__content {
       min-height: 60px;
       width: 100%;
       min-width: 100%;
-
       text-align: center;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1408,7 +1416,9 @@ h5.slice__content {
       -ms-flex-align: center;
       align-items: center;
     }
-
+    h5.slice__content{
+      font-size: 1rem !important;
+    }
     *.reset__transform > *.iconify {
       width: 40px !important;
       height: 40px !important;
@@ -1448,23 +1458,9 @@ h5.slice__content {
     }
 
     .steps {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: start;
       margin: 20px 5px;
-
-      -webkit-box-orient: vertical;
-
-      -webkit-box-direction: normal;
-
-      -ms-flex-flow: nowrap column;
-
-      flex-flow: nowrap column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
       width: 25%;
-      height: 28.125rem;
+      height: 23rem;
     }
 
     .last {
@@ -1765,7 +1761,7 @@ h5.slice__content {
       padding-top: 385px;
     }
     .contact__card__frame {
-      min-height: 650px !important;
+      min-height: 700px !important;
     }
   }
   @media only screen and (min-width: 800px) {
