@@ -316,7 +316,7 @@ div.steps > *.iconify {
     > .iconify, .last, div.abtme__btn > *, *.btn__selector
     > *, .reset__transform > .iconify, .btn__selector
     > a
-    > *.iconify, .skills__btn > *.iconify) {
+    > *.iconify, .skills__btn > *.iconify, .workex__picon) {
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -537,7 +537,7 @@ u.bold{
   margin: 0rem 0.9375rem;
 }
 
-.wing > a > .iconify {
+.wing > a > *.iconify {
   width: 1.2rem;
   height: 1.2rem;
 }
@@ -583,7 +583,11 @@ h5.slice__content {
   width: 3.75rem;
   height: 3.75rem;
 }
-
+.engTXT{
+  font-weight: bold;
+  padding-top: 5px;
+  direction: ltr;
+}
 .home__icon__container {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -597,6 +601,11 @@ h5.slice__content {
   flex-flow: row-reverse nowrap;
   width: 9.375rem;
   height: 2.125rem;
+}
+.home__icon__container> * >svg,.contact__card> * >svg,.abtme__btn>svg{
+  padding: 1%;
+  width: 1.875rem !important;
+  height: 1.875rem !important;
 }
 .contact__card__frame {
   border-radius: 18.75rem 0.9375rem 0.9375rem 18.75rem;
@@ -761,7 +770,6 @@ h5.slice__content {
   cursor: pointer;
   border-radius: 50%;
 }
-
 .skill__meter {
   width: 15%;
   height: auto;
@@ -771,7 +779,7 @@ h5.slice__content {
 .iconify:not(div.steps > .iconify, .wing > a > .iconify, div.reset__transform
     > .iconify, div.bgcircle > .iconify, .btn__selector
     > a
-    > *.iconify, .skills__btn > *.iconify, .services__slice > *.iconify) {
+    > *.iconify, .skills__btn > *.iconify, .services__slice > *.iconify,.workex__picon) {
   padding: 1%;
   width: 1.875rem;
   height: 1.875rem;
@@ -938,7 +946,7 @@ h5.slice__content {
     -ms-flex-align: center;
     align-items: center;
   }
-  .wing > a > .iconify {
+  .wing > a > *.iconify {
     width: 2.2rem;
     height: 2.2rem;
   }
