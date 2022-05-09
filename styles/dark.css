@@ -1,3 +1,6 @@
+:root {
+  color-scheme: only dark;
+}
 @media (max-width: 1023px) or (orientation: landscape) {
   .btn__selector {
     -webkit-box-shadow: inset 2px 2px 5px #1f2227, inset -2px -2px 5px #333841;

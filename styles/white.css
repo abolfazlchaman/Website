@@ -1,3 +1,6 @@
+:root {
+  color-scheme: only light;
+}
 @media (max-width: 1023px) or (orientation: landscape) {
   .btn__selector {
     background-blend-mode: soft-light, normal;

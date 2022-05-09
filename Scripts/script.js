@@ -72,6 +72,7 @@ $.getElementsByClassName("theme__btn")[0].addEventListener(
         "outdent"
       );
       $.getElementById("stylesheet").setAttribute("href", "styles/white.css");
+      $.getElementById("colorScheme").setAttribute("content", "light");
       $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
     } else {
       //Light Theme
@@ -85,6 +86,7 @@ $.getElementsByClassName("theme__btn")[0].addEventListener(
         "indent"
       );
       $.getElementById("stylesheet").setAttribute("href", "styles/dark.css");
+      $.getElementById("colorScheme").setAttribute("content", "dark");
       $.getElementById("icon1").setAttribute(
         "data-icon",
         "heroicons-outline:sun"
