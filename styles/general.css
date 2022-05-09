@@ -448,9 +448,13 @@ div.steps > *.iconify {
   justify-content: center;
   text-align: center;
 }
-.services__slice > * {
+.services__slice > *,.aboutme__card>p {
   mix-blend-mode: normal;
   text-shadow: 2px 2px 20px #000000;
+}
+u.bold{
+  mix-blend-mode: normal;
+  text-shadow:none;
 }
 .services__slice {
   -webkit-transition: all 0.3s;
@@ -1187,7 +1191,10 @@ h5.slice__content {
   footer {
     padding-right: 490px !important;
   }
-
+  .bold{
+    font-size: 1.4rem !important;
+    text-decoration: underline !important;
+  }
   .contact__card__img {
     max-width: 1300px;
     max-height: 1300px;
