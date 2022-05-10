@@ -451,9 +451,8 @@ div.steps > *.iconify {
   justify-content: center;
   text-align: center;
 }
-.services__slice > *,.aboutme__card>p {
-  mix-blend-mode: normal;
-  text-shadow: 2px 2px 20px #000000;
+.services__slice > *,.aboutme__card>p {  mix-blend-mode: normal;
+  text-shadow: 2px 2px 25px #000000;
 }
 u.bold{
   mix-blend-mode: normal;
@@ -750,6 +749,10 @@ h5.slice__content {
   -ms-flex-align: center;
   align-items: center;
 }
+.aboutme__card>p{
+  padding: 0px 5px;
+}
+
 .logo {
   margin-right: 10px;
   width: 100%;
@@ -1555,7 +1558,7 @@ h5.slice__content {
       border-radius: 18.75rem;
       border-bottom-right-radius: 0.9375rem;
       border-bottom-left-radius: 0.9375rem;
-      min-height: 500px;
+      min-height: 350px;
       height: 75vh;
       width: 80%;
       max-width: 400px;
@@ -1705,6 +1708,14 @@ h5.slice__content {
       border-radius: 5px 5px 80px 5px;
     }
   }
+  @media only screen and (min-height: 900px) {
+    .contact__card__frame {
+      min-height: 650px;
+    }
+    .contact__card {
+      padding-top: 330px;
+    }
+  }
   @media only screen and (min-width: 360px) {
     .wing > a > .iconify {
       width: 1.8rem !important;
@@ -1723,16 +1734,16 @@ h5.slice__content {
       height: 2.3rem !important;
     }
     .wing {
-      height: 250px !important;
+      height: 180px !important;
     }
   }
   @media only screen and (min-width: 601px) {
     .contact__card {
-      padding-top: 285px;
+      padding-top: 400px;
     }
     .aboutme__card__frame,
     .aboutme__card {
-      min-height: 470px;
+      min-height: 460px;
     }
     :root {
       font-size: 13px !important;
