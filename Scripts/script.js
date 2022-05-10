@@ -27,20 +27,20 @@ const lineImg = $.getElementById("line"),
 function picsHandler() {
   if (!themeFlag) {
     logo.classList.add("nobrightness");
-    lineImg.setAttribute("src", "images/blackline.png");
-    lineImg2.setAttribute("src", "images/blackline.png");
-    circleImg.setAttribute("src", "images/blackcircle.png");
-    hand[0].setAttribute("src", "images/blackhand.png");
-    hand[1].setAttribute("src", "images/blackhand.png");
+    lineImg.setAttribute("src", "/images/blackline.png");
+    lineImg2.setAttribute("src", "/images/blackline.png");
+    circleImg.setAttribute("src", "/images/blackcircle.png");
+    hand[0].setAttribute("src", "/images/blackhand.png");
+    hand[1].setAttribute("src", "/images/blackhand.png");
     handSource[0].setAttribute("srcset", "/images/blackhand.webp");
     handSource[1].setAttribute("srcset", "/images/blackhand.webp");
   } else {
     logo.classList.remove("nobrightness");
-    lineImg.setAttribute("src", "images/line.png");
-    lineImg2.setAttribute("src", "images/line.png");
-    circleImg.setAttribute("src", "images/circle.png");
-    hand[0].setAttribute("src", "images/whitehand.png");
-    hand[1].setAttribute("src", "images/whitehand.png");
+    lineImg.setAttribute("src", "/images/line.png");
+    lineImg2.setAttribute("src", "/images/line.png");
+    circleImg.setAttribute("src", "/images/circle.png");
+    hand[0].setAttribute("src", "/images/whitehand.png");
+    hand[1].setAttribute("src", "/images/whitehand.png");
     handSource[0].setAttribute("srcset", "/images/whitehand.webp");
     handSource[1].setAttribute("srcset", "/images/whitehand.webp");
   }
@@ -50,9 +50,9 @@ const seprator = $.getElementsByClassName("seprator");
 function seperatorsHandler() {
   for (let i = 0; i < seprator.length; i += 1) {
     if (!themeFlag) {
-      seprator[i].setAttribute("src", "images/blackseprator.png");
+      seprator[i].setAttribute("src", "/images/blackseprator.png");
     } else {
-      seprator[i].setAttribute("src", "images/seprator.png");
+      seprator[i].setAttribute("src", "/images/seprator.png");
     }
   }
 }
@@ -71,7 +71,7 @@ $.getElementsByClassName("theme__btn")[0].addEventListener(
         "indent",
         "outdent"
       );
-      $.getElementById("stylesheet").setAttribute("href", "styles/white.css");
+      $.getElementById("stylesheet").setAttribute("href", "/styles/white.css");
       $.getElementById("colorScheme").setAttribute("content", "light");
       $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
     } else {
@@ -85,7 +85,7 @@ $.getElementsByClassName("theme__btn")[0].addEventListener(
         "outdent",
         "indent"
       );
-      $.getElementById("stylesheet").setAttribute("href", "styles/dark.css");
+      $.getElementById("stylesheet").setAttribute("href", "/styles/dark.css");
       $.getElementById("colorScheme").setAttribute("content", "dark");
       $.getElementById("icon1").setAttribute(
         "data-icon",

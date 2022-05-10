@@ -232,6 +232,7 @@ h4 {
   margin: 0.3rem 0rem;
 }
 address {
+  width: 6rem;
   font-style: normal;
   font-size: 1.125rem;
   font-weight: 400;
@@ -610,6 +611,7 @@ h5.slice__content {
   width: 9.375rem;
   height: 2.125rem;
 }
+
 .home__icon__container> * >svg,.contact__card> * >svg,.abtme__btn>svg{
   padding: 1%;
   width: 1.875rem !important;
@@ -622,6 +624,10 @@ h5.slice__content {
   max-width: 55rem;
   max-height: 550px;
 }
+.contact__card__frame.ltr{
+  border-radius: 0.9375rem 18.75rem 18.75rem 0.9375rem;
+}
+
 .aboutme__card__img {
   border-left: 0rem;
   width: 20rem;
@@ -706,7 +712,10 @@ h5.slice__content {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
+.contact__card.ltr{
+  padding-right: 0rem;
+  padding-left: 2rem;
+}
 .theme__btn,
 .lang__btn {
   cursor: pointer;
@@ -1284,6 +1293,7 @@ h5.slice__content {
   }
 }
 @media screen and (orientation: portrait) {
+
   .workexp__content {
     width: 80%;
   }
@@ -1303,6 +1313,9 @@ h5.slice__content {
   @media only screen and (max-width: 1023px) {
     .wing {
       height: 20vh;
+    }
+    .contact__card__frame.ltr{
+      border-radius: 18.75rem 18.75rem 0.9375rem 0.9375rem;
     }
     .navheader {
       width: 15%;
