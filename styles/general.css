@@ -1299,16 +1299,7 @@ h5.slice__content {
     margin: 0px;
     padding: 5px;
   }
-  @media only screen and (max-width: 700px) {
-    .hand {
-      visibility: hidden;
-      display: none;
-    }
-    .aboutme__card__img {
-      display: none;
-      visibility: hidden;
-    }
-  }
+
   @media only screen and (max-width: 1023px) {
     .wing {
       height: 20vh;
@@ -1708,6 +1699,51 @@ h5.slice__content {
       border-radius: 5px 5px 80px 5px;
     }
   }
+  
+  @media only screen and (max-width: 700px) {
+    .hand {
+      visibility: hidden;
+      display: none;
+    }
+    .aboutme__card__img {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  @media only screen and (max-width: 321px) {
+    :root {
+      font-size: 8px !important;
+    }
+    .contact__card {
+      padding-top: 240px;
+    }
+    .contact__card__frame {
+      min-height: 370px;
+    }
+    .btn__selector,.theme__btn, .lang__btn {
+      height: 20px !important;
+      width: 20px !important;
+  }
+  .aboutme__card {
+    min-width: 220px;
+  }
+  .contact__card__img {
+    min-width: 180px !important;
+    min-height: 180px !important;
+  }
+  .btn__selector > *.iconify {
+    padding: 0px !important;
+    width: 12px !important;
+    height: 14px !important;
+  }
+  .wing > a > .iconify {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  .wing {
+    min-height: 80px;
+  }
+  }
   @media only screen and (min-height: 900px) {
     .contact__card__frame {
       min-height: 650px;
@@ -1716,7 +1752,7 @@ h5.slice__content {
       padding-top: 330px;
     }
   }
-  @media only screen and (min-width: 360px) {
+  @media only screen and (min-width: 360px){
     .wing > a > .iconify {
       width: 1.8rem !important;
       height: 1.8rem !important;
