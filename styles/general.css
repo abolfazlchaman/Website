@@ -1744,12 +1744,40 @@ h5.slice__content {
     min-height: 80px;
   }
   }
-  @media only screen and (min-height: 600px) {
+  @media only screen and (min-height: 700px)  and (min-width: 600px) {
+    .contact__card__frame {
+      min-height: 550px;
+    }
+    .contact__card{
+      padding-top: 350px ;
+    }
+    .contact__card__img{
+      height: 26rem ;
+      width: 26rem ; 
+    }
+  }
+  @media only screen and (min-height: 800px)  and (min-width: 600px) {
     .contact__card__frame {
       min-height: 650px;
     }
-    .contact__card {
-      padding-top: 330px;
+    .contact__card{
+      padding-top: 390px;
+    }
+    .contact__card__img{
+      height: 26rem ;
+      width: 26rem ; 
+    }
+  }
+  @media only screen and (min-height: 900px)  and (min-width: 600px) {
+    .contact__card__frame {
+      min-height: 700px;
+    }
+    .contact__card{
+      padding-top: 420px !important;
+    }
+    .contact__card__img{
+      height: 26rem ;
+      width: 26rem ; 
     }
   }
   @media only screen and (min-width: 360px){
@@ -1853,7 +1881,7 @@ h5.slice__content {
       min-height: 50vh;
     }
     .contact__card {
-      padding-top: 0px;
+      padding-top: 0px !important;
     }
     .contact__card__frame {
       min-height: unset !important;
