@@ -1744,7 +1744,7 @@ h5.slice__content {
     min-height: 80px;
   }
   }
-  @media only screen and (min-height: 900px) {
+  @media only screen and (min-height: 600px) {
     .contact__card__frame {
       min-height: 650px;
     }
