@@ -7,7 +7,10 @@
 screen size info http://andrelion.github.io/mediaquery/livedemo.html
 
 */
-
+.loader{
+  display: none;
+  visibility: hidden;
+}
 /* #region 🦔general🦔*/
 
 /* #region 🐌skills width🐌*/
@@ -180,10 +183,7 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
 :root {
   font-size: 12px;
   scroll-behavior: smooth;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  font-family: "Times New Roman", Times, serif;
   font-family: "Shabnam", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -340,7 +340,7 @@ div.steps > *.iconify {
   width: 2rem;
 }
 .btn__selector > *.iconify {
-  padding: 4px !important;
+  margin: 5px !important;
 }
 .btn__circle {
   font-weight: bolder;

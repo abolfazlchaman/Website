@@ -1,11 +1,36 @@
-//offline modal here
-window.addEventListener("offline", (event) => {
-  console.log("The network connection has been lost.");
-});
-
 //loader here
 window.addEventListener("load", function () {
   scrollHandler();
+  seperatorsHandler();
+  picsHandler();
+  if (!themeFlag) {
+    //Dark Theme
+    $.getElementsByClassName("theme__btn")[0].classList.replace(
+      "justifyend",
+      "justifystart"
+    );
+    $.getElementsByClassName("theme__btn")[0].classList.replace(
+      "indent",
+      "outdent"
+    );
+  }
+    else{
+      $.getElementsByClassName("theme__btn")[0].classList.replace(
+        "justifystart",
+        "justifyend"
+      );
+      $.getElementsByClassName("theme__btn")[0].classList.replace(
+        "outdent",
+        "indent"
+      )
+    }
+    // $.body.attributes.removeNamedItem("hidden")
+    $.body.classList.remove("loader")
+});
+
+//offline modal here
+window.addEventListener("offline", (event) => {
+  console.log("The network connection has been lost.");
 });
 
 //online modal here
@@ -13,8 +38,6 @@ window.addEventListener("online", (event) => {
   console.log("You are now connected to the network.");
 });
 
-let themeFlag = false; //dark theme is off (by default)
-const $ = document;
 let childs = $.getElementById("nav__arrow").children;
 
 const lineImg = $.getElementById("line"),
@@ -58,44 +81,9 @@ function seperatorsHandler() {
 }
 
 $.getElementsByClassName("theme__btn")[0].addEventListener(
-  ("touchstart", "click"),
-  function () {
-    if (themeFlag) {
-      //Dark Theme
-      themeFlag = false;
-      $.getElementsByClassName("theme__btn")[0].classList.replace(
-        "justifyend",
-        "justifystart"
-      );
-      $.getElementsByClassName("theme__btn")[0].classList.replace(
-        "indent",
-        "outdent"
-      );
-      $.getElementById("stylesheet").setAttribute("href", "/styles/white.css");
-      $.getElementById("colorScheme").setAttribute("content", "light");
-      $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
-    } else {
-      //Light Theme
-      themeFlag = true;
-      $.getElementsByClassName("theme__btn")[0].classList.replace(
-        "justifystart",
-        "justifyend"
-      );
-      $.getElementsByClassName("theme__btn")[0].classList.replace(
-        "outdent",
-        "indent"
-      );
-      $.getElementById("stylesheet").setAttribute("href", "/styles/dark.css");
-      $.getElementById("colorScheme").setAttribute("content", "dark");
-      $.getElementById("icon1").setAttribute(
-        "data-icon",
-        "heroicons-outline:sun"
-      );
-    }
-    seperatorsHandler();
-    picsHandler();
-  }
-);
+  ("touchstart", "click"),themeHandler);
+
+
 
 function navDentHandler() {
   for (let i = 0; i < childs.length; i++) {
@@ -213,3 +201,42 @@ $.addEventListener("scroll", function name() {
   behavior: "smooth";
   scrollHandler();
 });
+
+function themeHandler() {
+  if (themeFlag) {
+    //Dark Theme
+    themeFlag = false;
+    $.getElementsByClassName("theme__btn")[0].classList.replace(
+      "justifyend",
+      "justifystart"
+    );
+    $.getElementsByClassName("theme__btn")[0].classList.replace(
+      "indent",
+      "outdent"
+    );
+    $.getElementById("stylesheet").setAttribute("href", "/styles/white.css");
+    localStorage.setItem("theme", "light");
+    $.getElementById("colorScheme").setAttribute("content", "light");
+    $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
+  } else {
+    //Light Theme
+    themeFlag = true;
+    $.getElementsByClassName("theme__btn")[0].classList.replace(
+      "justifystart",
+      "justifyend"
+    );
+    $.getElementsByClassName("theme__btn")[0].classList.replace(
+      "outdent",
+      "indent"
+    );
+    $.getElementById("stylesheet").setAttribute("href", "/styles/dark.css");
+    localStorage.setItem("theme", "dark");
+    $.getElementById("colorScheme").setAttribute("content", "dark");
+    $.getElementById("icon1").setAttribute(
+      "data-icon",
+      "heroicons-outline:sun"
+    );
+  }
+  seperatorsHandler();
+  picsHandler();
+}
