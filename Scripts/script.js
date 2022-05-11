@@ -214,9 +214,9 @@ function themeHandler() {
       "indent",
       "outdent"
     );
-    $.getElementById("stylesheet").setAttribute("href", "/styles/white.css");
+    styleSheet.setAttribute("href", "/styles/white.css");
     localStorage.setItem("theme", "light");
-    $.getElementById("colorScheme").setAttribute("content", "light");
+    colorScheme.setAttribute("content", "light");
     $.getElementById("icon1").setAttribute("data-icon", "bi:moon-stars");
   } else {
     //Light Theme
@@ -229,9 +229,9 @@ function themeHandler() {
       "outdent",
       "indent"
     );
-    $.getElementById("stylesheet").setAttribute("href", "/styles/dark.css");
+    styleSheet.setAttribute("href", "/styles/dark.css");
     localStorage.setItem("theme", "dark");
-    $.getElementById("colorScheme").setAttribute("content", "dark");
+    colorScheme.setAttribute("content", "dark");
     $.getElementById("icon1").setAttribute(
       "data-icon",
       "heroicons-outline:sun"
