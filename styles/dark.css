@@ -113,8 +113,7 @@ a.btn__home:active,
   box-shadow: 0px 0px 30px 9px #a4161a;
 }
 
-.theme__btn,
-.lang__btn {
+.theme__btn {
   background-color: #a4161a;
 }
 .btn__selector {

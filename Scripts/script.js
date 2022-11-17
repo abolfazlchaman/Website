@@ -1,4 +1,4 @@
-//loader here
+//loader
 window.addEventListener("load", function () {
   scrollHandler();
   seperatorsHandler();
@@ -28,12 +28,12 @@ window.addEventListener("load", function () {
     $.body.classList.remove("loader")
 });
 
-//offline modal here
+//offline check
 window.addEventListener("offline", (event) => {
   console.log("The network connection has been lost.");
 });
 
-//online modal here
+//online check
 window.addEventListener("online", (event) => {
   console.log("You are now connected to the network.");
 });
@@ -43,13 +43,13 @@ let childs = $.getElementById("nav__arrow").children;
 const lineImg = $.getElementById("line"),
   lineImg2 = $.getElementById("line2"),
   circleImg = $.getElementById("circle"),
-  logo = $.getElementsByClassName("logo")[0],
+  // logo = $.getElementsByClassName("logo")[0],
   hand = $.getElementsByClassName("hand"),
   handSource = $.getElementsByClassName("handSource");
 
 function picsHandler() {
   if (!themeFlag) {
-    logo.classList.add("nobrightness");
+    // logo.classList.add("nobrightness");
     lineImg.setAttribute("src", "/images/blackline.png");
     lineImg2.setAttribute("src", "/images/blackline.png");
     circleImg.setAttribute("src", "/images/blackcircle.png");
@@ -58,7 +58,7 @@ function picsHandler() {
     handSource[0].setAttribute("srcset", "/images/blackhand.webp");
     handSource[1].setAttribute("srcset", "/images/blackhand.webp");
   } else {
-    logo.classList.remove("nobrightness");
+    // logo.classList.remove("nobrightness");
     lineImg.setAttribute("src", "/images/line.png");
     lineImg2.setAttribute("src", "/images/line.png");
     circleImg.setAttribute("src", "/images/circle.png");
@@ -136,7 +136,6 @@ for (let i = 0; i < childs.length; i++) {
 let skillsBtn = $.getElementsByClassName("skills__btn");
 for (let i = 0; i < skillsBtn.length; i++) {
   skillsBtn[i].addEventListener(("touchstart", "click"), function () {
-    // console.log(event.target.classList)
     skillsBtn[i].classList.replace("outdent", "indent");
 
     for (let i = 0; i < skillsBtn.length; i++) {
