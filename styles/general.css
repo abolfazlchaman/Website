@@ -213,7 +213,7 @@ footer > h2 {
 h1 {
   padding: 0rem;
   margin: 0.3125rem 0rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 h2 {
   margin: 0.3125rem 0rem;
@@ -978,9 +978,9 @@ h5.slice__content {
     width: 2.2rem;
     height: 2.2rem;
   }
-  .contact__card > h1 {
+  /* .contact__card > h1 {
     font-size: 55px !important;
-  }
+  } */
   .skill__meter:hover {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -1056,9 +1056,9 @@ h5.slice__content {
   :root {
     font-size: 24px !important;
   }
-  .contact__card > h1 {
+  /* .contact__card > h1 {
     font-size: 96px !important;
-  }
+  } */
   p {
     line-height: 1.22;
     font-size: 1.15rem;
@@ -1822,7 +1822,7 @@ h5.slice__content {
       height: 2.3rem !important;
     }
     .wing {
-      height: 180px !important;
+      height: 23vh !important;
     }
   }
   @media only screen and (min-width: 601px) {
