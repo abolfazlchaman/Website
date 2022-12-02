@@ -1,0 +1,19 @@
+@import url('https://v1.fontapi.ir/css/Yekan');
+:root, body{
+    font-family: Yekan, sans-serif !important; 
+}
+.navbar-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+.carousel-item>img{
+    filter: brightness(.7);
+}
+img{
+    object-fit: cover;
+}
+.justify{
+    text-align: justify;
+}
