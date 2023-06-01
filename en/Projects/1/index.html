@@ -48,7 +48,8 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-black opacity-75" aria-current="page" href="#Sliders">Home</a>
+            <a class="nav-link text-black opacity-100 text-decoration-underline" aria-current="page"
+              href="#Sliders">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-black opacity-75" href="#about">About</a>
@@ -121,11 +122,11 @@
 
     <button class="carousel-control-prev" type="button" data-bs-target="#Sliders" data-bs-slide="next">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">قبلی</span>
+      <span class="visually-hidden">next</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#Sliders" data-bs-slide="prev">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">بعدی</span>
+      <span class="visually-hidden">previous</span>
     </button>
   </div>
 
@@ -388,7 +389,7 @@
             <path
               d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
           </svg>
-          Great quality for the cost.
+          Great quality for the price you pay.
         </h3>
         <p class="justify">Lorem Ipsum is a mock text with an incomprehensible simplicity produced by the printing
           industry and used by graphic designers.
@@ -543,6 +544,23 @@
       </ul>
     </footer>
   </div>
+
+  <script>
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll('.navbar-nav a');
+
+    // Loop through all the links and add an event listener to each one
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Remove the active class from all links
+        navLinks.forEach(link => link.classList.remove('opacity-100', 'text-decoration-underline', 'opacity-75'));
+        navLinks.forEach(link => link.classList.add('opacity-75'));
+
+        // Add the active class to the clicked link
+        link.classList.add('opacity-100', 'text-decoration-underline');
+      });
+    });
+  </script>
 
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
