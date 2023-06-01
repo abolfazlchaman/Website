@@ -1,4 +1,4 @@
-@import url('https://v1.fontapi.ir/css/Shabnam');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 p {
   text-align: justify !important;
@@ -20,7 +20,7 @@ img {
 /* Padding below the footer and lighter body text */
 
 body {
-  font-family: Shabnam, sans-serif !important;
+  font-family: Dosis, sans-serif !important;
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
