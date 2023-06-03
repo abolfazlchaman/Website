@@ -163,6 +163,11 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
     opacity: 1;
   }
 }
+.contact__card__img {
+  aspect-ratio: initial;
+  object-fit: cover;
+  transform: rotate(-16deg);
+}
 #circle {
   width: 100%;
   height: auto;
@@ -183,8 +188,8 @@ screen size info http://andrelion.github.io/mediaquery/livedemo.html
 :root {
   font-size: 12px;
   scroll-behavior: smooth;
-  font-family: "Times New Roman", Times, serif;
-  font-family: "Shabnam", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Shabnam', sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -317,11 +322,17 @@ div.steps > *.iconify {
   padding-top: 0.3125rem;
   margin: 0rem 0.1rem;
 }
-.iconify:hover:not(div.steps > .iconify, .bgcircle
-    > .iconify, .last, div.abtme__btn > *, *.btn__selector
-    > *, .reset__transform > .iconify, .btn__selector
-    > a
-    > *.iconify, .skills__btn > *.iconify, .workex__picon) {
+.iconify:hover:not(
+    div.steps > .iconify,
+    .bgcircle > .iconify,
+    .last,
+    div.abtme__btn > *,
+    *.btn__selector > *,
+    .reset__transform > .iconify,
+    .btn__selector > a > *.iconify,
+    .skills__btn > *.iconify,
+    .workex__picon
+  ) {
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -803,11 +814,16 @@ h5.slice__content {
   border-radius: 30px;
   margin: 5px 5px;
 }
-.iconify:not(div.steps > .iconify, .wing > a > .iconify, div.reset__transform
-    > .iconify, div.bgcircle > .iconify, .btn__selector
-    > a
-    > *.iconify, .skills__btn > *.iconify, .services__slice
-    > *.iconify, .workex__picon) {
+.iconify:not(
+    div.steps > .iconify,
+    .wing > a > .iconify,
+    div.reset__transform > .iconify,
+    div.bgcircle > .iconify,
+    .btn__selector > a > *.iconify,
+    .skills__btn > *.iconify,
+    .services__slice > *.iconify,
+    .workex__picon
+  ) {
   padding: 1%;
   width: 1.875rem;
   height: 1.875rem;
