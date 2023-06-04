@@ -165,7 +165,6 @@ const workExp = $.getElementsByClassName('workexp'),
   workBtn = $.getElementsByClassName('workbtn');
 workBtn[0].addEventListener(('touchstart', 'click'), function () {
   workBtnHandler();
-  console.log(workBtn)
   workBtn[0].classList.add('outdent');
   workExp[0].setAttribute('hidden', '');
   workExp[1].setAttribute('hidden', '');
