@@ -72,13 +72,13 @@
             <div class="navbtns flex center column">
                 <button type="button" class="theme__btn justifystart  border30  flex row outdent center">
                     <div class="btn__selector circle50 flex center txt__color">
-                        <span id="icon1" class="iconify center" data-icon="bi:moon-stars">
+                        <span id="icon1" class="iconify center" data-icon="bi:moon-stars" style="padding-left: 1.5px;">
                         </span>
                     </div>
                 </button>
                 <a target="_self" href="/" class="lang__btn justifystart border30 outdent center">
-                    <div class="btn__selector circle50 flex center txt__color">
-                        <span class="center">
+                    <div class="btn__selector circle50 flex center txt__color" >
+                        <span class="center" style="margin-top: 5px;">
                             Fa
                         </span>
                     </div>
@@ -998,6 +998,49 @@
         </div>
         <div class="workexp indent border30 center flex row">
             <picture>
+                <source srcset="/images/goldencoffee.webp" type="image/webp">
+                <img class="workexp__img column indent" src="/images/goldencoffee.PNG" alt="Abolfazl Chaman`s portfolio"
+                    loading="lazy">
+            </picture>
+
+            <div class="workexp__content column flex center">
+                <p class="justify">
+                    Online Coffee shop for Golden Coffee complex 
+                    <!-- <i class="iconify workex__picon" data-icon="emojione:coffee" aria-disabled="true"></i> -->
+                    ☕
+                    <br>
+                    <br>
+                <div class="engTXT">
+                    Reactjs, Tailwind, Postcss, JavaScript, Figma
+                </div>
+                </p>
+                <div class="workexp__tags flex row center ">
+                    <div class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            Open source
+                        </span>
+                        <span class="iconify  center" data-icon="carbon:gateway-public">
+                        </span>
+                    </div>
+                    <a target="_blank" href="https://github.com/abolfazlchaman/Golden-Coffee" title="مشارکت"
+                        class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            Contribute
+                        </span>
+                        <span class="iconify  center" data-icon="ri:github-fill"></span>
+                    </a>
+                    <a href="https://golden-coffee.vercel.app/" title="مشاهده" class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            View
+                        </span>
+                        <span class="iconify center" data-icon="carbon:view-filled">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="workexp indent border30 center flex row">
+            <picture>
                 <source srcset="/images/medicalEN.webp" type="image/webp">
                 <img class="workexp__img column indent" src="/images/medicalEN.PNG" alt="Great medical" loading="lazy">
             </picture>
@@ -1126,10 +1169,93 @@
                 </div>
             </div>
         </div>
+        
+        <div class="workexp indent border30 center flex row" hidden>
+            <picture>
+                <img src="/images/pets.webp" class="workexp__img" type="image/webp" loading="lazy">
+                <!-- <img class="workexp__img column indent" src="/images/artist.jpg" alt="artist portfolio" loading="lazy"> -->
+            </picture>
+            <div class="workexp__content column flex center">
+                <p class="justify">A comprehensive platform for managing medical, veterinary, medical records, allergies, etc. + online pet toy and pet food shop
+                    <i class="iconify workex__picon" data-icon="emojione:cat" aria-disabled="true"></i>
+                    <br>
+                    <br>
+                <div class="engTXT">
+                    Nextjs ,Typescript ,Tailwind , Vite, Sass, PostCSS, HTML ,CSS & ...?
+                </div>
+                </p>
+                <div class="workexp__tags flex row center ">
+                    <div class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            Private
+                        </span>
+                        <span class="iconify  center" data-icon="carbon:gateway-vpn">
+                        </span>
+                    </div>
+                    <a target="_blank" href="#contact" title="مشارکت"
+                        class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            Request collab.
+                        </span>
+                        <span class="iconify center" data-icon="fa-solid:handshake">
+                        </span>
+                    </a>
+                    <!-- <a aria-disabled="" disabled href="placeHolder" title="مشاهده"
+                        class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            مشاهده
+                        </span>
+                        <span class="iconify center" data-icon="carbon:view-filled">
+                        </span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+        <div class="workexp indent border30 center flex row" hidden>
+            <picture>
+                <img src="/images/hotel.webp" type="image/webp" loading="lazy" class="workexp__img">
+                <!-- <img class="workexp__img column indent" src="/images/artist.jpg" alt="artist portfolio" loading="lazy"> -->
+            </picture>
+            <div class="workexp__content column flex center">
+                <p class="justify">Hotel management application with sections for booking hotels, viewing hotels and residents, including advanced management tools for luxury hotels and the services they need.
+                    <i class="iconify workex__picon" data-icon="emojione:hotel" aria-disabled="true"></i>
+                    <br>
+                    <br>
+                <div class="engTXT">
+                    Nextjs ,Typescript ,Tailwind , Vite, Sass, PostCSS, HTML ,CSS & ...?
+                </div>
+                </p>
+                <div class="workexp__tags flex row center ">
+                    <div class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            Private
+                        </span>
+                        <span class="iconify  center" data-icon="carbon:gateway-vpn">
+                        </span>
+                    </div>
+                    <a target="_blank" href="#contact" title="مشارکت"
+                        class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            Request collab.
+                        </span>
+                        <span class="iconify center" data-icon="fa-solid:handshake">
+                        </span>
+                    </a>
+                    <!-- <a aria-disabled="" disabled href="placeHolder" title="مشاهده"
+                        class="tag__btn border30  flex outdent center smooth">
+                        <span class="center">
+                            مشاهده
+                        </span>
+                        <span class="iconify center" data-icon="carbon:view-filled">
+                        </span>
+                    </a> -->
+                </div>
+            </div>
+        </div>
         <div class="workexp indent border30 center flex row" hidden>
             <picture>
                 <!-- <source srcset="/images/artist.webp" type="image/webp"> -->
-                <img class="workexp__img column indent" src="/images/artist.jpg" alt="artist portfolio" loading="lazy">
+                <img class="workexp__img column indent" src="/images/artist.jpg" alt="artist portfolio" loading="lazy" class="workexp__img">
             </picture>
             <div class="workexp__content column flex center">
                 <p class="justify">
