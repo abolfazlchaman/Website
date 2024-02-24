@@ -173,9 +173,10 @@ workBtn[0].addEventListener(('touchstart', 'click'), function () {
   workExp[4].setAttribute('hidden', '');
   workExp[5].setAttribute('hidden', '');
   workExp[6].setAttribute('hidden', '');
-  workExp[7].removeAttribute('hidden', '');
+  workExp[7].setAttribute('hidden', '');
   workExp[8].removeAttribute('hidden', '');
   workExp[9].removeAttribute('hidden', '');
+  workExp[10].removeAttribute('hidden', '');
 });
 workBtn[1].addEventListener(('touchstart', 'click'), function () {
   workBtnHandler();
@@ -186,10 +187,11 @@ workBtn[1].addEventListener(('touchstart', 'click'), function () {
   workExp[3].removeAttribute('hidden', '');
   workExp[4].removeAttribute('hidden', '');
   workExp[5].removeAttribute('hidden', '');
-  workExp[5].removeAttribute('hidden', '');
-  workExp[7].setAttribute('hidden', '');
+  workExp[6].removeAttribute('hidden', '');
+  workExp[7].removeAttribute('hidden', '');
   workExp[8].setAttribute('hidden', '');
   workExp[9].setAttribute('hidden', '');
+  workExp[10].setAttribute('hidden', '');
 });
 function workBtnHandler() {
   workBtn[0].classList.remove('outdent');
